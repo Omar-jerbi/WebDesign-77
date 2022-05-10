@@ -1,7 +1,18 @@
-body{
-    background-color: rgb(188, 188, 188);
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+    margin: 2vh 0;
+  }
+
+#logosocial{
+    margin: 15px 0;
 }
 
-#navbar{
-    background-color: brown;
+a{
+    color: rgb(14, 56, 92);
 }
