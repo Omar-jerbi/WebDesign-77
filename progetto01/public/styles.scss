@@ -1,0 +1,36 @@
+@import "../node_modules/materialize-css/sass/materialize.scss";
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+    margin: 1vh 0;
+    overflow-x: hidden;
+}
+
+#logosocial{
+    margin: 15px 0;
+}
+
+a{
+    color: rgb(14, 56, 92);
+}
+
+#myimg{
+  width: 99vw;
+}
+
+#fstimg-titolo{
+  position: absolute;
+}
+
+#fstimg-desc{
+    position: absolute;
+    margin-top: 20vh;
+    padding: 0 10vw 20vh 30vw;
+    color: $secondary-color;
+}
