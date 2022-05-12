@@ -1,0 +1,65 @@
+@import "../node_modules/materialize-css/sass/materialize.scss";
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+    margin: 1vh 0;
+    overflow-x: hidden;
+}
+
+#logosocial{
+    margin: 15px 0;
+}
+
+a{
+    color: rgb(14, 56, 92);
+}
+
+#myimg{
+  width: 100vw;
+  height: 40vh;
+}
+
+#fstimg-titolo{
+  position: absolute;
+  margin-left: 4vw;
+}
+
+#fstimg-desc{
+    position: absolute;
+    // margin-top: 20vh;
+    // padding: 0 10vw 20vh 30vw;
+    color: $secondary-color;
+    width: 90vw;
+    height: 30vh;
+    padding: 15vh 10vw 20vh 30vw;
+}
+
+@media only screen and (min-width: $U2k-screen) {
+    .cards {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        left: -10vw;
+        right: 10vw;
+        position: relative;
+        width: 70vw;
+    }
+  }
+
+
+
+
+.cards{
+    display: flex;
+   .row{
+        .col{
+            width: fit-content;
+        }
+    }
+}
