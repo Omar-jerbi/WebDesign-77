@@ -18,12 +18,15 @@ body{
     .slider-container{
         background-color:$primary-color-light;
         border-top-color:$primary-color-light;
+        
+        .slider>.indicators>.active{
+            background-color: $font-color3-light-theme;
+        }
     }
     
     h1, h2, h3, h4, h5, h6{
         color:$font-color2-light-theme;
     }
-    
 
 }
 
@@ -49,6 +52,10 @@ body{
     .slider-container{
         background-color:$primary-color-dark;
         border-top-color:$primary-color-dark;
+
+        .slider>.indicators>.active{
+            background-color: $font-color3-dark-theme;
+        }
     }
 
     .card{
