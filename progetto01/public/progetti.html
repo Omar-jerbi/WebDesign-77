@@ -11,6 +11,9 @@
     <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/general.min.css"  media="screen,projection"/>
   
 
+    <!-- lasciare per ultimo, override colori variabili scss  + DARK MODE -->
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/colorsoverride.min.css"  media="screen,projection"/>
+
     <!-- icone  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -30,8 +33,24 @@
 </style>
 
 
+<script>
+  function dark_lightFN(){
+    var body = document.querySelector('body');
+    if(body.classList.contains('dark-mode')){
+      body.classList.remove('dark-mode');
+    }else{
+      body.classList.add('dark-mode');
+    }
+
+  }
+</script>
+
+
+
+
+
+
   <body>
-    <!-- NAV -->
     <div class="navbar-fixed">
       <nav>
         <div id="main-nav" class="nav-wrapper row">
@@ -43,7 +62,7 @@
               <h6 style="display: inline-block; font-size: larger;">titolo del sito</h6>
           </div>
           <div class="right show-on-medium-and-down">
-            <i class="material-icons col s3">star</i>
+            <i class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
           </div>
 
 
@@ -60,7 +79,7 @@
     </nav>
   </div>
 
-    <ul class="sidenav" id="mobile-demo">
+  <ul class="sidenav" id="mobile-demo">
       <li><a href="index.html">
         <i class="material-icons">home</i>
         Home</a></li>
@@ -79,7 +98,7 @@
       <li><a href="info.html">
         <i class="material-icons">event_note</i>
         Info</a></li>      
-    </ul>
+  </ul>
   <!-- FINE NAV -->
 
 <main>

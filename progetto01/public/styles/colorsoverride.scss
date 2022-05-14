@@ -1,0 +1,52 @@
+@import "../../node_modules/materialize-css/sass/materialize.scss";
+@import "./general.scss";
+@import "./index.scss";
+
+body{
+    color: $font-color2-light-theme;
+    background-color: $secondary-color-light;
+
+    nav, .page-footer{
+        color: $font-color2-light-theme;
+        background-color: $primary-color-light;
+        *{
+            color: $font-color2-light-theme;
+            background-color: $primary-color-light;          
+        }
+    }
+
+    .slider-container{
+        background-color:$primary-color-light;
+        border-top-color:$primary-color-light;
+      }
+
+}
+
+
+ 
+
+
+// dark mode !!! lasciare in fondo!!!
+.dark-mode{//body
+
+    color: $font-color1-dark-theme;
+    background-color: $secondary-color-dark;
+
+    nav, .page-footer{
+        color: $font-color1-dark-theme;
+        background-color: $primary-color-dark;
+        *{
+            color: $font-color1-dark-theme;
+            background-color: $primary-color-dark;
+        }
+    }
+
+    .slider-container{
+        background-color:$primary-color-dark;
+        border-top-color:$primary-color-dark;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        color:$font-color2-dark-theme;
+    }
+  }

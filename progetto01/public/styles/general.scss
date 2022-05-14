@@ -1,5 +1,9 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
+#main-nav{
+    padding-right: 10px;
+}
+
 body {
     display: flex;
     min-height: 100vh;

@@ -1,13 +1,11 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
+
+// footer
 #logosocial{
     margin: 15px 0;
 }
 
-
-#main-nav{
-    padding-right: 10px;
-}
 
 #myimg{
   width: 100vw;
@@ -50,9 +48,8 @@
 }
 
 .slider-container{
-    width: 100vw;
-    background-color: #E38787;
-    border-top: 40px solid #E38787;
+    width: 100vw;;
+    border-top: 40px solid;
   }
 
   .slider{
