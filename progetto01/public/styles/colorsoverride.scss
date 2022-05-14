@@ -14,11 +14,16 @@ body{
             background-color: $primary-color-light;          
         }
     }
-
+    
     .slider-container{
         background-color:$primary-color-light;
         border-top-color:$primary-color-light;
-      }
+    }
+    
+    h1, h2, h3, h4, h5, h6{
+        color:$font-color2-light-theme;
+    }
+    
 
 }
 
@@ -44,6 +49,10 @@ body{
     .slider-container{
         background-color:$primary-color-dark;
         border-top-color:$primary-color-dark;
+    }
+
+    .card{
+        background-color: $tertiary-color-dark;        
     }
 
     h1, h2, h3, h4, h5, h6{
