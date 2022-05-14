@@ -27,7 +27,7 @@ a{
 
 #myimg{
   width: 100vw;
-  height: 40vh;
+  height: 35vh;
 }
 
 #fstimg-titolo{
@@ -35,13 +35,6 @@ a{
   margin-left: 4vw;
 }
 
-#fstimg-desc{
-    position: absolute;
-    color: $secondary-color;
-    width: 90vw;
-    height: 30vh;
-    padding: 15vh 10vw 20vh 30vw;
-}
 
 @media only screen and (min-width: $U2k-screen) {
     .cards {
