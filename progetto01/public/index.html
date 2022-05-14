@@ -20,6 +20,32 @@
   
   </head>
 
+
+
+
+
+  <style>
+    .slider-container{
+      width: 100vw;
+      background-color: #E38787;
+      border-top: 40px solid #E38787;
+    }
+
+    .slider{
+      width: 80%;
+      margin: auto auto;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
   <body>
     <!-- NAV -->
     <div class="navbar-fixed">
@@ -76,7 +102,7 @@
   <!-- immagine welcome sito -->
   <div id="fstimg">
     <h4 id="fstimg-titolo">Titolo del sito</h4>
-    <img id="myimg" src="https://picsum.photos/id/10/0/0" alt="" srcset="">
+    <img id="myimg" src="../img/copertina_beigua.png" alt="" srcset="">
   </div>
   
 
@@ -94,45 +120,52 @@
       In questo sito troverai un insieme di progetti sul tema del Beigua. In piu' un evento sull'importanza di impedire la miniera sul Beigua.
     </p>
 
-<br>
+    <br>
+  </div>    
 
 
 
 
 
-<div class="slider">
-  <ul class="slides">
-    <li>
-      <img src="https://picsum.photos/id/11/0/0"> <!-- random image -->
-      <div class="caption center-align">
-        <h3>This is our big Tagline!</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-    </li>
-    <li>
-      <img src="https://picsum.photos/id/10/0/0"> <!-- random image -->
-      <div class="caption left-align">
-        <h3>Left Aligned Caption</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-    </li>
-    <li>
-      <img src="https://picsum.photos/id/12/0/0"> <!-- random image -->
-      <div class="caption right-align">
-        <h3>Right Aligned Caption</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-    </li>
-    <li>
-      <img src="https://picsum.photos/id/15/0/0"> <!-- random image -->
-      <div class="caption center-align">
-        <h3>This is our big Tagline!</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-    </li>
-  </ul>
+
+  <div class="slider-container">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="https://picsum.photos/id/11/0/0"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://picsum.photos/id/10/0/0"> <!-- random image -->
+          <div class="caption left-align">
+            <h3>Left Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://picsum.photos/id/12/0/0"> <!-- random image -->
+          <div class="caption right-align">
+            <h3>Right Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://picsum.photos/id/15/0/0"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+
 </div>
 
+
+<div class="container">
     <br>
     <h4>
       In primo piano:
@@ -141,40 +174,39 @@
     
     <div class="cards">
 
-      <!-- card 1 -->
-      <div class="row">
-        <div class="col s12 m7">
-          <div class="card small">
-            <div class="card-image">
-              <img src="https://picsum.photos/id/10/0/0">
-              <span class="card-title">Card Title</span>
+
+    <!-- card 1 -->
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card small">
+          <div class="card-image">
+            <img src="../img/I liguri muoiono prima.png">
+            <!-- <span class="card-title"></span> -->
+          </div>
+          <div class="card-content">
+            <p style="font-size:large;">I liguri muoiono prima...</p>
             </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
+            <div class="card-action">
+              <a href="#">Vai ai progetti</a>
             </div>
           </div>
         </div>
+      </div>
         
 
     <!-- card 2 -->
     <div class="row">
         <div class="col s12 m7">
           <div class="card small">
-            <div class="card-image">
-              <img src="https://picsum.photos/id/10/0/0">
-              <span class="card-title">Card Title</span>
+            <div class="card-image" style="height: 200px;">
+              <img src="../img/unige.png" style="top: 50px;">
+              <!-- <span class="card-title">Card Title</span> -->
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
+              <p style="font-size:large;">UnigeXBeigua</p>
               </div>
               <div class="card-action">
-                <a href="#">This is a link</a>
+                <a href="#">Vai al nostro evento</a>
               </div>
             </div>
           </div>
