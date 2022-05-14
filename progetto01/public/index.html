@@ -22,8 +22,23 @@
   </head>
 
 
+<style>
+  .dark-mode{
+    background-color: black;
+  }
+</style>
 
 
+<script>
+  function dark_lightFN(){
+    var body = document.querySelector('body');
+    if(body.classList.contains('dark-mode')){
+      body.classList.remove('dark-mode');
+    }else{
+      body.classList.add('dark-mode');
+    }
+  }
+</script>
 
 <body>
     <!-- NAV -->
@@ -38,7 +53,7 @@
               <h6 style="display: inline-block; font-size: larger;">titolo del sito</h6>
           </div>
           <div class="right show-on-medium-and-down">
-            <i class="material-icons col s3">star</i>
+            <i class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
           </div>
 
 
