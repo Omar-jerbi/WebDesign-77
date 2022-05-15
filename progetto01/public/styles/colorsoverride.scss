@@ -1,10 +1,7 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
 
-// COPY
-
-// COPY
-
+//OVERRIDE DEI COLORI DI HEADER E FOOTER IN TUTTE E PAGINE 
 
 
 body{
@@ -22,24 +19,9 @@ body{
         }
     }
     
-    #slider-container{
-        background-color:$primary-color-light;
-        border-color:$primary-color-light;
-        box-shadow: 1px 3px 6px 0px $secondary-color-dark;
 
-        .slider>.indicators>.active{
-            background-color: $font-color3-light-theme;
-        }
-    }
-    
-    h1, h2, h3, h4, h5, h6{
-        color:$font-color2-light-theme;
-    }
 
 }
-
-
- 
 
 
 // dark mode !!! lasciare in fondo!!!
@@ -58,20 +40,5 @@ body{
         }
     }
 
-    #slider-container{
-        background-color:$primary-color-dark;
-        border-top-color:$primary-color-dark;
-        box-shadow: 1px 3px 6px 0px lighten($secondary-color-dark, 5);
-        .slider>.indicators>.active{
-            background-color: $font-color3-dark-theme;
-        }
-    }
 
-    .card{
-        background-color: $tertiary-color-dark;        
-    }
-
-    h1, h2, h3, h4, h5, h6{
-        color:$font-color2-dark-theme;
-    }
   }
