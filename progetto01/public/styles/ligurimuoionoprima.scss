@@ -1,0 +1,32 @@
+@import "../../node_modules/materialize-css/sass/materialize.scss";
+
+.container > h1{
+    margin: 0;
+}
+
+#titolo-card{
+    font-size: 2em;
+}
+
+
+.obbiettivo{
+    width: 100vw; 
+    background-color: $primary-color-light;
+    
+    .card-content{
+        background-color: $primary-color-light;
+    }
+}
+
+
+
+
+.dark-mode{
+    .obbiettivo{
+        background-color: $primary-color-dark;
+    
+        .card-content{
+            background-color: $primary-color-dark;
+        }
+    }
+}
