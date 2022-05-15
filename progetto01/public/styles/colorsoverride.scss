@@ -1,6 +1,19 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
-@import "./general.scss";
-@import "./index.scss";
+
+
+// COPY
+.slider-container{
+    width: 100vw;;
+    border-top: 40px solid;
+  }
+
+  .slider{
+    width: 80%;
+    margin: auto auto;
+  }
+// COPY
+
+
 
 body{
     color: $font-color2-light-theme;
