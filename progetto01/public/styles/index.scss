@@ -67,3 +67,12 @@ h1, h2, h3, h4, h5, h6{
     color:$font-color2-dark-theme;
   }
 }
+
+
+
+
+body{
+  background-image: repeating-linear-gradient(285deg, #ffffff7d, #5be9124f 280px);
+    transition: background-color 2s ease;
+}
+

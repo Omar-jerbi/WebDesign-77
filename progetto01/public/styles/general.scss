@@ -1,6 +1,10 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
 
+html{
+    scroll-behavior: smooth;
+}
+
 // footer
 #logosocial{
     margin: 15px 0;
