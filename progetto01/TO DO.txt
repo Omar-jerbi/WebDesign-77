@@ -1,6 +1,6 @@
 0- paragrafo di welcome
 1- titolo sito + logo sito(opz)(se scegliamo logo metterlo in tab della pagina (html5))
-2- mettere un link alla pagina progetti nel menu di navigazione?
+2- mettere un link alla pagina progetti nel menu di navigazione SI
 (FINIRE L'HEADER PRIMA DI PROCEDERE A SCRIVERE ALTRE PAGINE)
 3- creare cookie per dark/light mode
 4- implementare dark/light mode anche per burger menu
