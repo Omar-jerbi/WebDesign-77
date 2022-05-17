@@ -10,4 +10,7 @@
 8- scegliere palette (6 colori x2)
 9- aggiungere qualche animazione?
 10- finire il resto delle pagine
+
 piu info gruppi
+
+linear gradient nel background (background-image)

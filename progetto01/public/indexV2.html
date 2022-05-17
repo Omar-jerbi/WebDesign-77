@@ -9,25 +9,24 @@
 
     <!-- my style -->
     <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/general.min.css"  media="screen,projection"/>
-  
-
+    
+    <!-- lasciare per ultimo, override colori variabili scss  + DARK MODE -->
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/colorsoverride.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/index.min.css"  media="screen,projection"/>
+    
     <!-- icone  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  <title>programma_evento</title>
+    
+    
+
+    <script src="./js/dark_light.js"></script>
+  <title>index V2</title>
   
   </head>
 
-
-
-<style>
-    .slider .slides li .caption{
-        color: black;
-    }
-</style>
 
 
   <body>
@@ -134,114 +133,111 @@
 
 
   <div class="container">
-        <h4>
-        Welcome:
-        </h4>
+    <div class="welcome">
+      <br>
+      <h4>
+        Benvenuto
+      </h4>
+      <p>Benvenuto nella lotta contro la miniera sul beigua</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur iure repellendus labore est id nobis nulla veniam dolores laboriosam!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur iure repellendus labore est id nobis nulla veniam dolores laboriosam!</p>
+      
 
-        <p>
-        Benvenuto nel nostro sito dell'università di Genova. Fatto da studenti di Informatica in collaborazione con studenti di Design.
-        </p>
-        <p>
-        In questo sito troverai un insieme di progetti sul tema del Beigua. In piu' un evento sull'importanza di impedire la miniera sul Beigua.
-        </p>  
+    </div>
+      
+    <br>
+    <h4>
+      In primo piano:
+    </h4>
+    <br>
 
+    <div class="cards">
+      <!-- card 1 -->
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card small">
+            <div class="card-image">
+              <img src="img/I liguri muoiono prima.png">
+              <span class="card-title blue">Salute</span>
+            </div>
+            <div class="card-content">
+              <p style="font-size:large;">I liguri muoiono prima...</p>
+              </div>
+              <div class="card-action">
+                <a href="progetti.html">Vai ai progetti</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          
 
-        <br>
-        <h4>
-        In primo piano:
-        </h4>
-        <br>
-
-        <div class="cards">
-          <!-- card 1 -->
-          <div class="row">
-            <div class="col s12 m7">
-              <div class="card small">
-                <div class="card-image">
-                  <img src="img/I liguri muoiono prima.png">
-                  <span class="card-title"></span>
+      <!-- card 2 -->
+      <div class="row">
+          <div class="col s12 m7">
+            <div class="card small">
+              <div class="card-image" style="height: 200px;">
+                <img src="img/unige.png" style="padding: 60px 20px; background-color: white;">
+                <span class="card-title red">Evento</span>
+              </div>
+              <div class="card-content">
+                <p style="font-size:large;">UnigeXBeigua</p>
                 </div>
-                <div class="card-content">
-                  <p style="font-size:large;">I liguri muoiono prima</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">Vai ai progetti</a>
-                  </div>
+                <div class="card-action">
+                  <a href="beiguaxunige.html">Vai al nostro evento</a>
                 </div>
               </div>
             </div>
-              
-          <!-- card 2 -->
-          <div class="row">
-            <div class="col s12 m7">
-              <div class="card small">
-                <div class="card-image" style="height: 200px;">
-                  <img src="img/unige.png" style="top: 50px;">
-                  <!-- <span class="card-title">Card Title</span> -->
-                </div>
-                <div class="card-content">
-                  <p style="font-size:large;">UnigeXBeigua</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">Vai al nostro evento</a>
-                  </div>
-                </div>
+        </div>
+
+    <!-- cards -->
+    </div>
+
+
+    <div class="cards">
+      <!-- card 1 -->
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card small">
+            <div class="card-image">
+              <img src="img/vian.png">
+              <span class="card-title green">Ospiti</span>
+            </div>
+            <div class="card-content">
+              <p style="font-size:large;">Discussioni sul tema della miniera</p>
               </div>
+              <div class="card-action">
+                <a href="relatori.html">Informati sui relatori</a>
+              </div>
+            </div>
           </div>
-
-        <!-- cards -->
         </div>
-      
-      
-        <div class="cards">
-          <!-- card 1 -->
-          <div class="row">
-            <div class="col s12 m7">
-              <div class="card small">
-                <div class="card-image">
-                  <img src="https://picsum.photos/id/10/0/0">
-                  <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">This is a link</a>
-                  </div>
-                </div>
-              </div>
-        </div>
-            
+        
 
-        <!-- card 2 -->
-        <div class="row">
-            <div class="col s12 m7">
-              <div class="card small">
-                <div class="card-image">
-                  <img src="https://picsum.photos/id/10/0/0">
-                  <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">This is a link</a>
-                  </div>
-                </div>
+    <!-- card 2 -->
+    <div class="row">
+        <div class="col s12 m7">
+          <div class="card small">
+            <div class="card-image">
+              <img src="https://picsum.photos/id/863/0/0">
+              <span class="card-title yellow">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p style="font-size:large;">Partecipa al talk</p>
               </div>
+              <div class="card-action">
+                <a href="programma.html">Vai al programma</a>
+              </div>
+            </div>
           </div>
-                        
-        <!-- cards -->
-        </div>
+      </div>     
+    <!-- cards -->
+    </div>
 
-<!-- END container -->
+
+  <!-- END container -->
   </div>
-    
-
-
 </main>
+
 
 
 
@@ -296,7 +292,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.slider');
-        var instances = M.Slider.init(elems, {"indicators":true, "height": 800, "interval":3000});
+        var instances = M.Slider.init(elems, {"indicators":true, "height": 650, "interval":3000});
         instances.start();
       });
 

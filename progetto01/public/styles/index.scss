@@ -1,15 +1,16 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
 
-#myimg{
-  width: 100vw;
-  height: 35vh;
-}
+// #myimg{
+//   width: 100vw;
+//   height: 35vh;
+// }
 
-#fstimg-titolo{
-  position: absolute;
-  margin-left: 4vw;
-}
+// #fstimg-titolo{
+//   position: absolute;
+//   margin-left: 4vw;
+// }
+
 
 
 @media only screen and (min-width: $U2k-screen) {
@@ -41,24 +42,12 @@
     }
 }
 
-#slider-container{
-    width: 100vw;
-    border-top: 40px solid;
-    background-color:$primary-color-light;
-    border-color:$primary-color-light;
-    box-shadow: 1px 3px 6px 0px $secondary-color-dark;
-  }
 
-#slider{
-    width: 80%;
-    margin: auto auto;
-  }
-
-#slider-container{
-  .slider>.indicators>.active{
-      background-color: $font-color3-light-theme;
-  }
+.slider .indicators .indicator-item.active{
+    background-color: $font-color3-light-theme;
 }
+
+
 
 h1, h2, h3, h4, h5, h6{
     color:$font-color2-light-theme;
@@ -68,19 +57,12 @@ h1, h2, h3, h4, h5, h6{
 //////////////////////////////////////////////////////////////////////////////////
 
 .dark-mode{
-  #slider-container{
-    background-color:$primary-color-dark;
-    border-top-color:$primary-color-dark;
-    box-shadow: 1px 3px 6px 0px lighten($secondary-color-dark, 5);
-    .slider>.indicators>.active{
-        background-color: $font-color3-dark-theme;
-    }
+  .slider .indicators .indicator-item.active{
+    background-color: $font-color3-dark-theme;
   }
-
   .card{
     background-color: $tertiary-color-dark;        
   }
-
   h1, h2, h3, h4, h5, h6{
     color:$font-color2-dark-theme;
   }
