@@ -145,66 +145,71 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur iure repellendus labore est id nobis nulla veniam dolores laboriosam!</p>
   </div>
     
+    <script>
+      function fn(id){
+        var body = document.querySelector('body');
+        if(body.style.backgroundColor != 'black'){
+          body.style.backgroundColor = "black";
+    
+          var cardS = document.querySelectorAll('.card');
+          cardS.forEach(element => {
+            if(element.id != id){
+              element.style.zIndex = "-1";
+            }
+          });
+      
+          var cards = document.querySelectorAll('.cards');
+          cards.forEach(element => {
+            element.style.backgroundColor = "#00000070";
+          });
+        }
+        else  {
+          body.style.backgroundColor = "#c4c3c4";
+    
+          var cardS = document.querySelectorAll('.card');
+          cardS.forEach(element => {
+            if(element.id != id){
+              element.style.zIndex = "unset";
+            }
+          });
+    
+          var cards = document.querySelectorAll('.cards');
+          cards.forEach(element => {
+            element.style.backgroundColor = "unset";
+          });
+        }
+    
+      
+      };
+    </script>
+    
+    
+    <style>
+      .cards{
+        z-index: 10;
+      }
+    
+      .welcome{
+        padding: 5px 5px;
+        background-color: #fbfbfb52;
+        box-shadow: 0px 1px 6px 0px;
+      }
+    
+      hr{
+        border-color: black;
+      }
+    </style>
+
+
+
+
 
   <div class="container">
     <br>
     <h4>
       In primo piano:
     </h4>
-    <br>
-
-
-<script>
-  function fn(id){
-    var body = document.querySelector('body');
-    if(body.style.backgroundColor != 'black'){
-      body.style.backgroundColor = "black";
-
-      var cardS = document.querySelectorAll('.card');
-      cardS.forEach(element => {
-        if(element.id != id){
-          element.style.zIndex = "-1";
-        }
-      });
-  
-      var cards = document.querySelectorAll('.cards');
-      cards.forEach(element => {
-        element.style.backgroundColor = "#00000070";/////cambia in nero meno scuro
-      });
-    }
-    else  {
-      body.style.backgroundColor = "unset"
-
-      var cardS = document.querySelectorAll('.card');
-      cardS.forEach(element => {
-        if(element.id != id){
-          element.style.zIndex = "unset";
-        }
-      });
-
-      var cards = document.querySelectorAll('.cards');
-      cards.forEach(element => {
-        element.style.backgroundColor = "unset";
-      });
-    }
-
-  
-  };
-</script>
-
-
-<style>
-  .cards{
-    z-index: 10;
-  }
-
-  .welcome{
-    padding: 5px 5px;
-    background-color: #fbfbfb52;
-    box-shadow: 0px 1px 6px 0px;
-  }
-</style>
-
+    <hr>
 
 
 
@@ -300,6 +305,84 @@
 
   <!-- END container -->
   </div>
+
+
+
+
+
+<!-- sezione 2 -->
+<div class="container">
+  <br>
+  <h4>
+    Partecipa anche tu:
+  </h4>
+</div>
+<hr style="margin: 0;">
+
+
+
+
+<div class="parallax-container" style="height: 400px;">
+  <div class="parallax">
+    <img src="https://picsum.photos/id/657/0/0">
+    
+    <!-- card 1 -->
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card medium" style="background-color: #f9f9f900; box-shadow: none;"><!-- trasparente -->
+          <div class="card-content white-text">
+            <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- sezione 3 -->
+<div class="container">
+  <h4>
+    Unisciti alla community:
+  </h4>
+</div>
+<hr style="margin: 0;">
+
+
+
+
+<div class="parallax-container" style="height: 400px;">
+  <div class="parallax">
+    <img src="https://picsum.photos/id/127/0/0">
+    
+    <!-- card 1 -->
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card medium" style="background-color: #f9f9f900; box-shadow: none;"><!-- trasparente -->
+          <div class="card-content white-text">
+            <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
 </main>
 
 
@@ -356,10 +439,15 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.slider');
-        var instances = M.Slider.init(elems, {"indicators":true, "height": 650, "interval":3000});
+        var instances = M.Slider.init(elems, {"indicators":true, "height": 800, "interval":3000});
         instances.start();
       });
-
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems, options);
+      });
     </script>
   </body>
 </html>
