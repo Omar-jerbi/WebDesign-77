@@ -9,25 +9,24 @@
 
     <!-- my style -->
     <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/general.min.css"  media="screen,projection"/>
-  
-
+    
+    <!-- lasciare per ultimo, override colori variabili scss  + DARK MODE -->
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/colorsoverride.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/index.min.css"  media="screen,projection"/>
+    
     <!-- icone  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  <title>programma_evento</title>
+    
+    
+
+    <script src="./js/dark_light.js"></script>
+  <title>index V2</title>
   
   </head>
 
-
-
-<style>
-    .slider .slides li .caption{
-        color: black;
-    }
-</style>
 
 
   <body>
@@ -36,50 +35,56 @@
       <nav>
         <div id="main-nav" class="nav-wrapper row">
           <a href="#!" class="brand-logo col s3 offset-s1 hide-on-med-and-down">Logo</a>
-                  
+          
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           
           <div class="col s6 left show-on-medium-and-down hide-on-large-only">
-              <h6 style="display: inline-block; font-size: larger;">titolo del sito</h6>
+            <h6 style="display: inline-block; font-size: larger;">titolo del sito</h6>
           </div>
           <div class="right show-on-medium-and-down">
-            <i class="material-icons col s3">star</i>
+            <i id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
           </div>
 
 
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
-            <li><a href="programma_evento.html">Programma</a></li>
-            <li><a href="badges.html">Relatori</a></li>
-            <li><a href="badges.html">Partner</a></li>
-            <li><a href="collapsible.html">BeiguaXUnige</a></li>
-            <li><a href="collapsible.html">Info</a></li>
+            <li><a href="programma.html">Programma</a></li>
+            <li><a href="progetti.html">Progetti</a></li>
+            <li><a href="relatori.html">Relatori</a></li>
+            <li><a href="partner.html">Partner</a></li>
+            <li><a href="beiguaxunige.html">BeiguaXUnige</a></li>
+            <li><a href="info.html">Info</a></li>
           </ul>
 
         </div>
     </nav>
   </div>
 
-    <ul class="sidenav" id="mobile-demo">
+  <ul class="sidenav" id="mobile-demo">
       <li><a href="index.html">
         <i class="material-icons">home</i>
         Home</a></li>
-      <li><a href="programma_evento.html">
+      <li><a href="programma.html">
         <i class="material-icons">schedule</i>
         Programma</a></li>
-      <li><a href="badges.html">
+
+        <li><a href="progetti.html">
+          <i class="material-icons">work</i>
+        Progetti</a></li>
+
+      <li><a href="relatori.html">
         <i class="material-icons">group</i>
         Relatori</a></li>
-      <li><a href="collapsible.html">
+      <li><a href="partner.html">
         <i class="material-icons">web</i>
         Partner</a></li>
-      <li><a href="collapsible.html">
+      <li><a href="beiguaxunige.html">
           <i class="material-icons">nature_people</i>
         BeiguaXUnige</a></li>
-      <li><a href="collapsible.html">
+      <li><a href="info.html">
         <i class="material-icons">event_note</i>
         Info</a></li>      
-    </ul>
+  </ul>
   <!-- FINE NAV -->
 
 <main>
@@ -125,117 +130,261 @@
       </div>
   <!-- END slider -->
 
+  <br>
+  
+  <div class="welcome">
+    <h4>
+      Benvenuto
+    </h4>
+    <p>Benvenuto nella lotta contro la miniera sul beigua</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur iure repellendus labore est id nobis nulla veniam dolores laboriosam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur iure repellendus labore est id nobis nulla veniam dolores laboriosam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur iure repellendus labore est id nobis nulla veniam dolores laboriosam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur iure repellendus labore est id nobis nulla veniam dolores laboriosam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur iure repellendus labore est id nobis nulla veniam dolores laboriosam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur iure repellendus labore est id nobis nulla veniam dolores laboriosam!</p>
+  </div>
+    
+    <script>
+      function fn(id){
+        var body = document.querySelector('body');
+        if(body.style.backgroundColor != 'black'){
+          body.style.backgroundColor = "black";
+    
+          var cardS = document.querySelectorAll('.card');
+          cardS.forEach(element => {
+            if(element.id != id){
+              element.style.zIndex = "-1";
+            }
+          });
+      
+          var cards = document.querySelectorAll('.cards');
+          cards.forEach(element => {
+            element.style.backgroundColor = "#00000070";
+          });
+        }
+        else  {
+          body.style.backgroundColor = "#c4c3c4";
+    
+          var cardS = document.querySelectorAll('.card');
+          cardS.forEach(element => {
+            if(element.id != id){
+              element.style.zIndex = "unset";
+            }
+          });
+    
+          var cards = document.querySelectorAll('.cards');
+          cards.forEach(element => {
+            element.style.backgroundColor = "unset";
+          });
+        }
+    
+      
+      };
+    </script>
+    
+    
+    <style>
+      .cards{
+        z-index: 10;
+      }
+    
+      .welcome{
+        padding: 5px 5px;
+        background-color: #fbfbfb52;
+        box-shadow: 0px 1px 6px 0px;
+      }
+    
+      hr{
+        border-color: black;
+      }
+    </style>
+
+
+
 
 
   <div class="container">
-        <h4>
-        Welcome:
-        </h4>
-
-        <p>
-        Benvenuto nel nostro sito dell'università di Genova. Fatto da studenti di Informatica in collaborazione con studenti di Design.
-        </p>
-        <p>
-        In questo sito troverai un insieme di progetti sul tema del Beigua. In piu' un evento sull'importanza di impedire la miniera sul Beigua.
-        </p>  
+    <br>
+    <h4>
+      In primo piano:
+    </h4>
+    <hr>
 
 
-        <br>
-        <h4>
-        In primo piano:
-        </h4>
-        <br>
 
-        <div class="cards">
-          <!-- card 1 -->
-          <div class="row">
-            <div class="col s12 m7">
-              <div class="card small">
-                <div class="card-image">
-                  <img src="img/I liguri muoiono prima.png">
-                  <span class="card-title"></span>
-                </div>
-                <div class="card-content">
-                  <p style="font-size:large;">I liguri muoiono prima</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">Vai ai progetti</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-              
+    <div class="cards">
+
+      <!-- card 1 -->
+        <div class="card small" id="1" onclick="fn(id)">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/I liguri muoiono prima.png">
+            <span class="card-title" style="background-color: #00d59abf;">Salute</span>
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4" >I liguri muoiono prima...<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Scopri di più</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">I liguri muoiono prima...<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>    
+
+
+
+      <!-- card 2 -->
+        <div class="card small" id="2" onclick="fn(id)">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/vian.png">
+            <span class="card-title" style="background-color: #9acd32c7;">Ospiti</span>
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4" >Discussioni sul tema del Beigua<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Scopri i relatori</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Discussioni sul tema del Beigua<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>   
+
+
+    <!-- cards -->
+    </div>
+
+
+
+    <!-- seconda riga -->
+    <div class="cards">
           <!-- card 2 -->
-          <div class="row">
-            <div class="col s12 m7">
-              <div class="card small">
-                <div class="card-image" style="height: 200px;">
-                  <img src="img/unige.png" style="top: 50px;">
-                  <!-- <span class="card-title">Card Title</span> -->
-                </div>
-                <div class="card-content">
-                  <p style="font-size:large;">UnigeXBeigua</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">Vai al nostro evento</a>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-        <!-- cards -->
-        </div>
+          <div class="card small" id="3" onclick="fn(id)">
+            <div class="card-image waves-effect waves-block waves-light" style="height: 200px;">
+              <img class="activator" src="img/unige.png" style="padding: 60px 20px; background-color: white;">
+              <span class="card-title" style="background-color: #cd5c5cba;">Evento</span>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4" >BeiguaXUnige<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">Informati sull'evento</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">BeiguaXUnige<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>  
+          
       
-      
-        <div class="cards">
-          <!-- card 1 -->
-          <div class="row">
-            <div class="col s12 m7">
-              <div class="card small">
-                <div class="card-image">
-                  <img src="https://picsum.photos/id/10/0/0">
-                  <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">This is a link</a>
-                  </div>
-                </div>
-              </div>
-        </div>
-            
 
-        <!-- card 2 -->
-        <div class="row">
-            <div class="col s12 m7">
-              <div class="card small">
-                <div class="card-image">
-                  <img src="https://picsum.photos/id/10/0/0">
-                  <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">This is a link</a>
-                  </div>
-                </div>
-              </div>
-          </div>
-                        
-        <!-- cards -->
+      <!-- card 2 -->
+      <div class="card small" id="4" onclick="fn(id)">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="https://picsum.photos/id/863/0/0">
+          <span class="card-title" style="background-color: #6495edbf;">Il Talk</span>
         </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Partecipa al talk<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">Informati sull'evento</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Partecipa al talk<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>  
+        
+    <!-- cards -->
+    </div>
 
-<!-- END container -->
+
+  <!-- END container -->
   </div>
+
+
+
+
+
+<!-- sezione 2 -->
+<div class="container">
+  <br>
+  <h4>
+    Partecipa anche tu:
+  </h4>
+</div>
+<hr style="margin: 0;">
+
+
+
+
+<div class="parallax-container" style="height: 400px;">
+  <div class="parallax">
+    <img src="https://picsum.photos/id/657/0/0">
     
+    <!-- card 1 -->
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card medium" style="background-color: #f9f9f900; box-shadow: none;"><!-- trasparente -->
+          <div class="card-content white-text">
+            <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- sezione 3 -->
+<div class="container">
+  <h4>
+    Unisciti alla community:
+  </h4>
+</div>
+<hr style="margin: 0;">
+
+
+
+
+<div class="parallax-container" style="height: 400px;">
+  <div class="parallax">
+    <img src="https://picsum.photos/id/127/0/0">
+    
+    <!-- card 1 -->
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card medium" style="background-color: #f9f9f900; box-shadow: none;"><!-- trasparente -->
+          <div class="card-content white-text">
+            <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 
 </main>
+
 
 
 
@@ -273,9 +422,9 @@
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container">
+        <div class="container" style="background-color: unset;">
         © 2022 Copyright
-        <a class="grey-text text-lighten-4 right" href="https://www.unige.it" style="font-size:larger ;">Unige</a>
+        <a class="grey-text text-lighten-4 right" href="https://www.unige.it" style="font-size:larger ; background-color: unset;">Unige</a>
         </div>
       </div>
     </footer>
@@ -293,7 +442,12 @@
         var instances = M.Slider.init(elems, {"indicators":true, "height": 800, "interval":3000});
         instances.start();
       });
-
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems, options);
+      });
     </script>
   </body>
 </html>
