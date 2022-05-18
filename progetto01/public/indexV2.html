@@ -42,7 +42,7 @@
             <h6 style="display: inline-block; font-size: larger;">titolo del sito</h6>
           </div>
           <div class="right show-on-medium-and-down">
-            <i id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
+            <i id="DLIcon" class="material-icons col s3" onclick="dark_lightfn(id)">brightness_5</i>
           </div>
 
 
@@ -153,17 +153,49 @@
 
 
 <script>
-  function fn(){
+  function fn(id){
     var body = document.querySelector('body');
     if(body.style.backgroundColor != 'black'){
       body.style.backgroundColor = "black";
 
+      var cardS = document.querySelectorAll('.card');
+      cardS.forEach(element => {
+        if(element.id != id){
+          element.style.zIndex = "-1";
+        }
+      });
+  
+      var cards = document.querySelectorAll('.cards');
+      cards.forEach(element => {
+        element.style.backgroundColor = "#000000a8";
+      });
     }
-    else  body.style.backgroundColor = "unset"
+    else  {
+      body.style.backgroundColor = "unset"
 
+      var cardS = document.querySelectorAll('.card');
+      cardS.forEach(element => {
+        if(element.id != id){
+          element.style.zIndex = "unset";
+        }
+      });
+
+      var cards = document.querySelectorAll('.cards');
+      cards.forEach(element => {
+        element.style.backgroundColor = "unset";
+      });
+    }
+
+  
   };
-
 </script>
+
+
+<style>
+  .cards{
+    z-index: 10;
+  }
+</style>
 
 
 
@@ -171,10 +203,10 @@
     <div class="cards">
 
       <!-- card 1 -->
-        <div class="card small" onclick="fn()">
+        <div class="card small" id="1" onclick="fn(id)">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="img/I liguri muoiono prima.png">
-            <span class="card-title blue">Salute</span>
+            <span class="card-title" style="background-color: #00d59abf;">Salute</span>
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4" >I liguri muoiono prima...<i class="material-icons right">more_vert</i></span>
@@ -190,24 +222,23 @@
 
 
 
-      <!-- card 1 -->
-      <div class="row">
-        <div class="col s12 m7">
-          <div class="card small">
-            <div class="card-image">
-              <img src="img/vian.png">
-              <span class="card-title green">Ospiti</span>
-            </div>
-            <div class="card-content">
-              <p style="font-size:large;">Discussioni sul tema della miniera</p>
-              </div>
-              <div class="card-action">
-                <a href="relatori.html">Informati sui relatori</a>
-              </div>
-            </div>
+      <!-- card 2 -->
+        <div class="card small" id="2" onclick="fn(id)">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/vian.png">
+            <span class="card-title" style="background-color: #9acd32c7;">Ospiti</span>
           </div>
-        </div>
-
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4" >Discussioni sul tema del Beigua<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Scopri i relatori</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Discussioni sul tema del Beigua<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>   
 
 
     <!-- cards -->
@@ -217,42 +248,44 @@
 
     <!-- seconda riga -->
     <div class="cards">
-
           <!-- card 2 -->
-          <div class="row">
-            <div class="col s12 m7">
-              <div class="card small">
-                <div class="card-image" style="height: 200px;">
-                  <img src="img/unige.png" style="padding: 60px 20px; background-color: white;">
-                  <span class="card-title red">Evento</span>
-                </div>
-                <div class="card-content">
-                  <p style="font-size:large;">UnigeXBeigua</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="beiguaxunige.html">Vai al nostro evento</a>
-                  </div>
-                </div>
-              </div>
-          </div>    
-
-    <!-- card 2 -->
-    <div class="row">
-        <div class="col s12 m7">
-          <div class="card small">
-            <div class="card-image">
-              <img src="https://picsum.photos/id/863/0/0">
-              <span class="card-title yellow">Card Title</span>
+          <div class="card small" id="3" onclick="fn(id)">
+            <div class="card-image waves-effect waves-block waves-light" style="height: 200px;">
+              <img class="activator" src="img/unige.png" style="padding: 60px 20px; background-color: white;">
+              <span class="card-title" style="background-color: #cd5c5cba;">Evento</span>
             </div>
             <div class="card-content">
-              <p style="font-size:large;">Partecipa al talk</p>
-              </div>
-              <div class="card-action">
-                <a href="programma.html">Vai al programma</a>
-              </div>
+              <span class="card-title activator grey-text text-darken-4" >BeiguaXUnige<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">Informati sull'evento</a></p>
             </div>
-          </div>
-      </div>     
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">BeiguaXUnige<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>  
+          
+      
+
+      <!-- card 2 -->
+      <div class="card small" id="4" onclick="fn(id)">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="https://picsum.photos/id/863/0/0">
+          <span class="card-title" style="background-color: #6495edbf;">Il Talk</span>
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Partecipa al talk<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">Informati sull'evento</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Partecipa al talk<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>  
+        
     <!-- cards -->
     </div>
 
