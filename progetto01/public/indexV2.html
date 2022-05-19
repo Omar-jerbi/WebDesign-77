@@ -203,8 +203,8 @@
 
 
 
-
-  <div class="container">
+<!-- sezione 1 -->
+<div class="container">
     <br>
     <h4>
       In primo piano:
@@ -304,10 +304,7 @@
 
 
   <!-- END container -->
-  </div>
-
-
-
+</div>
 
 
 <!-- sezione 2 -->
@@ -318,8 +315,6 @@
   </h4>
 </div>
 <hr style="margin: 0;">
-
-
 
 
 <div class="parallax-container" style="height: 400px;">
@@ -355,8 +350,6 @@
 <hr style="margin: 0;">
 
 
-
-
 <div class="parallax-container" style="height: 400px;">
   <div class="parallax">
     <img src="https://picsum.photos/id/127/0/0">
@@ -380,6 +373,83 @@
 
   </div>
 </div>
+
+
+<!-- sezione 4 -->
+<br>
+<div class="container">
+  <h4>
+    Contatti
+  </h4>
+</div>
+<hr style="margin: 0;">
+
+
+
+
+<div class="container" id="s4">
+
+  <ul class="collection with-header">
+    <li class="collection-header"><h4>Responsabile</h4></li>
+    <li class="collection-item"><div>Andrea Vian<a href="#!" class="secondary-content"><i class="material-icons">person</i></a></div></li>
+  </ul>
+
+  <ul class="collection with-header" id="sviluppatori">
+    <li class="collection-header"><h4>Sviluppatori</h4></li>
+    <li class="collection-item"><div>Erik Ricci<a href="#!" class="secondary-content"><i class="material-icons">person</i></a></div></li>
+    <li class="collection-item"><div>Gianluca Napolitano<a href="#!" class="secondary-content"><i class="material-icons">person</i></a></div></li>
+    <li class="collection-item"><div>Luca Insinna<a href="#!" class="secondary-content"><i class="material-icons">person</i></a></div></li>
+    <li class="collection-item"><div>Omar Jerbi<a href="#!" class="secondary-content"><i class="material-icons">person</i></a></div></li>
+  </ul>
+  
+  <div class="display-info" id="info">
+    <ul class="collection">
+      <li class="collection-item">
+        <div class="first" style="display: flex; justify-content: space-between;">
+          <div class="nome">
+            omar
+          </div>
+          <div class="btt">
+            <i >X</i>
+          </div>
+        </div>
+      </li>
+      <li class="collection-item">cognome</li>
+      <li class="collection-item">cell</li>
+      <li class="collection-item">mail</li>
+    </ul>
+  </div>
+
+
+  <ul class="collection with-header">
+    <li class="collection-header"><h4>Designers</h4></li>
+    <li class="collection-item"><div>Gabriele Moggio<a href="#!" class="secondary-content"><i class="material-icons">person</i></a></div></li>
+    <li class="collection-item"><div>Gabriella Bonetti<a href="#!" class="secondary-content"><i class="material-icons">person</i></a></div></li>
+    <li class="collection-item"><div>Luca Galli<a href="#!" class="secondary-content"><i class="material-icons">person</i></a></div></li>
+    
+  </ul>
+
+
+  <!-- end container -->
+</div>
+
+
+
+
+<script>
+  var s4 = document.getElementById('s4');
+  var icons = s4.querySelectorAll('.material-icons')
+  icons.forEach(element => {
+    if(element.innerHTML = "person"){
+      console.log(element);
+      element.addEventListener("click", function(){
+        alert('ciao');
+      });
+    }
+  });
+</script>
+
+
 
 
 
