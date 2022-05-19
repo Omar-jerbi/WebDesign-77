@@ -385,22 +385,17 @@
 <hr style="margin: 0;">
 
 
-<!--  
-  fai in modo che se apri rofilo di vian, info al posto di responsabile, idem per sviluppaotri e designers
-AGGIUNGIO TRANSITION 
--->
 
 
-
-
-<div class="container" id="s4">
+<div class="container" id="s4" style="overflow-y: hidden;">
 
 
   <div class="contatti-responsabile">
 
     <ul class="collection with-header" id="responsabile">
       <li class="collection-header"><h4>Responsabile</h4></li>
-      <li class="collection-item"><div>Andrea Vian<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('vian', 'responsabile')">person</i></a></div></li>
+      <!-- <li class="cozlection-item"><div>Andrea Vian<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('vian', 'responsabile')">info_outline</i></a></div></li> -->
+      <li class="collection-item"><div>Andrea Vian<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfoT()">info_outline</i></a></div></li>
     </ul>
 
     <div id="info-responsabile">
@@ -413,8 +408,11 @@ AGGIUNGIO TRANSITION
               </div>
               <div class="btt">
                 <i onclick="
-                document.querySelector('#info-responsabile').style.display = 'none';
-                document.querySelector('#responsabile').style.display = 'block';
+                document.querySelector('#info-responsabile').style.opacity = '0';
+                document.querySelector('#info-responsabile').style.height = '0';
+                
+                document.querySelector('#responsabile').style.opacity = '10';
+                document.querySelector('#responsabile').style.height = 'auto';
                 ">X</i>
             </div>
           </div>
@@ -431,30 +429,18 @@ AGGIUNGIO TRANSITION
 
 
 
-<script>
-  function displayInfo(cognome, tipo){
-    document.querySelector('#'+tipo).style.display = 'none';
-    
-    document.querySelector('#info-'+tipo).style.display = 'block';
-    document.querySelector('#info-'+tipo).querySelector('#'+cognome).style.display = 'block';
-  }
-</script>
-
-
-
-
 <div class="contatti-sviluppatori">
 
   <ul class="collection with-header" id="sviluppatori">
     <li class="collection-header"><h4>Sviluppatori</h4></li>
-    <li class="collection-item"><div>Erik Ricci<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('ricci', 'sviluppatori')">person</i></a></div></li>
-    <li class="collection-item"><div>Gianluca Napolitano<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('napolitano', 'sviluppatori')">person</i></a></div></li>
-    <li class="collection-item"><div>Luca Insinna<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('insinna', 'sviluppatori')">person</i></a></div></li>
-    <li class="collection-item"><div>Omar Jerbi<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('jerbi', 'sviluppatori')">person</i></a></div></li>
+    <li class="collection-item"><div>Erik Ricci<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('ricci', 'sviluppatori')">info_outline</i></a></div></li>
+    <li class="collection-item"><div>Gianluca Napolitano<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('napolitano', 'sviluppatori')">info_outline</i></a></div></li>
+    <li class="collection-item"><div>Luca Insinna<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('insinna', 'sviluppatori')">info_outline</i></a></div></li>
+    <li class="collection-item"><div>Omar Jerbi<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('jerbi', 'sviluppatori')">info_outline</i></a></div></li>
   </ul>
   
   <div id="info-sviluppatori">
-    <div id="ricci" style="display: none;">
+    <div id="ricci" style="opacity: 0; height: 0;">
       <ul class="collection">
         <li class="collection-item">
           <div class="first" style="display: flex; justify-content: space-between;">
@@ -463,9 +449,14 @@ AGGIUNGIO TRANSITION
             </div>
             <div class="btt">
               <i onclick="
-                document.querySelector('#info-sviluppatori').style.display = 'none';
-                document.querySelector('#ricci').style.display = 'none';
-                document.querySelector('#sviluppatori').style.display = 'block';
+                document.querySelector('#info-sviluppatori').style.opacity = '0';
+                document.querySelector('#info-sviluppatori').style.height = '0';
+
+                document.querySelector('#ricci').style.opacity = '0';
+                document.querySelector('#ricci').style.height = '0';
+
+                document.querySelector('#sviluppatori').style.opacity = '10';
+                document.querySelector('#sviluppatori').style.height = 'auto';
                 ">X</i>
             </div>
           </div>
@@ -477,7 +468,7 @@ AGGIUNGIO TRANSITION
     </div>
 
 
-    <div id="napolitano" style="display: none;">
+    <div id="napolitano" style="opacity: 0; height: 0;">
       <ul class="collection">
         <li class="collection-item">
           <div class="first" style="display: flex; justify-content: space-between;">
@@ -486,9 +477,14 @@ AGGIUNGIO TRANSITION
             </div>
             <div class="btt">
               <i onclick="
-                document.querySelector('#info-sviluppatori').style.display = 'none';
-                document.querySelector('#napolitano').style.display = 'none';
-                document.querySelector('#sviluppatori').style.display = 'block';
+                document.querySelector('#info-sviluppatori').style.opacity = '0';
+                document.querySelector('#info-sviluppatori').style.height = '0';
+
+                document.querySelector('#napolitano').style.opacity = '0';
+                document.querySelector('#napolitano').style.height = '0';
+
+                document.querySelector('#sviluppatori').style.opacity='10';
+                document.querySelector('#sviluppatori').style.height = 'auto';
                 ">X</i>
             </div>
           </div>
@@ -500,7 +496,7 @@ AGGIUNGIO TRANSITION
     </div>
 
 
-    <div id="insinna" style="display: none;">
+    <div id="insinna" style="opacity: 0; height: 0;">
       <ul class="collection">
         <li class="collection-item">
           <div class="first" style="display: flex; justify-content: space-between;">
@@ -509,9 +505,14 @@ AGGIUNGIO TRANSITION
             </div>
             <div class="btt">
               <i onclick="
-                document.querySelector('#info-sviluppatori').style.display = 'none';
-                document.querySelector('#insinna').style.display = 'none';
-                document.querySelector('#sviluppatori').style.display = 'block';
+                document.querySelector('#info-sviluppatori').style.opacity = '0';
+                document.querySelector('#info-sviluppatori').style.height = '0';
+
+                document.querySelector('#insinna').style.opacity = '0';
+                document.querySelector('#insinna').style.height = '0';
+
+                document.querySelector('#sviluppatori').style.opacity ='10';
+                document.querySelector('#sviluppatori').style.height = 'auto';
                 ">X</i>
             </div>
           </div>
@@ -522,7 +523,7 @@ AGGIUNGIO TRANSITION
       </ul>
     </div>
 
-    <div id="jerbi" style="display: none;">
+    <div id="jerbi" style="opacity: 0; height: 0;">
       <ul class="collection">
         <li class="collection-item">
           <div class="first" style="display: flex; justify-content: space-between;">
@@ -531,9 +532,14 @@ AGGIUNGIO TRANSITION
             </div>
             <div class="btt">
               <i onclick="
-                document.querySelector('#info-sviluppatori').style.display = 'none';
-                document.querySelector('#jerbi').style.display = 'none';
-                document.querySelector('#sviluppatori').style.display = 'block';
+                document.querySelector('#info-sviluppatori').style.opacity = '0';
+                document.querySelector('#info-sviluppatori').style.height = '0';
+
+                document.querySelector('#jerbi').style.opacity = '0';
+                document.querySelector('#jerbi').style.height = '0';
+
+                document.querySelector('#sviluppatori').style.opacity = '10';
+                document.querySelector('#sviluppatori').style.height = 'auto';
                 ">X</i>
             </div>
           </div>
@@ -557,13 +563,13 @@ AGGIUNGIO TRANSITION
 
   <ul class="collection with-header" id="designers">
     <li class="collection-header"><h4>Designers</h4></li>
-    <li class="collection-item"><div>Gabriele Moggio<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('moggio', 'designers')">person</i></a></div></li>
-    <li class="collection-item"><div>Gabriella Bonetti<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('bonetti', 'designers')">person</i></a></div></li>
-    <li class="collection-item"><div>Luca Galli<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('galli', 'designers')">person</i></a></div></li>  
+    <li class="collection-item"><div>Gabriele Moggio<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('moggio', 'designers')">info_outline</i></a></div></li>
+    <li class="collection-item"><div>Gabriella Bonetti<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('bonetti', 'designers')">info_outline</i></a></div></li>
+    <li class="collection-item"><div>Luca Galli<a href="#!" class="secondary-content"><i class="material-icons" onclick="displayInfo('galli', 'designers')">info_outline</i></a></div></li>  
   </ul>
 
   <div id="info-designers">
-    <div id="moggio" style="display: none;">
+    <div id="moggio" style="opacity: 0; height: 0;">
       <ul class="collection">
         <li class="collection-item">
         <div class="first" style="display: flex; justify-content: space-between;">
@@ -572,9 +578,14 @@ AGGIUNGIO TRANSITION
           </div>
           <div class="btt">
             <i onclick="
-            document.querySelector('#info-designers').style.display = 'none';
-            document.querySelector('#moggio').style.display = 'none';
-            document.querySelector('#designers').style.display = 'block';
+            document.querySelector('#info-designers').style.opacity = '0';
+            document.querySelector('#info-designers').style.height = '0';
+            
+            document.querySelector('#moggio').style.opacity = '0';
+            document.querySelector('#moggio').style.height = '0';
+            
+            document.querySelector('#designers').style.opacity = '10';
+            document.querySelector('#designers').style.height = 'auto';
             ">X</i>
         </div>
       </div>
@@ -586,7 +597,7 @@ AGGIUNGIO TRANSITION
     </div>
 
 
-    <div id="bonetti" style="display: none;">
+    <div id="bonetti" style="opacity: 0; height: 0;">
       <ul class="collection">
         <li class="collection-item">
         <div class="first" style="display: flex; justify-content: space-between;">
@@ -595,9 +606,14 @@ AGGIUNGIO TRANSITION
           </div>
           <div class="btt">
             <i onclick="
-            document.querySelector('#info-designers').style.display = 'none';
-            document.querySelector('#bonetti').style.display = 'none';
-            document.querySelector('#designers').style.display = 'block';
+            document.querySelector('#info-designers').style.opacity = '0';
+            document.querySelector('#info-designers').style.height = '0';
+            
+            document.querySelector('#bonetti').style.opacity = '0';
+            document.querySelector('#bonetti').style.height = '0';
+            
+            document.querySelector('#designers').style.opacity = '10';
+            document.querySelector('#designers').style.height = 'auto';
             ">X</i>
         </div>
       </div>
@@ -608,7 +624,7 @@ AGGIUNGIO TRANSITION
       </ul>
     </div>
 
-    <div id="galli" style="display: none;">
+    <div id="galli" style="opacity: 0; height: 0;">
       <ul class="collection">
         <li class="collection-item">
         <div class="first" style="display: flex; justify-content: space-between;">
@@ -617,9 +633,14 @@ AGGIUNGIO TRANSITION
           </div>
           <div class="btt">
             <i onclick="
-            document.querySelector('#info-designers').style.display = 'none';
-            document.querySelector('#galli').style.display = 'none';
-            document.querySelector('#designers').style.display = 'block';
+            document.querySelector('#info-designers').style.opacity = '0';
+            document.querySelector('#info-designers').style.height = '0';
+            
+            document.querySelector('#galli').style.opacity = '0';
+            document.querySelector('#galli').style.height = '0';
+            
+            document.querySelector('#designers').style.opacity = '10';
+            document.querySelector('#designers').style.height = 'auto';
             ">X</i>
         </div>
       </div>
@@ -636,48 +657,87 @@ AGGIUNGIO TRANSITION
 
 
 
-
-
   <!-- end container -->
 </div>
-
-<style>
-  #info-sviluppatori{
-    display: none;
-  }
-
-  #info-responsabile{
-    display: none;
-  }
-
-  #info-designers{
-    display: none;
-  }
-
-  .collection{
-    box-shadow: 0px 2px 2px 0px;
-  }
-</style>
-
-
-<!-- <script>
-  var s4 = document.getElementById('s4');
-  var icons = s4.querySelectorAll('.material-icons')
-  icons.forEach(element => {
-    if(element.innerHTML = "person"){
-      element.addEventListener("click", function(){
-        document.querySelector('#info-sviluppatori').style.display = "block";
-        document.querySelector('#sviluppatori').style.display = 'none';
-      });
-    }
-  });
-</script> -->
 
 
 
 
 
 </main>
+
+
+
+
+
+
+<style>
+  #responsabile{
+    transition: opacity 0s, height 1s;
+  }
+
+  #info-responsabile{
+    display: block;   
+    opacity: 0;
+    height: 0;
+
+    transition: all 1s;
+  }
+  
+  
+  #info-sviluppatori{
+    display: block;   
+    opacity: 0;
+    height: 0;
+
+    transition: all 1s;
+  }
+
+  #info-designers{
+    display: block;   
+    opacity: 0;
+    height: 0;
+
+    transition: all 1s;
+  }
+
+  .collection{
+    box-shadow: 0px 2px 2px 0px;
+  }
+
+</style>
+
+
+<script>
+  function displayInfoT(){
+    document.querySelector('#responsabile').style.opacity = '0';
+    document.querySelector('#responsabile').style.height = '0';
+    
+    
+    document.querySelector('#info-responsabile').style.opacity = '10';
+    document.querySelector('#info-responsabile').style.height = 'auto';
+
+
+
+  }
+</script>
+
+
+
+<script>
+  function displayInfo(cognome, tipo){
+    document.querySelector('#'+tipo).style.opacity = '0';
+    document.querySelector('#'+tipo).style.height= '0';
+    
+    document.querySelector('#info-'+tipo).style.opacity = '10';
+    document.querySelector('#info-'+tipo).style.height= 'auto';
+
+    document.querySelector('#info-'+tipo).querySelector('#'+cognome).style.opacity = '10';
+    document.querySelector('#info-'+tipo).querySelector('#'+cognome).style.height = 'auto';
+  }
+</script>
+
+
 
 
 
