@@ -32,6 +32,15 @@
   }
 
 
+@media only screen and (min-width: $medium-screen) {//tablet
+  .cards{
+    .card{
+      margin-right: 10px;
+    }
+  }
+}
+
+  
 
 .cards{
     display: flex;
@@ -53,10 +62,74 @@ h1, h2, h3, h4, h5, h6{
     color:$font-color2-light-theme;
 }
 
+body{
+  background-image: repeating-linear-gradient(285deg, #ffffff7d, #5be9124f 280px);
+  transition: background-color 1.5s ease;
+}
+
+.cards{
+  z-index: 10;
+}
+
+.welcome{
+  padding: 5px 5px;
+  background-color: #fbfbfb52;
+  box-shadow: 0px 1px 6px 0px;
+}
+
+hr{
+  border-color: black;
+}
+
+#info-responsabile{
+  display: block;   
+  opacity: 0;
+  height: 0;
+
+  transition: all 1s;
+}
+
+
+#info-sviluppatori{
+  display: block;   
+  opacity: 0;
+  height: 0;
+
+  transition: all 1s;
+}
+
+#info-designers{
+  display: block;   
+  opacity: 0;
+  height: 0;
+
+  transition: all 1s;
+}
+
+.collection{
+  box-shadow: 0px 2px 2px 0px;
+}
+
+
+.parallax-container{
+  height: 400px;
+  
+  .card{
+    background-color: transparent; 
+    box-shadow: none;
+  }
+}
+
+
 
 //////////////////////////////////////////////////////////////////////////////////
 
 .dark-mode{
+
+  .welcome{
+    box-shadow: 0px 1px 6px 0px #625f5fbf;
+  }
+
   .slider .indicators .indicator-item.active{
     background-color: $font-color3-dark-theme;
   }
@@ -66,13 +139,18 @@ h1, h2, h3, h4, h5, h6{
   h1, h2, h3, h4, h5, h6{
     color:$font-color2-dark-theme;
   }
+
+  .parallax-container{
+    .card{
+      background-color: transparent;
+    }
+  }
+
+  .collection{
+    box-shadow: 0px 2px 2px 0px #625f5fbf;
+    .collection-header, .collection-item{
+      background-color: $tertiary-color-dark;
+    }
+  }
 }
-
-
-
-
-body{
-  background-image: repeating-linear-gradient(285deg, #ffffff7d, #5be9124f 280px);
-    transition: background-color 1.5s ease;
-}
-
+//////////////////////////////////////////////////////////////////////////////////
