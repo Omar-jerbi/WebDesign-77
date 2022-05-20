@@ -32,6 +32,15 @@
   }
 
 
+@media only screen and (min-width: $medium-screen) {//tablet
+  .cards{
+    .card{
+      margin-right: 10px;
+    }
+  }
+}
+
+  
 
 .cards{
     display: flex;
