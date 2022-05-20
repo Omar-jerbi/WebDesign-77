@@ -62,24 +62,6 @@ h1, h2, h3, h4, h5, h6{
     color:$font-color2-light-theme;
 }
 
-
-//////////////////////////////////////////////////////////////////////////////////
-
-.dark-mode{
-  .slider .indicators .indicator-item.active{
-    background-color: $font-color3-dark-theme;
-  }
-  .card{
-    background-color: $tertiary-color-dark;        
-  }
-  h1, h2, h3, h4, h5, h6{
-    color:$font-color2-dark-theme;
-  }
-}
-
-
-
-
 body{
   background-image: repeating-linear-gradient(285deg, #ffffff7d, #5be9124f 280px);
   transition: background-color 1.5s ease;
@@ -127,3 +109,48 @@ hr{
 .collection{
   box-shadow: 0px 2px 2px 0px;
 }
+
+
+.parallax-container{
+  height: 400px;
+  
+  .card{
+    background-color: transparent; 
+    box-shadow: none;
+  }
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+.dark-mode{
+
+  .welcome{
+    box-shadow: 0px 1px 6px 0px #625f5fbf;
+  }
+
+  .slider .indicators .indicator-item.active{
+    background-color: $font-color3-dark-theme;
+  }
+  .card{
+    background-color: $tertiary-color-dark;        
+  }
+  h1, h2, h3, h4, h5, h6{
+    color:$font-color2-dark-theme;
+  }
+
+  .parallax-container{
+    .card{
+      background-color: transparent;
+    }
+  }
+
+  .collection{
+    box-shadow: 0px 2px 2px 0px #625f5fbf;
+    .collection-header, .collection-item{
+      background-color: $tertiary-color-dark;
+    }
+  }
+}
+//////////////////////////////////////////////////////////////////////////////////
