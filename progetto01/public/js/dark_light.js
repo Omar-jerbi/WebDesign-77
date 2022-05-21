@@ -2,7 +2,7 @@ function dark_lightFN(){
     var body = document.querySelector('body');
     if(body.classList.contains('dark-mode')){
       body.classList.remove('dark-mode');
-      body.style.backgroundColor = "#c4c3c4";//style>class
+      body.style.backgroundColor = "#c5d4e0";//style>class
       var icon = document.querySelector('#DLIcon');
       icon.innerHTML = "brightness_5";
     }else{
