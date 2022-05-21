@@ -42,7 +42,7 @@
 
 
 .slider .indicators .indicator-item.active{
-    background-color: $font-color3-light-theme;
+    background-color: $font-color3-light-theme!important;
 }
 
 
@@ -88,7 +88,7 @@
   }
 
   .slider .indicators .indicator-item.active{
-    background-color: $font-color3-dark-theme;
+    background-color: $font-color3-dark-theme!important;
   }
   .card{
     background-color: $tertiary-color-dark;        
