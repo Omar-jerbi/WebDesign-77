@@ -1,17 +1,6 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
 
-// #myimg{
-//   width: 100vw;
-//   height: 35vh;
-// }
-
-// #fstimg-titolo{
-//   position: absolute;
-//   margin-left: 4vw;
-// }
-
-
 
 @media only screen and (min-width: $U2k-screen) {
     .cards {
@@ -57,16 +46,6 @@
 }
 
 
-
-h1, h2, h3, h4, h5, h6{
-    color:$font-color2-light-theme;
-}
-
-body{
-  background-image: repeating-linear-gradient(285deg, #ffffff7d, #5be9124f 280px);
-  transition: background-color 1.5s ease;
-}
-
 .cards{
   z-index: 10;
 }
@@ -77,9 +56,7 @@ body{
   box-shadow: 0px 1px 6px 0px;
 }
 
-hr{
-  border-color: black;
-}
+
 
 #info-responsabile{
   display: block;   
@@ -120,14 +97,25 @@ hr{
   }
 }
 
+.cards{
 
-
+  .card-content{
+    background-color: $tertiary-color !important;
+  }
+  
+  .card-reveal{
+    background-color: $tertiary-color !important;
+  }
+  
+}
 //////////////////////////////////////////////////////////////////////////////////
 
 .dark-mode{
+  $tertiary-color: $tertiary-color-dark;
 
   .welcome{
     box-shadow: 0px 1px 6px 0px #625f5fbf;
+    background-color: #00000061;
   }
 
   .slider .indicators .indicator-item.active{
@@ -151,6 +139,18 @@ hr{
     .collection-header, .collection-item{
       background-color: $tertiary-color-dark;
     }
+  }
+
+
+  .cards{
+    .card-content{
+      background-color: $tertiary-color !important;
+    }
+    
+    .card-reveal{
+      background-color: $tertiary-color !important;
+    }
+    
   }
 }
 //////////////////////////////////////////////////////////////////////////////////
