@@ -1,1 +1,6 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
+
+
+.card-stacked{
+    background-color: lighten($color: $secondary-color-light, $amount: 10);
+}

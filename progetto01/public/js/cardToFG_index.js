@@ -2,7 +2,7 @@ function cardToFG(id){
     var body = document.querySelector('body');
     if(!body.classList.contains('dark-mode')){
       
-      if(body.style.backgroundColor != 'black'){
+      if(!body.classList.contains("dark-mode") &&  body.style.backgroundColor != "black"){
         body.style.backgroundColor = "black";
         
         var cardS = document.querySelectorAll('.card');
@@ -18,7 +18,7 @@ function cardToFG(id){
         });
       }
       else  {
-        body.style.backgroundColor = "#c4c3c4";
+        body.style.backgroundColor = "#c5d4e0";
         
         var cardS = document.querySelectorAll('.card');
         cardS.forEach(element => {

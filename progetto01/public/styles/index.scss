@@ -67,15 +67,21 @@
 }
 
 .cards{
-
   .card-content{
-    background-color: $tertiary-color !important;
+    background-color: lighten($secondary-color, 10)!important;
   }
   
   .card-reveal{
-    background-color: $tertiary-color !important;
+    background-color: lighten($secondary-color, 10) !important;
   }
-  
+}
+
+
+
+.collection{
+  .collection-header, .collection-item{
+    background-color: lighten($secondary-color, 10)!important;
+  }
 }
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -106,7 +112,7 @@
   .collection{
     box-shadow: 0px 2px 2px 0px #625f5fbf;
     .collection-header, .collection-item{
-      background-color: $tertiary-color-dark;
+      background-color: $tertiary-color-dark !important;
     }
   }
 
