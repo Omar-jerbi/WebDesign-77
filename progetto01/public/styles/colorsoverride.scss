@@ -7,22 +7,23 @@
 body{
     $tertiary-color: $tertiary-color-light;
 
-    color: $font-color2-light-theme;
+    color: $font-color1-light-theme;
     background-color: $secondary-color-light;
 
     nav, .page-footer{
-        color: $font-color2-light-theme;
+        color: $font-color1-light-theme;
         background-color: $primary-color-light;
         *{
-            color: $font-color2-light-theme;
+            color: $font-color1-light-theme;
             background-color: $primary-color-light;          
         }
     }
     
 
     h1, h2, h3, h4, h5, h6{
-        color:$font-color2-light-theme;
+        color:$font-color1-light-theme;
     }
+
 }
 
 
@@ -43,6 +44,18 @@ body{
 
     h1, h2, h3, h4, h5, h6{
         color:$font-color2-dark-theme;
+    }
+
+
+    .slider{
+        background-color: rgba(0, 0, 0, 0.493);
+        height: 800px!important;
+        .slides{
+            opacity: 0.8;
+        }
+        h3{
+            color: black;
+        }
     }
 
   }

@@ -45,9 +45,17 @@
     background-color: $font-color3-light-theme!important;
 }
 
+.slider{
+  a{
+    color: $font-color1-dark-theme;
+  }
+}
 
 .cards{
   z-index: 10;
+  a{
+    color: $font-color2-light-theme!important;
+  }
 }
 
 .welcome{
@@ -99,6 +107,7 @@
   .card{
     background-color: $tertiary-color-dark;        
   }
+  
   h1, h2, h3, h4, h5, h6{
     color:$font-color2-dark-theme;
   }
@@ -127,5 +136,6 @@
     }
     
   }
+
 }
 //////////////////////////////////////////////////////////////////////////////////
