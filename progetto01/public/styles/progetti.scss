@@ -4,3 +4,13 @@
 .card-stacked{
     background-color: lighten($color: $secondary-color-light, $amount: 10);
 }
+
+
+
+.dark-mode{   
+    .card-content , .card-reveal , .card-action{
+        background-color: $tertiary-color-dark !important;
+    }
+    
+}
+    
