@@ -24,6 +24,17 @@ body{
         color:$font-color1-light-theme;
     }
 
+    .slider{
+        h3{
+            color: rgb(0, 0, 0) !important;
+        }
+        h5{
+            color:rgb(255, 255, 255) !important;
+            a{
+                color:rgb(255, 255, 255)!important;
+            }
+        }
+    }
 }
 
 
