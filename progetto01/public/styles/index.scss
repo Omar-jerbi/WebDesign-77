@@ -21,7 +21,7 @@
   }
 
 
-@media only screen and (min-width: $medium-screen) {//tablet
+@media only screen and (min-width: $medium-screen) {//tablet e pc
   .cards{
     .card{
       margin-right: 10px;
@@ -45,9 +45,17 @@
     background-color: $font-color3-light-theme!important;
 }
 
+.slider{
+  a{
+    color: $font-color1-dark-theme;
+  }
+}
 
 .cards{
   z-index: 10;
+  a{
+    color: $font-color2-light-theme!important;
+  }
 }
 
 .welcome{
@@ -67,15 +75,21 @@
 }
 
 .cards{
-
   .card-content{
-    background-color: $tertiary-color !important;
+    background-color: lighten($secondary-color, 10)!important;
   }
   
   .card-reveal{
-    background-color: $tertiary-color !important;
+    background-color: lighten($secondary-color, 10) !important;
   }
-  
+}
+
+
+
+.collection{
+  .collection-header, .collection-item{
+    background-color: lighten($secondary-color, 10)!important;
+  }
 }
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -93,6 +107,7 @@
   .card{
     background-color: $tertiary-color-dark;        
   }
+  
   h1, h2, h3, h4, h5, h6{
     color:$font-color2-dark-theme;
   }
@@ -106,7 +121,7 @@
   .collection{
     box-shadow: 0px 2px 2px 0px #625f5fbf;
     .collection-header, .collection-item{
-      background-color: $tertiary-color-dark;
+      background-color: $tertiary-color-dark !important;
     }
   }
 
@@ -121,5 +136,6 @@
     }
     
   }
+
 }
 //////////////////////////////////////////////////////////////////////////////////

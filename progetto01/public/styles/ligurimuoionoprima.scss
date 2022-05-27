@@ -9,20 +9,35 @@
 }
 
 #prima-card{
-    background-color: white;
+    background-color:lighten($color: $secondary-color-light, $amount: 10);
 }
 
 
 .obbiettivo{
     width: 100vw; 
-    background-color: $primary-color-light;
+    background-color: $tertiary-color-light;
     
     box-shadow: 1px 1px 3px 0px;
 
     .card-content{
-        background-color: $primary-color-light;
+        background-color: $tertiary-color-light;
     }
+
+    .card-image{
+        background-color: $tertiary-color-light;
+        img{
+            height: 80%!important;
+        }
+    }
+
 }
+
+
+.collection{
+    .collection-header, .collection-item{
+      background-color: lighten($secondary-color, 10)!important;
+    }
+  }
 
 
 
@@ -34,9 +49,19 @@
         .card-content{
             background-color: $primary-color-dark;
         }
+        .card-image{
+            background-color: $primary-color-dark!important;
+        }
     }
 
     #prima-card{
         background-color: $tertiary-color-dark;
     }
+
+    .collection{
+        box-shadow: 0px 2px 2px 0px #625f5fbf;
+        .collection-header, .collection-item{
+          background-color: $tertiary-color-dark !important;
+        }
+      }
 }
