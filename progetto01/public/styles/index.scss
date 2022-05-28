@@ -18,7 +18,7 @@
     .cards {
         flex-direction: column;
     }
-  }
+}
 
 
 @media only screen and (min-width: $medium-screen) {//tablet e pc
@@ -27,10 +27,18 @@
       margin-right: 10px;
     }
   }
+
+  .caption{
+    h3{
+      width: 80%;
+      margin-bottom: 50px;
+    }
+  }
 }
 
-  
 
+
+  
 .cards{
     display: flex;
    .row{
@@ -85,12 +93,12 @@
 }
 
 
-
 .collection{
   .collection-header, .collection-item{
     background-color: lighten($secondary-color, 10)!important;
   }
 }
+
 //////////////////////////////////////////////////////////////////////////////////
 
 .dark-mode{
