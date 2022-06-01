@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -27,9 +29,11 @@
 
   <script src="progetto01/public/js/dark_light.js"></script>
   <script src="progetto01/public/js/cookieDLcheck.js"></script>
-  <title>TITOLO HOME PAGE DA CAMBIARE</title>
+  <title>UnigeXBeigua</title>
 
 </head>
+
+
 
 
 
@@ -38,12 +42,16 @@
   <div class="navbar-fixed">
     <nav>
       <div id="main-nav" class="nav-wrapper row">
-        <a href="#!" class="brand-logo col s3 offset-s1 hide-on-med-and-down">Logo</a>
+        <a href="#!" class="brand-logo col s3 offset-s1 hide-on-med-and-down" style="width: fit-content;">
+          UnigeXBeigua
+          <i id="logoUXB" class="material-icons medium" style="font-size: 1.2em;">nature_people</i>
+        </a>
 
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-        <div class="col s6 left show-on-medium-and-down hide-on-large-only">
-          <h6 style="display: inline-block; font-size: larger;">titolo del sito</h6>
+        <div class="col s6 left show-on-medium-and-down hide-on-large-only" style="height: inherit;">
+          <i id="logoUXB" class="material-icons medium" style="font-size: 2em; display: inline;">nature_people</i>
+          <h6 style="font-size: larger; display: inline; position: absolute; top: 17%; left: 6.5em;;">UnigeXBeigua</h6>
         </div>
         <div class="right show-on-medium-and-down">
           <i id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
@@ -57,7 +65,7 @@
           <li><a href="progetto01/public/relatori.html">Relatori</a></li>
           <li><a href="progetto01/public/partner.html">Partner</a></li>
           <li><a href="progetto01/public/UnigeXBeigua.html">UnigeXBeigua</a></li>
-          <li><a href="progetto01/public/info.html">Info</a></li>
+          <li><a href="progetto01/public/aboutus.html">About Us</a></li>
         </ul>
 
       </div>
@@ -85,9 +93,9 @@
     <li><a href="progetto01/public/UnigeXBeigua.html">
         <i class="material-icons">nature_people</i>
         UnigeXBeigua</a></li>
-    <li><a href="progetto01/public/info.html">
+    <li><a href="progetto01/public/aboutus.html">
         <i class="material-icons">event_note</i>
-        Info</a></li>
+        About Us</a></li>
   </ul>
   <!-- FINE NAV -->
 
@@ -98,7 +106,7 @@
         <li>
           <img src="./progetto01/public/img/CASA ALPINI4.jpg">
           <div class="caption ">
-            <h3>Unige X Beigua: l'evento</h3>
+            <h3>UnigeXBeigua: l'evento</h3>
             <h5 class="light"><a href="progetto01/public/unigexbeigua.html">Un'iniziativa per tutta la liguria, e non solo</a></h5>
           </div>
         </li>
@@ -119,7 +127,7 @@
         <li>
           <img src="./progetto01/public/img/Panorama-dal-Beigua-Ft.-Monica-Saettone.jpg">
           <div class="caption ">
-            <h3>Il tuo essenziale contributo</h3>
+            <h3>Il tuo contributo è essenziale</h3>
             <h5 class="light"><a href="progetto01/public/programma.html">Vai al programma dell'evento</a></h5>
           </div>
         </li>
@@ -265,21 +273,21 @@
     <hr style="margin: 0;">
     <div class="parallax-container">
       <div class="parallax">
-        <img src="https://passeggiareinliguria.it/wp-content/uploads/2020/05/punto-panoramico-scaled.jpg">
+        <img src="http://www.parcobeigua.it/fotoNews/PRBEInov55690-img1.jpg">
 
         <div class="container">
         <!-- card 1 -->
         <div class="row">
-          <div class="col s12 m6">
+          <div class="col s12 m6" style="width: 100%;">
             <div class="card medium">
               <!-- trasparente -->
               <div class="card-content white-text">
-                <!-- <span class="card-title">Card Title</span> -->
-                <p class="flow-text">MESSAGGIO SULLA PARTECIPAZIONE, DA COMPLETARE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
+                <p class="flow-text" style=" font-size: 1.4em; font-weight: bold; text-shadow: -1px -1px 0px black;">
+                  Il tuo contributo è essenziale alla salvaguardia della vita in Liguria e nelle zone limitrofe come basso piemonte,
+                  Emilia Romagna e Toscana. Infatti, la miniera avrebbe un impatto negativo sulla salute di milioni
+                  di persone. Con una tua partecipazione attiva alla causa, potremo sconfiggere questo nemico comune.
+                </p>
+                <!-- aggiungi altro paragrafo con breakpoint per screen big -->
               </div>
             </div>
           </div>
@@ -647,7 +655,7 @@
         <div class="col l6 s12">
           <h5 class="white-text">Gruppo 77 UNIGE</h5>
           <p class="grey-text text-lighten-4"><a href="#">Home Page</a></p>
-          <p class="grey-text text-lighten-4"><a href="index.html#contatti">About Us...</a></p>
+          <p class="grey-text text-lighten-4"><a href="index.html#contatti">Contatti</a></p>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
@@ -704,4 +712,22 @@
   </script>
 </body>
 
+<script>
+  function rainbow(){
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    var logo = document.querySelectorAll("#logoUXB");
+    logo.forEach(element => {
+      element.style.setProperty("color", "#"+randomColor, "important");
+      setTimeout(rainbow, 3000);
+    });
+  }
+    
+  rainbow();
+</script>
+
+<style>
+  #logoUXB{
+    transition: all 1.5s ease-in;
+  }
+</style>
 </html>

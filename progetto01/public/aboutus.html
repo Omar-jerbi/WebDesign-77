@@ -14,7 +14,7 @@
 
     <!-- lasciare per ultimo file.scss, override colori variabili scss  + DARK MODE -->
     <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/colorsoverride.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/progetti.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/aboutus.min.css"  media="screen,projection"/>
 
     <!-- icone  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,9 +24,12 @@
     
   <script src="./js/dark_light.js"></script>
   <script src="./js/cookieDLcheck.js"></script>
-  <title>progetti</title>
+  <title>About Us</title>
   
   </head>
+
+
+
 
 
   <body>
@@ -91,161 +94,102 @@
   </ul>
   <!-- FINE NAV -->
 
+
+<style>
+    .titolo{
+        text-align: center;
+    }
+
+    .devs .card-image{
+        height: 60%;
+    }
+
+    .devs .card-image img{
+        height: 100%;
+        width: 80%;
+    }
+
+    .devs .card-image a{
+        right: 5%;
+        bottom: 40%;
+    }
+
+    .devs .card-image .card-title{
+        font-size: xx-large;
+        font-weight: 400;
+        text-shadow: -1px -1px 20px black;
+    }
+</style>
+
+
 <main>
-  <div class="container">    
-    <br>
-    <div class="presentazione">
-      <h3>Progetti 2022</h3>
-      <hr>
-      <br>
-      <p class="flow-text">Il Brief di quest’anno è cominciato riflettendo sulle conseguenze ambientali e sociali causate dal conflitto di interessi sul parco del Beigua.<br><br> Obbiettivo condiviso è quello di: sensibilizzare con mezzi eterogenei su tematiche connesse a questa vicenda.</p>
-    </div>
-    <br>
+  
+    <div class="container">
+        <div class="titolo">
+            <h1>Chi siamo:</h1>
+            <h4>
+                Siamo un team di sette studenti dell'universita di Genova. Tra di noi ci sono tre designers e quattro sviluppatori. Tuti insieme abbiamo lavorato allo sviluppo di questo sito. 
+                Il nostro progetto era infatti di fornire uno spazio che indirizzasse ai progetti dei nostri colleghi di corso, nonchè presentasse al meglio l'evento UnigeXBeigua, 
+                filo conduttore del lavoro di tutti noi.
+            </h4>    
+        <!-- end titolo -->
+        </div>
 
+<br><br><br>
 
-
-<!-- card 1 -->
-    <div class="col s12 m7">
-        <div class="card horizontal large">
-          <div class="card-image">
-            <img src="../public/img/posterligurimuoiono.png">
+        <div class="titolo">
+            <h3>Sviluppatori:</h3>
+            <hr>
+        </div>
+       <div class="devs">
+        <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./img/me.jpg">
+                  <span class="card-title">Omar Jerbi</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red" href="../../index.html#contatti"><i class="material-icons">send</i></a>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <h5>I liguri muoiono prima</h5>
-              <br>
-              <p class="flow-text">Il progetto consiste in una campagna di guerrilla comunication, attraverso un’azione autonoma da compiere dentro al sito.</p>
-            </div>
-            <div class="card-action">
-              <a href="./progetti/ligurimuoionoprima.html">Vai al progetto</a>
+
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png">
+                  <span class="card-title">Omar Jerbi</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">send</i></a>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    <br>
-    <br>
 
-    <!-- card 2 -->
-    <div class="col s12 m7">
-        <div class="card horizontal large">
 
-        <div class="card-stacked">
-            <div class="card-content">
-            <h5>H2Animato</h5>
-            <br>
-            <p class="flow-text">H2Animato vuole sensibilizzare sul problema della presenza di amianto nel nostro pianeta, con particolare attenzione agli effetti sulla salute.
-            </div>
-            <div class="card-action">
-            <a href="#">Vai al progetto</a>
-            </div>
+        <!-- end devs -->
+       </div> 
+
+
+
+       <div class="des">
+        <div class="titolo">
+            <h3>Designers:</h3>
+            <hr>
         </div>
-        <div class="card-image">
-            <img src="../public/img/H2A.png">
-        </div>
-        </div>
+
+
+        <!-- end des -->
+       </div>
+
+        <!-- end container -->
     </div>
-    <br>
-    <br>
-
-    <!-- card 3 -->
-    <div class="col s12 m7">
-        <div class="card horizontal large">
-        <div class="card-image">
-            <img src="../public/img/WhatsApp Image 2022-05-14 at 12.09.49 PM.jpeg">
-        </div>
-        <div class="card-stacked">
-            <div class="card-content">
-            <h5>Eternit</h5>
-            <br>
-            <p class="flow-text">Timeline che analizza la catastrofe di Casale Monferrato in merito alla propagazione di amianto tossico.
-            </div>
-            <div class="card-action">
-            <a href="#">Vai al progetto</a>
-            </div>
-        </div>
-        </div>
-    </div>
-    <br>
-    <br>
-
-
-    <!-- card 4 -->
-    <div class="col s12 m7">
-        <div class="card horizontal large">
-
-        <div class="card-stacked">
-            <div class="card-content">
-            <h5>Mesote Liberi</h5>
-            <br>
-            <p class="flow-text">Il mesotelioma è una delle numerose conseguenze che causa l’inalazione
-              di amianto, MesoteLiberi vuole agire concretamente sul territorio.</p>
-            </div>
-            <div class="card-action">
-            <a href="#">Vai al progetto</a>
-            </div>
-        </div>
-        <div class="card-image">
-            <img src="../public/img/mesote liberi.jpg">
-        </div>
-        </div>
-    </div>
-    <br>
-    <br>
-
-
-    <!-- card 5 -->
-    <div class="col s12 m7">
-        <div class="card horizontal large">
-        <div class="card-image">
-            <img src="../public/img/invasione amianto.png">
-        </div>
-        <div class="card-stacked">
-            <div class="card-content">
-            <h5>La famosa invasione dell'amianto in Liguria</h5>
-            <br>
-            <p class="flow-text">Qui saranno presentati in chiaro i potenziali danni che emergeranno dalla trivellazione di amianto nel Beigua</p>
-            </div>
-            <div class="card-action">
-            <a href="#">Vai al progetto</a>
-            </div>
-        </div>
-        </div>
-    </div>
-    <br>
-    <br>
-
-
-    <!-- card 6 -->
-    <div class="col s12 m7">
-        <div class="card horizontal large">
-
-        <div class="card-stacked">
-            <div class="card-content">
-            <h5>PROGETTO VUOTO</h5>
-            <br>
-            <p class="flow-text">I am a very simple card. I am good at containing small bits of information.</p>
-            <p class="flow-text">I am a very simple card. I am good at containing small bits of information.</p>
-            </div>
-            <div class="card-action">
-            <a href="#">Vai al progetto</a>
-            </div>
-        </div>
-        <div class="card-image">
-            <img src="https://picsum.photos/id/259/0/0">
-        </div>
-        </div>
-    </div>
-    <br>
-    <br>
-
-
-
-
-
-<!-- END container -->
-  </div>
-    
-
 
 </main>
 
