@@ -11,11 +11,11 @@ body{
     background-color: $secondary-color-light;
 
     nav, .page-footer{
-        color: $font-color1-light-theme;
-        background-color: $primary-color-light;
+        color: $font-color1-light-theme !important;
+        background-color: $primary-color-light !important;
         *{
-            color: $font-color1-light-theme;
-            background-color: $primary-color-light;          
+            color: $font-color1-light-theme !important;
+            background-color: $primary-color-light !important;          
         }
     }
     
@@ -41,15 +41,15 @@ body{
 // dark mode !!! lasciare in fondo!!!
 .dark-mode{//body
 
-    color: $font-color1-dark-theme;
-    background-color: $secondary-color-dark;
+    color: $font-color1-dark-theme!important;
+    background-color: $secondary-color-dark!important;
 
     nav, .page-footer{
-        color: $font-color1-dark-theme;
-        background-color: $primary-color-dark;
+        color: $font-color2-dark-theme;
+        background-color: $primary-color-dark!important;
         *{
-            color: $font-color1-dark-theme;
-            background-color: $primary-color-dark;
+            color: $font-color2-dark-theme!important;
+            background-color: $primary-color-dark!important;
         }
     }
 
