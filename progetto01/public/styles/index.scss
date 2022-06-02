@@ -63,6 +63,33 @@
   margin-top: 300px;
 }
 
+
+.bttcards{
+  width: 100px;
+  border-radius: 21px;
+  top: 40px;
+  right: 39px;
+}
+
+
+.row{
+  border-radius: 40px 0 40px 0;
+  .col{
+    border-radius: 40px 0 40px 0;
+    .card{
+      border-radius: 40px 0 40px 0;
+      .card-image{
+        border-radius: 40px 0 40px 0;
+        *{
+          border-radius: 40px 0 40px 0;
+        }
+      .card-content{
+        border-radius: 40px 0 40px 0;
+      }
+      }
+    }
+  }
+}
 //////////////////////////////////////////////////////////////////////////////////
 
 .dark-mode{
