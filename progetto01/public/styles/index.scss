@@ -3,147 +3,26 @@
 
 
 @media only screen and (min-width: $U2k-screen) {
-    .cards {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        left: -10vw;
-        right: 10vw;
-        position: relative;
-        width: 70vw;
-    }
+ 
   }
 
 @media only screen and (max-width: $small-screen) {
-    .cards {
-        flex-direction: column;
-    }
+
 }
 
 
 @media only screen and (min-width: $medium-screen) {//tablet e pc
-  .cards{
-    .card{
-      margin-right: 10px;
-    }
-  }
 
-  .caption{
-    h3{
-      width: 80%;
-      margin-bottom: 50px;
-    }
-  }
 }
 
 
 
-  
-.cards{
-    display: flex;
-   .row{
-        .col{
-            width: fit-content;
-        }
-    }
-}
 
-
-.slider .indicators .indicator-item.active{
-    background-color: $font-color3-light-theme!important;
-}
-
-.slider{
-  a{
-    color: $font-color1-dark-theme;
-  }
-}
-
-.cards{
-  z-index: 10;
-  a{
-    color: $font-color2-light-theme!important;
-  }
-}
-
-.welcome{
-  padding: 5px 5px;
-  background-color: #fbfbfb52;
-  box-shadow: 0px 1px 6px 0px;
-}
-
-
-.parallax-container{
-  height: 400px;
-  
-  .card{
-    background-color: transparent; 
-    box-shadow: none;
-  }
-}
-
-.cards{
-  .card-content{
-    background-color: lighten($secondary-color, 10)!important;
-  }
-  
-  .card-reveal{
-    background-color: lighten($secondary-color, 10) !important;
-  }
-}
-
-
-.collection{
-  .collection-header, .collection-item{
-    background-color: lighten($secondary-color, 10)!important;
-  }
-}
 
 //////////////////////////////////////////////////////////////////////////////////
 
 .dark-mode{
-  $tertiary-color: $tertiary-color-dark;
 
-  .welcome{
-    box-shadow: 0px 1px 6px 0px #625f5fbf;
-    background-color: #00000061;
-  }
-
-  .slider .indicators .indicator-item.active{
-    background-color: $font-color3-dark-theme!important;
-  }
-  .card{
-    background-color: $tertiary-color-dark;        
-  }
-  
-  h1, h2, h3, h4, h5, h6{
-    color:$font-color2-dark-theme;
-  }
-
-  .parallax-container{
-    .card{
-      background-color: transparent;
-    }
-  }
-
-  .collection{
-    box-shadow: 0px 2px 2px 0px #625f5fbf;
-    .collection-header, .collection-item{
-      background-color: $tertiary-color-dark !important;
-    }
-  }
-
-
-  .cards{
-    .card-content{
-      background-color: $tertiary-color !important;
-    }
-    
-    .card-reveal{
-      background-color: $tertiary-color !important;
-    }
-    
-  }
 
 }
 //////////////////////////////////////////////////////////////////////////////////

@@ -11,13 +11,12 @@
   <link type="text/css" rel="stylesheet" href="progetto01/node_modules/materialize-css/dist/css/materialize.min.css"
     media="screen,projection" />
 
-  <!-- my style -->
+  <!-- style -->
   <link type="text/css" rel="stylesheet" href="progetto01/node_modules/materialize-css/dist/css/general.min.css" media="screen,projection" />
 
   <!-- lasciare "pagina".scss per ultimo, override colori variabili scss  + DARK MODE -->
   <link type="text/css" rel="stylesheet" href="progetto01/node_modules/materialize-css/dist/css/colorsoverride.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="progetto01/node_modules/materialize-css/dist/css/index.min.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="progetto01/node_modules/materialize-css/dist/css/contatti.min.css" media="screen,projection" />
 
   <!-- icone  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,7 +28,7 @@
 
   <script src="progetto01/public/js/dark_light.js"></script>
   <script src="progetto01/public/js/cookieDLcheck.js"></script>
-  <title>UnigeXBeigua</title>
+  <title>BeUge</title>
 
 </head>
 
@@ -43,15 +42,15 @@
     <nav>
       <div id="main-nav" class="nav-wrapper row">
         <a href="#!" class="brand-logo col s3 offset-s1 hide-on-med-and-down" style="width: fit-content;">
-          UnigeXBeigua
-          <i id="logoUXB" class="material-icons medium" style="font-size: 1.2em;">nature_people</i>
+          BeUge
+          <!-- <i id="logoUXB" class="material-icons medium" style="font-size: 1.2em;">nature_people</i> -->
         </a>
 
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
         <div class="col s6 left show-on-medium-and-down hide-on-large-only" style="height: inherit;">
-          <i id="logoUXB" class="material-icons medium" style="font-size: 2em; display: inline;">nature_people</i>
-          <h6 style="font-size: larger; display: inline; position: absolute; top: 17%; left: 6.5em;;">UnigeXBeigua</h6>
+          <!-- <i id="logoUXB" class="material-icons medium" style="font-size: 2em; display: inline;">nature_people</i> -->
+          <h6 style="font-size: larger; display: inline; position: absolute; top: 17%; left: 6.5em;;">BeUge</h6>
         </div>
         <div class="right show-on-medium-and-down">
           <i id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
@@ -100,549 +99,44 @@
   <!-- FINE NAV -->
 
   <main>
+
+
+  <div class="container titolo">
+    <h1>
+      Benvenuto su BeUge
+    </h1>
+  </div>
+
     <!-- slider -->
     <div class="slider">
       <ul class="slides">
         <li>
           <img src="./progetto01/public/img/CASA ALPINI4.jpg">
-          <div class="caption ">
-            <h3>UnigeXBeigua: l'evento</h3>
-            <h5 class="light"><a href="progetto01/public/unigexbeigua.html">Un'iniziativa per tutta la liguria, e non solo</a></h5>
-          </div>
         </li>
         <li>
           <img src="./progetto01/public/img/parco-beigua-671551.jpg">
-          <div class="caption ">
-            <h3>NO! alla miniera sul Beigua</h3>
-            <h5 class="light"><a href="index.html#partecipa">Salva te stesso e chi ti sta a cuore</a></h5>
-          </div>
         </li>
         <li>
           <img src="https://st.ilfattoquotidiano.it/wp-content/uploads/2021/04/12/MONTEREIXABIS-scaled.jpg">
-          <div class="caption ">
-            <h3>Informati sulla lotta contro la miniera!</h3>
-            <h5 class="light"><a href="progetto01/public/progetti.html">Dai un'occhiata ai nostri progetti</a></h5>
-          </div>
         </li>
         <li>
           <img src="./progetto01/public/img/Panorama-dal-Beigua-Ft.-Monica-Saettone.jpg">
-          <div class="caption ">
-            <h3>Il tuo contributo è essenziale</h3>
-            <h5 class="light"><a href="progetto01/public/programma.html">Vai al programma dell'evento</a></h5>
-          </div>
         </li>
         <li>
           <img src="./progetto01/public/img/20190822_175604 (1).jpg">
-          <div class="caption ">
-            <h3>Salviano il nostro territorio e la nostra vita</h3>
-            <h5 class="light"><a href="index.html#community">Tutti insieme possiamo farcela!</a></h5>
-          </div>
         </li>
       </ul>
     </div>
     <!-- END slider -->
 
-    <br>
-    <div class="welcome">        
-      <div class="container">
-        <h4>
-          Benvenuto
-        </h4>
-        <hr>
-        <p class="flow-text">Benvenuto nella lotta contro la miniera sul beigua.</p>
-        <p class="flow-text">Qui trovarai un insieme di progetti della classe di web design del dipartimento di architettura in collaborazione con gli sviluppatori
-          del dipartimento di informatica dell'universita'di Genova.
-        </p>
-        <p class="flow-text">Tutti i progetti si articoleranno seguendo lo stesso filo conduttore: La messa al bando del progetto di allestimento di una miniera di amianto nell'attuale
-          parco del Beigua </p>
-        <p class="flow-text">Scoprirai i vari motivi per i quali è essenziale una collettiva presa di posizione contro questa ipotesi della miniera. Ipotesi che resta fino ad oggi, una
-          concreta minaccia alla vita di milioni di persone </p>
-
-    </div>
-    </div>
-<!-- end welcome -->
-
-
-    <!-- sezione 1 -->
-    <div class="container">
-      <br>
-      <h4>
-        In primo piano:
-      </h4>
-      <hr>
-
-
-      <div class="cards">
-        <!-- card 1 -->
-        <div class="card small" id="1" onclick="cardToFG(id)">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="progetto01/public/img/I liguri muoiono prima.png">
-            <span class="card-title" style="background-color: #00d59abf;">Salute</span>
-          </div>
-          <div class="card-content">
-            <h5><span class="card-title activator">I liguri muoiono prima...<i class="material-icons right">more_vert</i></span></h5>
-            <p class="flow-text"><a href="progetto01/public/progetti.html">Scopri altri progetti</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">I liguri muoiono prima...<i
-                class="material-icons right">close</i></span>
-            <p class="flow-text">Here is some more information about this product that is only revealed once clicked on.</p>
-            <p class="flow-text">Here is some more information about this product that is only revealed once clicked on.</p>
-            <p class="flow-text">Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-
-        <!-- card 2 -->
-        <div class="card small" id="2" onclick="cardToFG(id)">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="progetto01/public/img/vian.png">
-            <span class="card-title" style="background-color: #9acd32c7;">Ospiti</span>
-          </div>
-          <div class="card-content">
-            <h5><span class="card-title activator">Discussioni a tema<i class="material-icons right">more_vert</i></span></h5>
-            <p class="flow-text"><a href="progetto01/public/relatori.html">Scopri i relatori</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">Discussioni sul tema del Beigua<i
-                class="material-icons right">close</i></span>
-            <p class="flow-text">Here is some more information about this product that is only revealed once clicked on.</p>
-            <p class="flow-text">Here is some more information about this product that is only revealed once clicked on.</p>
-            <p class="flow-text">Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-        <!-- cards -->
-      </div>
-
-
-      <!-- seconda riga -->
-      <div class="cards">
-        <!-- card 2 -->
-        <div class="card small" id="3" onclick="cardToFG(id)">
-          <div class="card-image waves-effect waves-block waves-light" style="height: 200px;">
-            <img class="activator" src="progetto01/public/img/unige.png" style="padding: 60px 20px; background-color: white;">
-            <span class="card-title" style="background-color: #cd5c5cba;">Evento</span>
-          </div>
-          <div class="card-content">
-            <h5><span class="card-title activator">UnigeXBeigua<i class="material-icons right">more_vert</i></span></h5>
-            <p class="flow-text"><a href="progetto01/public/unigexbeigua.html">Informati sull'evento</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">UnigeXBeigua<i
-                class="material-icons right">close</i></span>
-            <p class="flow-text">Here is some more information about this product that is only revealed once clicked on.</p>
-            <p class="flow-text">Here is some more information about this product that is only revealed once clicked on.</p>
-            <p class="flow-text">Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-
-        <!-- card 2 -->
-        <div class="card small" id="4" onclick="cardToFG(id)">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="progetto01/public/img/talkHP.jpg">
-            <span class="card-title" style="background-color: #6495edbf;">Il Talk</span>
-          </div>
-          <div class="card-content">
-            <h5><span class="card-title activator">Partecipa al talk<i class="material-icons right">more_vert</i></span></h5>
-            <p class="flow-text"><a href="progetto01/public/programma.html">Visita il programma</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">Partecipa al talk<i
-                class="material-icons right">close</i></span>
-            <p class="flow-text">Here is some more information about this product that is only revealed once clicked on.</p>
-            <p class="flow-text">Here is some more information about this product that is only revealed once clicked on.</p>
-            <p class="flow-text">Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-
-        <!-- cards -->
-      </div>
-
-
-      <!-- END container -->
-    </div>
-    <!-- end sezione 1 -->
-
-    <!-- sezione 2 -->
-    <a id="partecipa"></a>
-    <div class="container">
-      <br>
-      <h4>
-        Partecipa anche tu:
-      </h4>
-    </div>
-    <hr style="margin: 0;">
-    <div class="parallax-container">
-      <div class="parallax">
-        <img src="http://www.parcobeigua.it/fotoNews/PRBEInov55690-img1.jpg">
-
-        <div class="container">
-        <!-- card 1 -->
-        <div class="row">
-          <div class="col s12 m6" style="width: 100%;">
-            <div class="card medium">
-              <!-- trasparente -->
-              <div class="card-content white-text">
-                <p class="flow-text" style=" font-size: 1.4em; font-weight: bold; text-shadow: -1px -1px 0px black;">
-                  Il tuo contributo è essenziale alla salvaguardia della vita in Liguria e nelle zone limitrofe come basso piemonte,
-                  Emilia Romagna e Toscana. Infatti, la miniera avrebbe un impatto negativo sulla salute di milioni
-                  di persone. Con una tua partecipazione attiva alla causa, potremo sconfiggere questo nemico comune.
-                </p>
-                <!-- aggiungi altro paragrafo con breakpoint per screen big -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      </div>
-    </div>
-    <!-- end sezione 2 -->
-
-    <!-- sezione 3 -->
-    <a id="community"></a>
-    <div class="container">
-      <h4>
-        Unisciti alla community:
-      </h4>
-    </div>
-    <hr style="margin: 0;">
-    <div class="parallax-container">
-      <div class="parallax">
-        <img src="https://digilander.libero.it/stedgl13/images/CASA%20ALPINI2.jpg">
-
-        <div class="container">
-
-        <!-- card 1 -->
-        <div class="row">
-          <div class="col s12 m6">
-            <div class="card medium">
-              <!-- trasparente -->
-              <div class="card-content white-text">
-                <!-- <span class="card-title">Card Title</span> -->
-                <p class="flow-text">LINK A SOCIAL MEDIA, PETIZIONI.... DA COMPLETARE!!!!!!!!!!!!!!!!!</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-          
-      </div>
-      </div>
-    </div>
-    <!-- end sezione 3 -->
-
-
-    <!-- sezione 4 -->
-    <br>
-    <a id="contatti"></a>
-    <div class="container">
-      <h4>
-        Contatti
-      </h4>
-      <hr>
+    <div class="container welcome">
+      <h5>
+        Ciao benvenut* qui troverai forti iniziative che hanno come obbiettivo quello di Divulgare su tematiche strette al tuo vivere, 
+        e quello di tutti 
+      </h5>
     </div>
 
-    <div class="container" id="s4" style="overflow-y: hidden;">
 
-      <div class="contatti-responsabile">
-
-        <ul class="collection with-header" id="responsabile">
-          <li class="collection-header">
-            <h4>Responsabile</h4>
-          </li>
-          <li class="collection-item">
-            <div>Andrea Vian<a href="#!" class="secondary-content"><i class="material-icons"
-                  onclick="displayInfo('vian', 'responsabile')">info_outline</i></a></div>
-          </li>
-        </ul>
-
-        <div id="info-responsabile">
-          <div id="vian" style="opacity: 0; height: 0;">
-            <ul class="collection">
-              <li class="collection-item">
-                <div class="first" style="display: flex; justify-content: space-between;">
-                  <div class="nome">
-                    Andrea
-                  </div>
-                  <div class="btt">
-                    <i onclick="
-                document.querySelector('#info-responsabile').style.opacity = '0';
-                document.querySelector('#info-responsabile').style.height = '0';
-                
-                document.querySelector('#vian').style.opacity = '0';
-                document.querySelector('#vian').style.height = '0';
-
-                document.querySelector('#responsabile').style.opacity = '10';
-                document.querySelector('#responsabile').style.height = 'auto';
-                ">X</i>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-item">cognome</li>
-              <li class="collection-item">cell</li>
-              <li class="collection-item">mail</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- end responsabile -->
-      </div>
-
-      <div class="contatti-sviluppatori">
-
-        <ul class="collection with-header" id="sviluppatori">
-          <li class="collection-header">
-            <h4>Sviluppatori</h4>
-          </li>
-          <li class="collection-item">
-            <div>Erik Ricci<a href="#!" class="secondary-content"><i class="material-icons"
-                  onclick="displayInfo('ricci', 'sviluppatori')">info_outline</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Gianluca Napolitano<a href="#!" class="secondary-content"><i class="material-icons"
-                  onclick="displayInfo('napolitano', 'sviluppatori')">info_outline</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Luca Insinna<a href="#!" class="secondary-content"><i class="material-icons"
-                  onclick="displayInfo('insinna', 'sviluppatori')">info_outline</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Omar Jerbi<a href="#!" class="secondary-content"><i class="material-icons"
-                  onclick="displayInfo('jerbi', 'sviluppatori')">info_outline</i></a></div>
-          </li>
-        </ul>
-
-        <div id="info-sviluppatori">
-          <div id="ricci" style="opacity: 0; height: 0;">
-            <ul class="collection">
-              <li class="collection-item">
-                <div class="first" style="display: flex; justify-content: space-between;">
-                  <div class="nome">
-                    erik
-                  </div>
-                  <div class="btt">
-                    <i onclick="
-                document.querySelector('#info-sviluppatori').style.opacity = '0';
-                document.querySelector('#info-sviluppatori').style.height = '0';
-
-                document.querySelector('#ricci').style.opacity = '0';
-                document.querySelector('#ricci').style.height = '0';
-
-                document.querySelector('#sviluppatori').style.opacity = '10';
-                document.querySelector('#sviluppatori').style.height = 'auto';
-                ">X</i>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-item">cognome</li>
-              <li class="collection-item">cell</li>
-              <li class="collection-item">mail</li>
-            </ul>
-          </div>
-
-
-          <div id="napolitano" style="opacity: 0; height: 0;">
-            <ul class="collection">
-              <li class="collection-item">
-                <div class="first" style="display: flex; justify-content: space-between;">
-                  <div class="nome">
-                    gianluca
-                  </div>
-                  <div class="btt">
-                    <i onclick="
-                document.querySelector('#info-sviluppatori').style.opacity = '0';
-                document.querySelector('#info-sviluppatori').style.height = '0';
-
-                document.querySelector('#napolitano').style.opacity = '0';
-                document.querySelector('#napolitano').style.height = '0';
-
-                document.querySelector('#sviluppatori').style.opacity='10';
-                document.querySelector('#sviluppatori').style.height = 'auto';
-                ">X</i>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-item">cognome</li>
-              <li class="collection-item">cell</li>
-              <li class="collection-item">mail</li>
-            </ul>
-          </div>
-
-
-          <div id="insinna" style="opacity: 0; height: 0;">
-            <ul class="collection">
-              <li class="collection-item">
-                <div class="first" style="display: flex; justify-content: space-between;">
-                  <div class="nome">
-                    luca
-                  </div>
-                  <div class="btt">
-                    <i onclick="
-                document.querySelector('#info-sviluppatori').style.opacity = '0';
-                document.querySelector('#info-sviluppatori').style.height = '0';
-
-                document.querySelector('#insinna').style.opacity = '0';
-                document.querySelector('#insinna').style.height = '0';
-
-                document.querySelector('#sviluppatori').style.opacity ='10';
-                document.querySelector('#sviluppatori').style.height = 'auto';
-                ">X</i>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-item">cognome</li>
-              <li class="collection-item">cell</li>
-              <li class="collection-item">mail</li>
-            </ul>
-          </div>
-
-          <div id="jerbi" style="opacity: 0; height: 0;">
-            <ul class="collection">
-              <li class="collection-item">
-                <div class="first" style="display: flex; justify-content: space-between;">
-                  <div class="nome">
-                    omar
-                  </div>
-                  <div class="btt">
-                    <i onclick="
-                document.querySelector('#info-sviluppatori').style.opacity = '0';
-                document.querySelector('#info-sviluppatori').style.height = '0';
-
-                document.querySelector('#jerbi').style.opacity = '0';
-                document.querySelector('#jerbi').style.height = '0';
-
-                document.querySelector('#sviluppatori').style.opacity = '10';
-                document.querySelector('#sviluppatori').style.height = 'auto';
-                ">X</i>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-item">cognome</li>
-              <li class="collection-item">cell</li>
-              <li class="collection-item">mail</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- end sviluppatori -->
-      </div>
-
-
-      <div class="contatti-designers">
-
-        <ul class="collection with-header" id="designers">
-          <li class="collection-header">
-            <h4>Designers</h4>
-          </li>
-          <li class="collection-item">
-            <div>Gabriele Moggio<a href="#!" class="secondary-content"><i class="material-icons"
-                  onclick="displayInfo('moggio', 'designers')">info_outline</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Gabriella Bonetti<a href="#!" class="secondary-content"><i class="material-icons"
-                  onclick="displayInfo('bonetti', 'designers')">info_outline</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Luca Galli<a href="#!" class="secondary-content"><i class="material-icons"
-                  onclick="displayInfo('galli', 'designers')">info_outline</i></a></div>
-          </li>
-        </ul>
-
-        <div id="info-designers">
-          <div id="moggio" style="opacity: 0; height: 0;">
-            <ul class="collection">
-              <li class="collection-item">
-                <div class="first" style="display: flex; justify-content: space-between;">
-                  <div class="nome">
-                    gabriele
-                  </div>
-                  <div class="btt">
-                    <i onclick="
-            document.querySelector('#info-designers').style.opacity = '0';
-            document.querySelector('#info-designers').style.height = '0';
-            
-            document.querySelector('#moggio').style.opacity = '0';
-            document.querySelector('#moggio').style.height = '0';
-            
-            document.querySelector('#designers').style.opacity = '10';
-            document.querySelector('#designers').style.height = 'auto';
-            ">X</i>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-item">cognome</li>
-              <li class="collection-item">cell</li>
-              <li class="collection-item">mail</li>
-            </ul>
-          </div>
-
-
-          <div id="bonetti" style="opacity: 0; height: 0;">
-            <ul class="collection">
-              <li class="collection-item">
-                <div class="first" style="display: flex; justify-content: space-between;">
-                  <div class="nome">
-                    gabriella
-                  </div>
-                  <div class="btt">
-                    <i onclick="
-            document.querySelector('#info-designers').style.opacity = '0';
-            document.querySelector('#info-designers').style.height = '0';
-            
-            document.querySelector('#bonetti').style.opacity = '0';
-            document.querySelector('#bonetti').style.height = '0';
-            
-            document.querySelector('#designers').style.opacity = '10';
-            document.querySelector('#designers').style.height = 'auto';
-            ">X</i>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-item">cognome</li>
-              <li class="collection-item">cell</li>
-              <li class="collection-item">mail</li>
-            </ul>
-          </div>
-
-          <div id="galli" style="opacity: 0; height: 0;">
-            <ul class="collection">
-              <li class="collection-item">
-                <div class="first" style="display: flex; justify-content: space-between;">
-                  <div class="nome">
-                    luca
-                  </div>
-                  <div class="btt">
-                    <i onclick="
-            document.querySelector('#info-designers').style.opacity = '0';
-            document.querySelector('#info-designers').style.height = '0';
-            
-            document.querySelector('#galli').style.opacity = '0';
-            document.querySelector('#galli').style.height = '0';
-            
-            document.querySelector('#designers').style.opacity = '10';
-            document.querySelector('#designers').style.height = 'auto';
-            ">X</i>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-item">cognome</li>
-              <li class="collection-item">cell</li>
-              <li class="collection-item">mail</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- end designers -->
-      </div>
-
-    <!-- end container -->
-    </div>
-    <!-- end sezione 4 -->
   </main>
 
 
@@ -700,7 +194,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.slider');
-      var instances = M.Slider.init(elems, { "indicators": true, "height": 800, "interval": 5000 });
+      var instances = M.Slider.init(elems, { "indicators": false, "height": 300, "interval": 5000 });
       instances.start();
     });
   </script>
@@ -712,24 +206,5 @@
   </script>
 </body>
 
-
-<script>
-  function rainbow(){
-    var randomColor = Math.floor(Math.random()*16777215).toString(16);
-    var logo = document.querySelectorAll("#logoUXB");
-    logo.forEach(element => {
-      element.style.setProperty("color", "#"+randomColor, "important");
-      setTimeout(rainbow, 3000);
-    });
-  }
-    
-  rainbow();
-</script>
-
-<style>
-  #logoUXB{
-    transition: all 1.5s ease-in;
-  }
-</style>
 </html>
 
