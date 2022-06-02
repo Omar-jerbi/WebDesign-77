@@ -16,8 +16,52 @@
 }
 
 
+.titolo{
+  padding: 50px 10vw;
+  color: $font-color1-light-theme !important;
+  background-color: $secondary-color-light !important;
+  h1{
+      color: $font-color2-light-theme !important;
+  }
+}
 
 
+.navbar-fixed, nav, #main-nav{
+  border-radius: 0 0 15px 15px;
+}
+
+.slider, .slides, .slider .slides li{
+  border-radius: 0 0 20px 20px;
+}
+
+.collapsibles , .immagine-top, .immagine-top img{
+  border-radius: 20px 20px 0 0;
+}
+
+.collapsibles{
+  position: relative;
+  .immagine-top{
+    position: absolute;
+  }
+  .contents{
+    position: relative;
+    top: 270px;
+    border-radius: 20px 20px 20px 20px;
+    *{
+      border-radius: 20px 20px 20px 20px;
+    }
+  }
+
+  .collapsible{
+    background-color: white;
+  }
+}
+
+
+
+.cards{
+  margin-top: 300px;
+}
 
 //////////////////////////////////////////////////////////////////////////////////
 
