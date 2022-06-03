@@ -17,11 +17,20 @@
 
 
 .titolo{
-  padding: 50px 10vw;
+  padding: 20px 10vw;
   color: $font-color1-light-theme !important;
   background-color: $secondary-color-light !important;
   h1{
       color: $font-color2-light-theme !important;
+  }
+
+  .fix-edges{
+    width: 100vw;
+    height: 30px;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    background-color: #3b429f;
   }
 }
 
