@@ -1,6 +1,14 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
 
+
+main{
+    p, h5, h6{
+        line-height: 32px !important;
+    }
+}
+
+
  .slider {
     h3{
         font-weight: bold !important;
