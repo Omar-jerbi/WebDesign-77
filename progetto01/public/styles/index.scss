@@ -16,12 +16,22 @@
 }
 
 
+
 .titolo{
-  padding: 50px 10vw;
+  padding: 20px 10vw;
   color: $font-color1-light-theme !important;
   background-color: $secondary-color-light !important;
   h1{
       color: $font-color2-light-theme !important;
+  }
+
+  .fix-edges{
+    width: 100vw;
+    height: 30px;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    background-color: #3b429f;
   }
 }
 
@@ -32,6 +42,10 @@
 
 .slider, .slides, .slider .slides li{
   border-radius: 0 0 20px 20px;
+}
+
+.slider{
+  box-shadow: -1px 4px 2px #00000052;
 }
 
 .collapsibles , .immagine-top, .immagine-top img{
@@ -50,6 +64,7 @@
     *{
       border-radius: 20px 20px 20px 20px;
     }
+
   }
 
   .collapsible{
@@ -108,15 +123,23 @@
 
 
 
-
+.collapsible-header{
+  position: relative;
+  h4{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    width: 60% ;
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+}
 
 
 
 
 //////////////////////////////////////////////////////////////////////////////////
 
-.dark-mode{
+// .dark-mode{
 
 
-}
+// }
 //////////////////////////////////////////////////////////////////////////////////
