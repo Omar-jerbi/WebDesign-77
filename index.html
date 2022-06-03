@@ -5,6 +5,7 @@
   <meta charset="utf-8">
 
   <!--Import Google Icon Font-->
+  <!-- necessario per icone -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!--Import materialize.css-->
@@ -43,28 +44,23 @@
       <div id="main-nav" class="nav-wrapper row">
         <a href="#!" class="brand-logo col s3 offset-s1 hide-on-med-and-down" style="width: fit-content;">
           BeUge
-          <!-- <i id="logoUXB" class="material-icons medium" style="font-size: 1.2em;">nature_people</i> -->
         </a>
 
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-        <div class="col s6 left show-on-medium-and-down hide-on-large-only" style="height: inherit;">
-          <!-- <i id="logoUXB" class="material-icons medium" style="font-size: 2em; display: inline;">nature_people</i> -->
-          <h6 style="font-size: larger; display: inline; position: absolute; top: 17%; left: 6.5em;;">BeUge</h6>
+        <div class="col s6 left show-on-medium-and-down hide-on-large-only" style="height: inherit; width: 20%;">
+          <h6 style="font-size: larger; display: inline; position: absolute; top: 8%; left: 11.5em; font-size: 1.8em;">BeUge</h6>
         </div>
         <div class="right show-on-medium-and-down">
-          <i id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
+          <i style="display: none;" id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
         </div>
 
 
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html">Home</a></li>
-          <li><a href="progetto01/public/programma.html">Programma</a></li>
           <li><a href="progetto01/public/progetti.html">Progetti</a></li>
-          <li><a href="progetto01/public/relatori.html">Relatori</a></li>
-          <li><a href="progetto01/public/partner.html">Partner</a></li>
-          <li><a href="progetto01/public/UnigeXBeigua.html">UnigeXBeigua</a></li>
-          <li><a href="progetto01/public/aboutus.html">About Us</a></li>
+          <li><a href="progetto01/public/beuge.html">BEuGE</a></li>
+          <li style="margin-right: 10vw;"><a href="progetto01/public/aboutus.html">About Us</a></li>
         </ul>
 
       </div>
@@ -73,25 +69,12 @@
 
   <ul class="sidenav" id="mobile-demo">
     <li><a href="index.html">
-        <i class="material-icons">home</i>
-        Home</a></li>
-    <li><a href="progetto01/public/programma.html">
-        <i class="material-icons">schedule</i>
-        Programma</a></li>
-
+        <i class="material-icons">home</i>Home</a></li>
     <li><a href="progetto01/public/progetti.html">
-        <i class="material-icons">work</i>
-        Progetti</a></li>
-
-    <li><a href="progetto01/public/relatori.html">
-        <i class="material-icons">group</i>
-        Relatori</a></li>
-    <li><a href="progetto01/public/partner.html">
-        <i class="material-icons">web</i>
-        Partner</a></li>
+        <i class="material-icons">work</i>Progetti</a></li>
     <li><a href="progetto01/public/UnigeXBeigua.html">
         <i class="material-icons">nature_people</i>
-        UnigeXBeigua</a></li>
+        BEuGE</a></li> 
     <li><a href="progetto01/public/aboutus.html">
         <i class="material-icons">event_note</i>
         About Us</a></li>
@@ -152,21 +135,36 @@
       <div class="contents">
         <ul class="collapsible">
           <li id="c1" class="active">
-            <div class="collapsible-header">Il Parco del Beigua<i class="material-icons">filter_drama</i></div>
-            <div class="collapsible-body"><span>
-              Qui trovarai un insieme di progetti della classe di web design del dipartimento di architettura in collaborazione con gli sviluppatori del dipartimento di informatica dell'universita'di Genova.
-              Tutti i progetti si articoleranno seguendo lo stesso filo conduttore: La messa al bando del progetto di allestimento di una miniera di amianto nell'attuale parco del Beigua.
-            </span></div>
+            <div class="collapsible-header">
+              <h4>Il Parco del Beigua</h4>
+              <img src="./progetto01/public/img/Component 16.png" alt="" style=" position: absolute; top: 4px;  right: 17px">
+            </div>
+            <div class="collapsible-body">
+              <p class="flow-text">
+                Qui trovarai un insieme di progetti della classe di web design del dipartimento di architettura in collaborazione con gli sviluppatori del dipartimento di informatica dell'universita'di Genova.
+              </p>
+              <br>
+              <p class="flow-text">
+                Tutti i progetti si articoleranno seguendo lo stesso filo conduttore: La messa al bando del progetto di allestimento di una miniera di amianto nell'attuale parco del Beigua.
+              </p>
+              <br><br><br><br>
+          </div>
           </li>
 
           <li id="c2">
-            <div class="collapsible-header">La tua salute<i class="material-icons">place</i></div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis adipisci eaque laborum ipsum illo dolorem distinctio nostrum ab quos! Nihil corporis rerum atque nostrum tempora nam neque sequi eaque in obcaecati. Ea tempore dicta ipsam? Quisquam possimus tempore error.</span></div>
+            <div class="collapsible-header">
+            <h4>La tua salute</h4>
+            <img src="./progetto01/public/img/Component 16.png" alt="" style=" position: absolute; top: 4px;  right: 17px">
+            </div>
+            <div class="collapsible-body"><span class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis adipisci eaque laborum ipsum illo dolorem distinctio nostrum ab quos! Nihil corporis rerum atque nostrum tempora nam neque sequi eaque in obcaecati. Ea tempore dicta ipsam? Quisquam possimus tempore error.</span></div>
           </li>
 
           <li id="c3">
-            <div class="collapsible-header">L'ambiente<i class="material-icons">whatshot</i></div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit officia iste illo, beatae voluptate dolores porro dolore sed illum magnam vitae enim error et provident quod praesentium impedit amet quasi laudantium doloribus. Accusantium, eaque quasi? Repellendus eum minus aspernatur harum, fuga reiciendis consequatur assumenda suscipit excepturi non asperiores unde laborum velit error quisquam, autem rem numquam doloremque. Ducimus nisi iusto nobis, modi quidem mollitia. Ipsa in at, harum modi assumenda cum blanditiis. Magni quidem corrupti, fugiat est harum, aliquam enim obcaecati rerum praesentium cum aperiam aut debitis. Rem a doloremque quaerat exercitationem qui suscipit laborum sequi? Aut nulla tempore corrupti!</span></div>
+            <div class="collapsible-header">
+              <h4>L'ambiente</h4>
+              <img src="./progetto01/public/img/Component 16.png" alt="" style=" position: absolute; top: 4px;  right: 17px">
+            </div>
+            <div class="collapsible-body"><span class="flow-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit officia iste illo, beatae voluptate dolores porro dolore sed illum magnam vitae enim error et provident quod praesentium impedit amet quasi laudantium doloribus. Accusantium, eaque quasi? Repellendus eum minus aspernatur harum, fuga reiciendis consequatur assumenda suscipit excepturi non asperiores unde laborum velit error quisquam, autem rem numquam doloremque. Ducimus nisi iusto nobis, modi quidem mollitia. Ipsa in at, harum modi assumenda cum blanditiis. Magni quidem corrupti, fugiat est harum, aliquam enim obcaecati rerum praesentium cum aperiam aut debitis. Rem a doloremque quaerat exercitationem qui suscipit laborum sequi? Aut nulla tempore corrupti!</span></div>
           </li>
         </ul>
       </div>

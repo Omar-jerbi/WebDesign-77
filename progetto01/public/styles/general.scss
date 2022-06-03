@@ -41,12 +41,14 @@
 
 
 html{
+    overflow-x: hidden;
     scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif !important;
 }
 
 // footer
-#logosocial{
-    margin: 15px 0;
+footer{
+    border-radius: 20px;
 }
 
 
@@ -77,5 +79,10 @@ hr{
   }
 
 
+.navbar-fixed{
+    li{
+        margin-right: 2vw;
+    }
+}
 
 

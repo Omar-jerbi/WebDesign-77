@@ -16,6 +16,7 @@
 }
 
 
+
 .titolo{
   padding: 20px 10vw;
   color: $font-color1-light-theme !important;
@@ -43,6 +44,10 @@
   border-radius: 0 0 20px 20px;
 }
 
+.slider{
+  box-shadow: -1px 4px 2px #00000052;
+}
+
 .collapsibles , .immagine-top, .immagine-top img{
   border-radius: 20px 20px 0 0;
 }
@@ -59,6 +64,7 @@
     *{
       border-radius: 20px 20px 20px 20px;
     }
+
   }
 
   .collapsible{
@@ -117,15 +123,23 @@
 
 
 
-
+.collapsible-header{
+  position: relative;
+  h4{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    width: 60% ;
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+}
 
 
 
 
 //////////////////////////////////////////////////////////////////////////////////
 
-.dark-mode{
+// .dark-mode{
 
 
-}
+// }
 //////////////////////////////////////////////////////////////////////////////////
