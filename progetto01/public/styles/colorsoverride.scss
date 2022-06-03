@@ -1,7 +1,7 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
 
-//OVERRIDE DEI COLORI DI BODY HEADER E FOOTER IN TUTTE E PAGINE 
+//OVERRIDE DEI COLORI DI BODY HEADER E FOOTER IN TUTTE E PAGINE  + OMBRE
 
 
 body{
@@ -13,6 +13,7 @@ body{
     nav{
         color: $font-color2-light-theme !important;
         background-color: $secondary-color-light !important;
+        box-shadow: -1px -1px 12px 1px black !important;
         *{
             color: $font-color2-light-theme !important;
             background-color: $secondary-color-light !important;          
@@ -29,6 +30,12 @@ body{
         }
     }
 
+
+    .collapsibles{
+        .contents{
+            box-shadow: -1px 6px 12px 0px #0000007d!important;
+        }
+    }
 }
 
 
