@@ -61,14 +61,22 @@
 
 .cards{
   margin-top: 300px;
+
+  .card{
+    img{
+      border: 1px solid $font-color1-light-theme;
+    }
+  }
 }
 
 
 .bttcards{
-  width: 100px;
+  background-color: $tertiary-color-light;
+  width: 150px;
   border-radius: 21px;
   top: 40px;
   right: 39px;
+  text-align: center;
 }
 
 
@@ -90,6 +98,20 @@
     }
   }
 }
+
+
+.footer-container{
+  margin: 10px 20vw;
+}
+
+
+
+
+
+
+
+
+
 //////////////////////////////////////////////////////////////////////////////////
 
 .dark-mode{
