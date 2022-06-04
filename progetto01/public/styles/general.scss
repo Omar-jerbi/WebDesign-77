@@ -26,26 +26,7 @@ main{
     }
 }
 
-@media only screen and (min-width: $medium-screen) {//tablet e pc
-    .slider .slides li .caption{
-        top: 20% !important;
-        left: 20% !important;
-    }
 
-    .slider {
-        h3{
-            font-weight: bold !important;
-            font-size: 6em !important;
-        }
-        h5{
-            font-weight: bold !important;
-            font-size: 2em !important;
-            a{
-                font-size: 2em !important;
-            }
-        }
-    }
-  }
 
 
 html{
@@ -56,7 +37,17 @@ html{
 
 // footer
 footer{
+    position: relative;
     border-radius: 20px;
+    .back-to-top{
+        position: absolute;
+        top: -37px;
+        right: 23px;
+        background-color: transparent!important;
+        *{
+            background-color: $tertiary-color-light !important;
+        }
+    }
 }
 
 
@@ -94,3 +85,14 @@ hr{
 }
 
 
+@media only screen and (min-width : $medium) {//tablet e pc
+    nav{
+        .sidenav-trigger{
+            display: none!important;
+        }
+
+        h6{
+            display: none !important;
+        }
+    }
+}
