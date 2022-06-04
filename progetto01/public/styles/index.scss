@@ -2,21 +2,6 @@
 
 
 
-@media only screen and (min-width: $U2k-screen) {
- 
-  }
-
-@media only screen and (max-width: $small-screen) {
-
-}
-
-
-@media only screen and (min-width: $medium-screen) {//tablet e pc
-
-}
-
-
-
 .titolo{
   padding: 20px 10vw;
   color: $font-color1-light-theme !important;
@@ -132,6 +117,46 @@
     font-weight: 600;
   }
 }
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 700px) {//tablet e pc
+  .collapsibles{
+    .contents{
+      top: 326px;
+    }
+  }
+
+  .cards{
+    width: 200%;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 370px;
+  }
+}
+
+@media only screen and (min-width: 800px) {//fix ipad air
+  .cards{
+    margin-left: 10vw;
+  }
+}
+
+
+@media only screen and (min-width: $U2k-screen) {//ultrawide (2k, 4k)
+ 
+}
+
+@media only screen and (max-width: $small-screen) {//phone
+
+}
+
+
+
 
 
 
