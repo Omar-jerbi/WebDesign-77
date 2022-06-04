@@ -56,7 +56,17 @@ html{
 
 // footer
 footer{
+    position: relative;
     border-radius: 20px;
+    .back-to-top{
+        position: absolute;
+        top: -37px;
+        right: 23px;
+        background-color: transparent!important;
+        *{
+            background-color: $tertiary-color-light !important;
+        }
+    }
 }
 
 

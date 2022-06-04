@@ -27,8 +27,9 @@
 
 
 
-  <script src="progetto01/public/js/dark_light.js"></script>
-  <script src="progetto01/public/js/cookieDLcheck.js"></script>
+  <!-- <script src="progetto01/public/js/dark_light.js"></script>
+  <script src="progetto01/public/js/cookieDLcheck.js"></script> -->
+  <script src="progetto01/public/js/FNbackToTop.js"></script>
   <title>BeUge</title>
 
 </head>
@@ -235,6 +236,18 @@
 <!-- FOOTER -->
 <!--  -->
   <footer class="page-footer">
+
+
+<div class="back-to-top" onclick="FNbackToTop()">
+  <a class="btn-floating btn-large waves-effect waves-light" style="padding: 8px;">
+    <img src="./progetto01/public/img/Group 4.png">
+  </a>
+</div>
+
+
+
+
+
     <div class="container footer-container">
       <div class="row">
         <div class="col l6 s12">
@@ -285,20 +298,12 @@
 
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="progetto01/node_modules/materialize-css/dist/js/materialize.min.js"></script>
-  <script type="text/javascript" src="progetto01/public/js/displayInfo_contatti_index.js"></script>
-  <script type="text/javascript" src="progetto01/public/js/cardToFG_index.js"></script>
   <script>M.AutoInit();</script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.slider');
       var instances = M.Slider.init(elems, { "indicators": false, "height": 300, "interval": 5000 });
       instances.start();
-    });
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.parallax');
-      var instances = M.Parallax.init(elems, options);
     });
   </script>
 </body>
