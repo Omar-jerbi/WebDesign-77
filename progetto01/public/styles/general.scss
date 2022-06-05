@@ -85,14 +85,14 @@ hr{
 }
 
 
-@media only screen and (min-width : $medium) {//tablet e pc
-    nav{
-        .sidenav-trigger{
-            display: none!important;
-        }
+@media only screen and (min-width : $medium-screen) {//tablet e pc
+    // nav{
+    //     .sidenav-trigger{
+    //         display: none!important;
+    //     }
 
-        h6{
-            display: none !important;
-        }
-    }
+    //     h6{
+    //         display: none !important;
+    //     }
+    // }
 }
