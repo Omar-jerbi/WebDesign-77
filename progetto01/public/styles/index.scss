@@ -2,6 +2,8 @@
 
 
 
+
+
 .titolo{
   padding: 20px 10vw;
   color: $font-color1-light-theme !important;
@@ -43,8 +45,9 @@
     position: absolute;
   }
   .contents{
+    width: 100vw;
     position: relative;
-    top: 270px;
+    top: 28vh;
     border-radius: 20px 20px 20px 20px;
     *{
       border-radius: 20px 20px 20px 20px;
@@ -60,7 +63,7 @@
 
 
 .cards{
-  margin-top: 300px;
+  margin-top: 30vh;
 
   .card{
     background-color: lighten($primary-color-light, 22);
@@ -120,52 +123,61 @@
 
 
 
+// .banner{
+//   display: none;
+// }
 
 
 
 
-
-@media only screen and (min-width: 700px) {//tablet e pc
-  .collapsibles{
-    .contents{
-      top: 326px;
-    }
-  }
-
+@media only screen and (min-width: 700px) {//tablet 
   .cards{
     width: 200%;
     margin-left: 8vw;
     margin-right: 8vw;
-    margin-top: 370px;
+    margin-top: 30vh;
   }
 }
 
-@media only screen and (min-width: 800px) {//fix ipad air
-  .cards{
-    margin-left: 10vw;
-  }
-}
-
-
-@media only screen and (min-width: 1920px) {//FHD + ultrawide (2k, 4k)
- .collapsibles{
-   .contents{
-     top:1200px
-   }
- }
-
- .cards{
-    margin-left: 16vw;
-    margin-top: 1200px;
-    .col{
-      width: 100%!important;
+@media only screen and (min-width: 1920px) {// pc
+  .collapsibles{
+    .contents{
+      top: 130vh;
     }
- }
+  }
+
+  .cards{
+    margin-top: 130vh;
+  }
 }
 
-@media only screen and (max-width: $small-screen) {//phone
 
-}
+// @media only screen and (min-width: 800px) {//fix ipad air
+//   .cards{
+//     margin-left: 10vw;
+//   }
+// }
+
+
+// @media only screen and (min-width: 1920px) {//FHD + ultrawide (2k, 4k)
+//  .collapsibles{
+//    .contents{
+//      top:1200px
+//    }
+//  }
+
+//  .cards{
+//     margin-left: 16vw;
+//     margin-top: 1200px;
+//     .col{
+//       width: 100%!important;
+//     }
+//  }
+// }
+
+// @media only screen and (max-width: $small-screen) {//phone
+
+// }
 
 
 
