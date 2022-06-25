@@ -85,6 +85,44 @@ hr{
 }
 
 
+
+#selected-page{
+    color: $footer-color !important;
+    text-decoration: underline;
+}
+
+
+
+.titolo{
+    padding: 20px 10vw;
+    color: $font-color1-light-theme !important;
+    background-color: $secondary-color-light !important;
+    h1{
+        color: $font-color2-light-theme !important;
+    }
+  
+    .fix-edges{
+      width: 100vw;
+      height: 30px;
+      position: absolute;
+      top: 42px;
+      left: 0;
+      background-color: #3b429f;
+    }
+  }
+
+  .navbar-fixed, nav, #main-nav{
+    border-radius: 0 0 15px 15px;
+  }
+
+
+@media only screen and (max-width: 850px) {
+    .footer-container{
+      padding: 10px 20vw;
+    }
+  }
+
+
 @media only screen and (min-width : $medium-screen) {//tablet e pc
     // nav{
     //     .sidenav-trigger{
