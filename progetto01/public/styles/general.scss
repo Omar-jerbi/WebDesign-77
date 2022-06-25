@@ -123,6 +123,28 @@ hr{
   }
 
 
+
+.sidenav{
+    background-color: $footer-color !important;
+    height: 60vh !important;    
+    border-radius: 0 20px 20px 0;
+    overflow-y: hidden !important;
+
+    .banner-side-menu{
+        height: 30vh;
+        border: 1px solid transparent;//per forzare radius
+        border-radius: 0 20px 20px 0;
+        background-color:darken($color: $secondary-color-light, $amount: 20);
+        color: $primary-color !important;
+        margin-bottom: 20px;
+        padding: 10px;
+        *{
+            margin-bottom: 60px;
+        }
+    }
+
+}
+
 @media only screen and (min-width : $medium-screen) {//tablet e pc
     // nav{
     //     .sidenav-trigger{
