@@ -1,16 +1,69 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
 
-.card-stacked{
-    background-color: lighten($color: $secondary-color-light, $amount: 10);
-}
+.slider, .slides, .slider .slides li{
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .slider{
+    box-shadow: -1px 4px 2px #00000052;
+  }
+
+  
+    .card{
+        background-color: lighten($primary-color-light, 22) !important;
+      img{
+        border: 1px solid $font-color1-light-theme;
+      }
+    }
 
 
-
-.dark-mode{   
-    .card-content , .card-reveal , .card-action{
-        background-color: $tertiary-color-dark !important;
+    .bttcards {
+        background-color: #de6c3f;
+        width: 150px;
+        border-radius: 36px;
+        top: 41px;
+        right: 39px;
+        text-align: center;
+        height: 60px;
+        padding-top: 10px;
     }
     
-}
-    
+
+  .row{
+    border-radius: 40px 0 40px 0;
+    .col{
+      border-radius: 40px 0 40px 0;
+      .card{
+        border-radius: 40px 0 40px 0;
+        .card-image{
+          border-radius: 40px 0 40px 0;
+          *{
+            border-radius: 40px 0 40px 0;
+          }
+        .card-content{
+          border-radius: 40px 0 40px 0;
+        }
+        }
+      }
+    }
+  }
+
+
+
+
+  @media only screen and (min-width: 1920px) {//desktop
+
+    .cards-pc{
+        width: 30% !important;
+        margin-left: 45px !important;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px){//phone
+    .cards-pc{
+      width: 50% !important;
+  }
+
+  }

@@ -1,6 +1,14 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
 
+
+main{
+    p, h5, h6{
+        line-height: 32px !important;
+    }
+}
+
+
  .slider {
     h3{
         font-weight: bold !important;
@@ -18,35 +26,28 @@
     }
 }
 
-@media only screen and (min-width: $medium-screen) {//tablet e pc
-    .slider .slides li .caption{
-        top: 20% !important;
-        left: 20% !important;
-    }
 
-    .slider {
-        h3{
-            font-weight: bold !important;
-            font-size: 6em !important;
-        }
-        h5{
-            font-weight: bold !important;
-            font-size: 2em !important;
-            a{
-                font-size: 2em !important;
-            }
-        }
-    }
-  }
 
 
 html{
+    overflow-x: hidden;
     scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif !important;
 }
 
 // footer
-#logosocial{
-    margin: 15px 0;
+footer{
+    position: relative;
+    border-radius: 20px;
+    .back-to-top{
+        position: absolute;
+        top: -37px;
+        right: 23px;
+        background-color: transparent!important;
+        *{
+            background-color: $tertiary-color-light !important;
+        }
+    }
 }
 
 
@@ -63,7 +64,6 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    // transition: background-color 1s ease;    ////GENERATO DA EVENTLISTENER
   }
 
 main {
@@ -78,5 +78,81 @@ hr{
   }
 
 
+.navbar-fixed{
+    li{
+        margin-right: 2vw;
+    }
+}
 
 
+
+#selected-page{
+    color: $footer-color !important;
+    text-decoration: underline;
+}
+
+
+
+.titolo{
+    padding: 20px 10vw;
+    color: $font-color1-light-theme !important;
+    background-color: $secondary-color-light !important;
+    h1{
+        color: $font-color2-light-theme !important;
+    }
+  
+    .fix-edges{
+      width: 100vw;
+      height: 30px;
+      position: absolute;
+      top: 42px;
+      left: 0;
+      background-color: #3b429f;
+    }
+  }
+
+  .navbar-fixed, nav, #main-nav{
+    border-radius: 0 0 15px 15px;
+  }
+
+
+@media only screen and (max-width: 850px) {
+    .footer-container{
+      padding: 10px 20vw;
+    }
+  }
+
+
+
+.sidenav{
+    background-color: $footer-color !important;
+    height: 60vh !important;    
+    border-radius: 0 20px 20px 0;
+    overflow-y: hidden !important;
+
+    .banner-side-menu{
+        height: 30vh;
+        border: 1px solid transparent;//per forzare radius
+        border-radius: 0 20px 20px 0;
+        background-color:darken($color: $secondary-color-light, $amount: 20);
+        color: $primary-color !important;
+        margin-bottom: 20px;
+        padding: 10px;
+        *{
+            margin-bottom: 60px;
+        }
+    }
+
+}
+
+@media only screen and (min-width : $medium-screen) {//tablet e pc
+    // nav{
+    //     .sidenav-trigger{
+    //         display: none!important;
+    //     }
+
+    //     h6{
+    //         display: none !important;
+    //     }
+    // }
+}

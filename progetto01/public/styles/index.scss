@@ -2,148 +2,179 @@
 
 
 
-@media only screen and (min-width: $U2k-screen) {
-    .cards {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        left: -10vw;
-        right: 10vw;
-        position: relative;
-        width: 70vw;
-    }
-  }
-
-@media only screen and (max-width: $small-screen) {
-    .cards {
-        flex-direction: column;
-    }
-}
-
-
-@media only screen and (min-width: $medium-screen) {//tablet e pc
-  .cards{
-    .card{
-      margin-right: 10px;
-    }
-  }
-
-  .caption{
-    h3{
-      width: 80%;
-      margin-bottom: 50px;
-    }
-  }
-}
-
-
-
-  
-.cards{
-    display: flex;
-   .row{
-        .col{
-            width: fit-content;
-        }
-    }
-}
-
-
-.slider .indicators .indicator-item.active{
-    background-color: $font-color3-light-theme!important;
+.slider, .slides, .slider .slides li{
+  border-radius: 0 0 20px 20px;
 }
 
 .slider{
-  a{
-    color: $font-color1-dark-theme;
+  box-shadow: -1px 4px 2px #00000052;
+}
+
+.collapsibles , .immagine-top, .immagine-top img{
+  border-radius: 20px 20px 0 0;
+}
+
+.collapsibles{
+  position: relative;
+  .immagine-top{
+    position: absolute;
+  }
+  .contents{
+    width: 100vw;
+    position: relative;
+    top: 28vh;
+    border-radius: 20px 20px 20px 20px;
+    *{
+      border-radius: 20px 20px 20px 20px;
+    }
+
+  }
+
+  .collapsible{
+    background-color: white;
   }
 }
+
+
 
 .cards{
-  z-index: 10;
-  a{
-    color: $font-color2-light-theme!important;
-  }
-}
+  margin-top: 30vh;
 
-.welcome{
-  padding: 5px 5px;
-  background-color: #fbfbfb52;
-  box-shadow: 0px 1px 6px 0px;
-}
-
-
-.parallax-container{
-  height: 400px;
-  
   .card{
-    background-color: transparent; 
-    box-shadow: none;
+    background-color: lighten($primary-color-light, 22);
+    img{
+      border: 1px solid $font-color1-light-theme;
+    }
   }
 }
 
-.cards{
-  .card-content{
-    background-color: lighten($secondary-color, 10)!important;
-  }
-  
-  .card-reveal{
-    background-color: lighten($secondary-color, 10) !important;
-  }
+.bttcards {
+  background-color: #de6c3f;
+  width: 150px;
+  border-radius: 36px;
+  top: 41px;
+  right: 39px;
+  text-align: center;
+  height: 60px;
+  padding-top: 10px;
 }
 
 
-.collection{
-  .collection-header, .collection-item{
-    background-color: lighten($secondary-color, 10)!important;
-  }
-}
-
-//////////////////////////////////////////////////////////////////////////////////
-
-.dark-mode{
-  $tertiary-color: $tertiary-color-dark;
-
-  .welcome{
-    box-shadow: 0px 1px 6px 0px #625f5fbf;
-    background-color: #00000061;
-  }
-
-  .slider .indicators .indicator-item.active{
-    background-color: $font-color3-dark-theme!important;
-  }
-  .card{
-    background-color: $tertiary-color-dark;        
-  }
-  
-  h1, h2, h3, h4, h5, h6{
-    color:$font-color2-dark-theme;
-  }
-
-  .parallax-container{
+.row{
+  border-radius: 40px 0 40px 0;
+  .col{
+    border-radius: 40px 0 40px 0;
     .card{
-      background-color: transparent;
+      border-radius: 40px 0 40px 0;
+      .card-image{
+        border-radius: 40px 0 40px 0;
+        *{
+          border-radius: 40px 0 40px 0;
+        }
+      .card-content{
+        border-radius: 40px 0 40px 0;
+      }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.collapsible-header{
+  position: relative;
+  h4{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    width: 60% ;
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+}
+
+
+
+
+
+@media only screen and (min-width: 700px) {//tablet 
+  .cards{
+    width: 200%;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 30vh;
+  }
+}
+
+@media only screen and (min-width: 1920px) {// pc
+  .collapsibles{
+    .contents{
+      top: 96vh;
     }
   }
 
-  .collection{
-    box-shadow: 0px 2px 2px 0px #625f5fbf;
-    .collection-header, .collection-item{
-      background-color: $tertiary-color-dark !important;
-    }
+  .collapsible{
+    padding: 20px 100px !important;
   }
-
 
   .cards{
-    .card-content{
-      background-color: $tertiary-color !important;
-    }
-    
-    .card-reveal{
-      background-color: $tertiary-color !important;
-    }
-    
+    margin-top: 100vh;
   }
 
+  .slider{
+    height: 500px !important;
+    .slides{
+      height: 500px !important;
+    }
+  }
+
+  .immagine-top{
+    img{
+      height: 100vh;
+    }
+  }
+
+
+  #r1{
+    width: 100vw;
+  }
+
+
+  .cards-pc{
+    width: 27% !important;
+    margin: 0 20px ;
+  }
 }
-//////////////////////////////////////////////////////////////////////////////////
+
+
+// @media only screen and (min-width: 800px) {//fix ipad air
+//   .cards{
+//     margin-left: 10vw;
+//   }
+// }
+
+
+// @media only screen and (min-width: 1920px) {//FHD + ultrawide (2k, 4k)
+//  .collapsibles{
+//    .contents{
+//      top:1200px
+//    }
+//  }
+
+//  .cards{
+//     margin-left: 16vw;
+//     margin-top: 1200px;
+//     .col{
+//       width: 100%!important;
+//     }
+//  }
+// }
+
+// @media only screen and (max-width: $small-screen) {//phone
+
+// }
+
+
+
+

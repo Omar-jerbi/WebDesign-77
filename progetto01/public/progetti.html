@@ -21,9 +21,9 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
-  <script src="./js/dark_light.js"></script>
-  <script src="./js/cookieDLcheck.js"></script>
+
+
+    <script src="../public/js/FNbackToTop.js"></script>
   <title>progetti</title>
   
   </head>
@@ -35,29 +35,24 @@
     <nav>
       <div id="main-nav" class="nav-wrapper row">
         <a href="#!" class="brand-logo col s3 offset-s1 hide-on-med-and-down" style="width: fit-content;">
-          UnigeXBeigua
-          <i class="material-icons medium" style="font-size: 1.2em;color: white;">nature_people</i>
+          BeUge
         </a>
 
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-        <div class="col s6 left show-on-medium-and-down hide-on-large-only" style="height: inherit;">
-          <i class="material-icons medium" style="font-size: 2em; display: inline;">nature_people</i>
-          <h6 style="font-size: larger; display: inline; position: absolute; top: 17%; left: 6.5em;;">UnigeXBeigua</h6>
+        <div class="col s6 left show-on-medium-and-down hide-on-large-only" style="height: inherit; width: 20%;">
+          <h6 style="font-size: larger; display: inline; position: absolute; top: 8%; left: 10.5em; font-size: 1.8em;">BeUge</h6>
         </div>
         <div class="right show-on-medium-and-down">
-          <i id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
+          <i style="display: none;" id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
         </div>
 
 
         <ul class="right hide-on-med-and-down">
           <li><a href="../../index.html">Home</a></li>
-          <li><a href="programma.html">Programma</a></li>
-          <li><a href="progetti.html">Progetti</a></li>
-          <li><a href="relatori.html">Relatori</a></li>
-          <li><a href="partner.html">Partner</a></li>
-          <li><a href="UnigeXBeigua.html">UnigeXBeigua</a></li>
-          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="./progetti.html" id="selected-page">Progetti</a></li>
+          <li><a href="./beuge.html">BEuGE</a></li>
+          <li style="margin-right: 10vw;"><a href="./aboutus.html">About Us</a></li>
         </ul>
 
       </div>
@@ -65,236 +60,394 @@
   </div>
 
   <ul class="sidenav" id="mobile-demo">
+    <li class="banner-side-menu" style="text-align: center;">
+      <h5>BeUge</h5>
+      <h3>-3 giorni</h3>
+      <h5>all'inizio dell'evento</h5>
+    </li>
     <li><a href="../../index.html">
-        <i class="material-icons">home</i>
-        Home</a></li>
-    <li><a href="programma.html">
-        <i class="material-icons">schedule</i>
-        Programma</a></li>
-
-    <li><a href="progetti.html">
-        <i class="material-icons">work</i>
-        Progetti</a></li>
-
-    <li><a href="relatori.html">
-        <i class="material-icons">group</i>
-        Relatori</a></li>
-    <li><a href="partner.html">
-        <i class="material-icons">web</i>
-        Partner</a></li>
-    <li><a href="UnigeXBeigua.html">
+        <i class="material-icons">home</i>Home</a></li>
+    <li><a href="./progetti.html">
+        <i class="material-icons">work</i>Progetti</a></li>
+    <li><a href="./beuge.html">
         <i class="material-icons">nature_people</i>
-        UnigeXBeigua</a></li>
-    <li><a href="AboutUs.html">
+        BEuGE</a></li> 
+    <li><a href="./aboutus.html">
         <i class="material-icons">event_note</i>
         About Us</a></li>
   </ul>
   <!-- FINE NAV -->
 
 <main>
-  <div class="container">    
-    <br>
-    <div class="presentazione">
-      <h3>Progetti 2022</h3>
-      <hr>
-      <br>
-      <p class="flow-text">Il Brief di quest’anno è cominciato riflettendo sulle conseguenze ambientali e sociali causate dal conflitto di interessi sul parco del Beigua.<br><br> Obbiettivo condiviso è quello di: sensibilizzare con mezzi eterogenei su tematiche connesse a questa vicenda.</p>
-    </div>
-    <br>
 
+  <div class="titolo">
+    <h1 style="margin-top: 20px;">
+      I progetti
+    </h1>
 
-
-<!-- card 1 -->
-    <div class="col s12 m7">
-        <div class="card horizontal large">
-          <div class="card-image">
-            <img src="../public/img/posterligurimuoiono.png">
-          </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <h5>I liguri muoiono prima</h5>
-              <br>
-              <p class="flow-text">Il progetto consiste in una campagna di guerrilla comunication, attraverso un’azione autonoma da compiere dentro al sito.</p>
-            </div>
-            <div class="card-action">
-              <a href="./progetti/ligurimuoionoprima.html">Vai al progetto</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    <br>
-    <br>
-
-    <!-- card 2 -->
-    <div class="col s12 m7">
-        <div class="card horizontal large">
-
-        <div class="card-stacked">
-            <div class="card-content">
-            <h5>H2Animato</h5>
-            <br>
-            <p class="flow-text">H2Animato vuole sensibilizzare sul problema della presenza di amianto nel nostro pianeta, con particolare attenzione agli effetti sulla salute.
-            </div>
-            <div class="card-action">
-            <a href="#">Vai al progetto</a>
-            </div>
-        </div>
-        <div class="card-image">
-            <img src="../public/img/H2A.png">
-        </div>
-        </div>
-    </div>
-    <br>
-    <br>
-
-    <!-- card 3 -->
-    <div class="col s12 m7">
-        <div class="card horizontal large">
-        <div class="card-image">
-            <img src="../public/img/WhatsApp Image 2022-05-14 at 12.09.49 PM.jpeg">
-        </div>
-        <div class="card-stacked">
-            <div class="card-content">
-            <h5>Eternit</h5>
-            <br>
-            <p class="flow-text">Timeline che analizza la catastrofe di Casale Monferrato in merito alla propagazione di amianto tossico.
-            </div>
-            <div class="card-action">
-            <a href="#">Vai al progetto</a>
-            </div>
-        </div>
-        </div>
-    </div>
-    <br>
-    <br>
-
-
-    <!-- card 4 -->
-    <div class="col s12 m7">
-        <div class="card horizontal large">
-
-        <div class="card-stacked">
-            <div class="card-content">
-            <h5>Mesote Liberi</h5>
-            <br>
-            <p class="flow-text">Il mesotelioma è una delle numerose conseguenze che causa l’inalazione
-              di amianto, MesoteLiberi vuole agire concretamente sul territorio.</p>
-            </div>
-            <div class="card-action">
-            <a href="#">Vai al progetto</a>
-            </div>
-        </div>
-        <div class="card-image">
-            <img src="../public/img/mesote liberi.jpg">
-        </div>
-        </div>
-    </div>
-    <br>
-    <br>
-
-
-    <!-- card 5 -->
-    <div class="col s12 m7">
-        <div class="card horizontal large">
-        <div class="card-image">
-            <img src="../public/img/invasione amianto.png">
-        </div>
-        <div class="card-stacked">
-            <div class="card-content">
-            <h5>La famosa invasione dell'amianto in Liguria</h5>
-            <br>
-            <p class="flow-text">Qui saranno presentati in chiaro i potenziali danni che emergeranno dalla trivellazione di amianto nel Beigua</p>
-            </div>
-            <div class="card-action">
-            <a href="#">Vai al progetto</a>
-            </div>
-        </div>
-        </div>
-    </div>
-    <br>
-    <br>
-
-
-    <!-- card 6 -->
-    <div class="col s12 m7">
-        <div class="card horizontal large">
-
-        <div class="card-stacked">
-            <div class="card-content">
-            <h5>PROGETTO VUOTO</h5>
-            <br>
-            <p class="flow-text">I am a very simple card. I am good at containing small bits of information.</p>
-            <p class="flow-text">I am a very simple card. I am good at containing small bits of information.</p>
-            </div>
-            <div class="card-action">
-            <a href="#">Vai al progetto</a>
-            </div>
-        </div>
-        <div class="card-image">
-            <img src="https://picsum.photos/id/259/0/0">
-        </div>
-        </div>
-    </div>
-    <br>
-    <br>
-
-
-
-
-
-<!-- END container -->
+    <div class="fix-edges"></div>
   </div>
-    
 
+
+    <!-- slider -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="./img/CASA ALPINI4.jpg">
+        </li>
+        <li>
+          <img src="./img/parco-beigua-671551.jpg">
+        </li>
+        <li>
+          <img src="https://st.ilfattoquotidiano.it/wp-content/uploads/2021/04/12/MONTEREIXABIS-scaled.jpg">
+        </li>
+        <li>
+          <img src="./img/Panorama-dal-Beigua-Ft.-Monica-Saettone.jpg">
+        </li>
+        <li>
+          <img src="./img/20190822_175604 (1).jpg">
+        </li>
+      </ul>
+    </div>
+    <!-- END slider -->
+
+
+<br><br><br>
+
+    <div class="container welcome">
+      <h5>
+        I progetti sono l’insieme delle azioni che coordinate hanno deciso di muovere un dito contro la attuale situazione in beigua.
+      </h5>
+    </div>
+
+<br><br><br>
+
+
+<div class="container show-on-small hide-on-med-and-up">
+  <img src="./img/progetti-vian.png" alt="" srcset="">
+</div>
+
+
+
+<br><br><br>
+
+
+<div class="container">
+  <h2>Progetti:</h2>
+</div>
+
+<div class="row" id="r1">
+
+  <div class="col s12 m6 cards-pc">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s12 m6 cards-pc">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s12 m6 cards-pc hide-on-med-and-down show-on-large">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row" id="r2">
+
+  <div class="col s12 m6 cards-pc">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s12 m6 cards-pc">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s12 m6 cards-pc hide-on-med-and-down show-on-large">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row" id="r3">
+
+  <div class="col s12 m6 cards-pc">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s12 m6 cards-pc">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s12 m6 cards-pc hide-on-med-and-down show-on-large">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+
+<div class="row" id="r4">
+
+  <div class="col s12 m6 cards-pc">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s12 m6 cards-pc">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s12 m6 cards-pc hide-on-med-and-down show-on-large">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row show-on-medium-and-down hide-on-large-only" id="r5PHONETAB">
+
+  <div class="col s12 m6 cards-pc">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s12 m6 cards-pc">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s12 m6 cards-pc hide-on-med-and-down show-on-large">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row show-on-medium-and-down hide-on-large-only" id="r6PHONETAB">
+
+  <div class="col s12 m6 cards-pc">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s12 m6 cards-pc">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s12 m6 cards-pc hide-on-med-and-down show-on-large">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://www.lamialiguria.it/images/VarazzeOutF_2017_2.jpg">
+      </div>
+      <div class="card-content">
+        <h3 style="margin: 0">I nostri ospiti</h3>
+        <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 </main>
 
 
+
+<br>
+<br><br><br>
 <!--  -->
 <!-- FOOTER -->
 <!--  -->
 <footer class="page-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Gruppo 77 UNIGE</h5>
-        <p class="grey-text text-lighten-4"><a href="../../index.html">Home Page</a></p>
-        <p class="grey-text text-lighten-4"><a href="../../index.html#contatti">Contatti</a></p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
-        <ul>
-          <li id="logosocial">
-            <a class="grey-text text-lighten-3" href="#!">
-              <i class="fa fa-twitter" style="font-size:36px"></i>
-              ciao sono il nickname
-            </a>
-          </li>
-          <li id="logosocial">
-            <a class="grey-text text-lighten-3" href="#!">
-              <i class="fa fa-instagram" style="font-size:36px"></i>
-              ciao sono il nickname
-            </a>
-          </li>
-          <li id="logosocial">
-            <a class="grey-text text-lighten-3" href="#!">
-              <i class="fa fa-facebook" style="font-size:36px"></i>
-              ciao sono il nickname
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container" style="background-color: unset;">
-      © 2022 Copyright
-      <a class="grey-text text-lighten-4 right" href="https://www.unige.it"
-        style="font-size:larger ; background-color: unset;">Unige</a>
-    </div>
-  </div>
-</footer>
 
+
+  <div class="back-to-top" onclick="FNbackToTop()">
+    <a class="btn-floating btn-large waves-effect waves-light" style="padding: 8px;">
+      <img src="./img/Group 4.png">
+    </a>
+  </div>
+  
+  
+  
+  
+  
+      <div class="container footer-container">
+        <div class="row">
+          <div class="col l6 s12">
+              <img src="./img/Component 8.png" alt="logo">
+              <h4 style="font-weight: 450;">Gruppo 77</h4>
+          </div>
+  
+          <div class="col l6 s12">
+          <h6 style="text-decoration:underline; margin-top: 30px;">Design:</h6>
+          <p>Gabriella Bonetti  </p>
+           <p>  Luca Galli </p>
+           <p> Gabriele Moggio </p> 
+          
+          <h6 style="text-decoration:underline; margin-top: 30px;">Developmet:</h6>
+          <p>Omar Jerbi</p>
+           <p>  Erik Ricci </p>
+           <p> Gianluca Napolitano </p> 
+           <p> Luca Insinna </p> 
+        </div>
+          
+          <div class="col l4 offset-l2 s12">
+            <h5  style="margin-top: 30px;">Social Media</h5>
+                <a class="grey-text text-lighten-3" href="#!" style="margin-right: 15px;">
+                  <i class="fa fa-twitter" style="font-size:36px"></i>
+                </a>
+  
+                <a class="grey-text text-lighten-3" href="#!"  style="margin-right: 15px;">
+                  <i class="fa fa-instagram" style="font-size:36px"></i>
+                </a>
+  
+                <a class="grey-text text-lighten-3" href="#!"  style="margin-right: 15px;">
+                  <i class="fa fa-facebook" style="font-size:36px"></i>
+                </a>
+  
+          </div>
+          
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container" style="background-color: unset;">
+          © 2022 Copyright
+          <a class="black-text text-lighten-4 right" href="https://www.unige.it"
+            style="font-size:larger ; background-color: unset;">Unige</a>
+        </div>
+      </div>
+    </footer>
+  
 
 
 
@@ -305,7 +458,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.slider');
-        var instances = M.Slider.init(elems, {"indicators":true, "height": 800, "interval":4000});
+        var instances = M.Slider.init(elems, { "indicators": false, "height": 300, "interval": 5000 });
         instances.start();
       });
 

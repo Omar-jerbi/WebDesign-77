@@ -1,38 +1,39 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
 
-//OVERRIDE DEI COLORI DI BODY HEADER E FOOTER IN TUTTE E PAGINE 
+//OVERRIDE DEI COLORI DI BODY HEADER E FOOTER IN TUTTE E PAGINE  + OMBRE
 
 
 body{
-    $tertiary-color: $tertiary-color-light;
+    $tertiary-color: $tertiary-color-light !important;
 
-    color: $font-color1-light-theme;
-    background-color: $secondary-color-light;
+    color: $font-color1-light-theme !important;
+    background-color: $primary-color-light !important;
 
-    nav, .page-footer{
-        color: $font-color1-light-theme !important;
-        background-color: $primary-color-light !important;
+    nav{
+        color: $font-color2-light-theme !important;
+        background-color: $secondary-color-light !important;
+        box-shadow: -1px -1px 12px 1px black !important;
         *{
-            color: $font-color1-light-theme !important;
-            background-color: $primary-color-light !important;          
+            color: $font-color2-light-theme !important;
+            background-color: $secondary-color-light !important;          
         }
     }
-    
+   
 
-    h1, h2, h3, h4, h5, h6{
-        color:$font-color1-light-theme;
+    footer{
+        color: $footer-color-font !important;
+        background-color: $footer-color !important;
+        *{
+            color: $footer-color-font !important;
+            background-color: $footer-color !important;
+        }
     }
 
-    .slider{
-        h3{
-            color: rgb(0, 0, 0) !important;
-        }
-        h5{
-            color:rgb(255, 255, 255) !important;
-            a{
-                color:rgb(255, 255, 255)!important;
-            }
+
+    .collapsibles{
+        .contents{
+            box-shadow: -1px 6px 12px 0px #0000007d!important;
         }
     }
 }
@@ -41,33 +42,5 @@ body{
 // dark mode !!! lasciare in fondo!!!
 .dark-mode{//body
 
-    color: $font-color1-dark-theme!important;
-    background-color: $secondary-color-dark!important;
-
-    nav, .page-footer{
-        color: $font-color2-dark-theme;
-        background-color: $primary-color-dark!important;
-        *{
-            color: $font-color2-dark-theme!important;
-            background-color: $primary-color-dark!important;
-        }
-    }
-
-    h1, h2, h3, h4, h5, h6{
-        color:$font-color2-dark-theme;
-    }
-
-
-    .slider{
-        background-color: rgba(0, 0, 0, 0.493);
-        height: 800px!important;
-        .slides{
-            opacity: 0.8;
-        }
-        h3{
-            color: black;
-        }
-    }
-
-  }
+}
 
