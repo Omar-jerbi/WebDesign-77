@@ -49,7 +49,29 @@
     }
   }
 
+.collapsible{
+  border-color: transparent !important;
+  border-radius: 20px 5px 20px 5px;
 
+  *{
+    border-radius: 20px 5px 20px 5px;
+  }
+
+  .active{
+    background-color: white;
+  }
+
+  .collapsible-header{
+    background-color: $secondary-color;
+    color: white;
+  }
+
+  .collapsible-body{
+    border-radius: 0px 0px 20px 0px;
+    background-color: white;
+  }
+
+}
 
 
   @media only screen and (min-width: 1920px) {//desktop
