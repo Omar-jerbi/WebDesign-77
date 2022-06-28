@@ -1,0 +1,47 @@
+@import "../../node_modules/materialize-css/sass/materialize.scss";
+
+
+main{
+    margin-bottom: 0;
+}
+
+.faq{
+    border-radius: 20px 20px 0 0;
+    color: $footer-color;
+    height: 65vh;
+    background-color: $secondary-color;
+
+    .collapsible{
+        border-color: transparent !important;
+        border-radius: 20px 5px 20px 5px;
+      
+        *{
+          border-radius: 20px 5px 20px 5px;
+        }
+      
+        .active{
+          background-color: white;
+        }
+      
+        .collapsible-header{
+          background-color: $primary-color;
+          color: white;
+        }
+      
+        .collapsible-body{
+          border-radius: 0px 0px 20px 0px;
+          background-color: white;
+        }
+      
+      }
+      
+}
+
+.filler{
+    background-color: $secondary-color!important;
+    position: absolute;
+    z-index: -1;
+    height:20px;
+    width: 100vw;
+    top: 0;
+}
