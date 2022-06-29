@@ -1,6 +1,15 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
 
+.slider, .slides, .slider .slides li{
+  border-radius: 0 0 20px 20px;
+}
+
+.slider{
+  box-shadow: -1px 4px 2px #00000052;
+}
+
+
 main{
     margin-bottom: 0;
 }
@@ -42,7 +51,7 @@ main{
     position: absolute;
     background-color: white;
     height: 250px;
-    width: 90%;
+    width: inherit;
     top: -120px;
     border-radius: 20px;
     text-align: center;
@@ -93,4 +102,36 @@ main{
     height:20px;
     width: 100vw;
     top: 0;
+}
+
+
+.des, .dev{
+  .row{
+    .col{
+      border-radius: 20px!important;
+      .card{
+        border-radius: 20px!important;
+        .card-image{
+          border-radius: 20px!important;
+          img{
+            border-radius: 20px!important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.btn-floating{
+  background-color: #de6c3f;
+}
+
+@media only screen and (min-width: 1700px){//pc
+  .faq{
+    .newsletter{
+      width: 66%;
+    }
+  }
 }

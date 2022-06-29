@@ -93,7 +93,7 @@
   }
 
   .cards{
-    margin-top: 100vh;
+    margin-top: 100vh !important;
   }
 
   .slider{
@@ -120,35 +120,3 @@
     margin: 0 20px ;
   }
 }
-
-
-// @media only screen and (min-width: 800px) {//fix ipad air
-//   .cards{
-//     margin-left: 10vw;
-//   }
-// }
-
-
-// @media only screen and (min-width: 1920px) {//FHD + ultrawide (2k, 4k)
-//  .collapsibles{
-//    .contents{
-//      top:1200px
-//    }
-//  }
-
-//  .cards{
-//     margin-left: 16vw;
-//     margin-top: 1200px;
-//     .col{
-//       width: 100%!important;
-//     }
-//  }
-// }
-
-// @media only screen and (max-width: $small-screen) {//phone
-
-// }
-
-
-
-

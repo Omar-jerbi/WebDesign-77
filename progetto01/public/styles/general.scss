@@ -148,7 +148,7 @@ hr{
     padding: 20px 10vw;
     color: $font-color1-light-theme !important;
     background-color: $secondary-color-light !important;
-    h1{
+    h1, h2, h3, h4, h5{
         color: $font-color2-light-theme !important;
     }
   
@@ -162,16 +162,11 @@ hr{
     }
   }
 
-  .navbar-fixed, nav, #main-nav{
+.navbar-fixed, nav, #main-nav{
     border-radius: 0 0 15px 15px;
   }
 
 
-@media only screen and (max-width: 850px) {
-    .footer-container{
-      padding: 10px 20vw;
-    }
-  }
 
 
 
@@ -196,14 +191,16 @@ hr{
 
 }
 
-@media only screen and (min-width : $medium-screen) {//tablet e pc
-    // nav{
-    //     .sidenav-trigger{
-    //         display: none!important;
-    //     }
 
-    //     h6{
-    //         display: none !important;
-    //     }
-    // }
-}
+@media only screen and (max-width: 850px) {//solo tablet e phone
+    .footer-container{
+      padding: 10px 20vw;
+    }
+  }
+
+
+  @media only screen and (max-width: 450px){//solo phone
+    .titolo{
+        text-align: center;
+    }
+  }
