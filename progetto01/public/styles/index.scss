@@ -37,24 +37,6 @@
 
 
 
-.cards{
-  margin-top: 30vh;
-  .row{
-    margin-bottom: 60px!important;
-  }
-}
-
-.bttcards {
-  background-color: #de6c3f;
-  width: 150px;
-  border-radius: 36px;
-  top: 41px;
-  right: 39px;
-  text-align: center;
-  height: 60px;
-  padding-top: 10px;
-}
-
 
 .row{
   border-radius: 40px 0 40px 0;
@@ -74,32 +56,6 @@
     }
   }
 }
-
-
-.sect{
-  height: 35vh;
-  border-radius: 60px 0;
-  background-size: cover;
-  position: relative;
-}
-
-.sect-tit{
-  background-color: rgba(255, 255, 255, 0.541);
-  height: 40%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  border-radius: 0 0 60px 0;
-  padding: 10px;
-
-}
-
-.bttcards{
-  position: absolute;
-  left: 0;
-  top: 92%;
-}
-
 
 
 .collapsible-header{
@@ -137,7 +93,7 @@
   }
 
   .cards{
-    margin-top: 100vh;
+    margin-top: 100vh !important;
   }
 
   .slider{
@@ -164,35 +120,3 @@
     margin: 0 20px ;
   }
 }
-
-
-// @media only screen and (min-width: 800px) {//fix ipad air
-//   .cards{
-//     margin-left: 10vw;
-//   }
-// }
-
-
-// @media only screen and (min-width: 1920px) {//FHD + ultrawide (2k, 4k)
-//  .collapsibles{
-//    .contents{
-//      top:1200px
-//    }
-//  }
-
-//  .cards{
-//     margin-left: 16vw;
-//     margin-top: 1200px;
-//     .col{
-//       width: 100%!important;
-//     }
-//  }
-// }
-
-// @media only screen and (max-width: $small-screen) {//phone
-
-// }
-
-
-
-

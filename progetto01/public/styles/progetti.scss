@@ -10,44 +10,7 @@
   }
 
   
-    .card{
-        background-color: lighten($primary-color-light, 22) !important;
-      img{
-        border: 1px solid $font-color1-light-theme;
-      }
-    }
-
-
-    .bttcards {
-        background-color: #de6c3f;
-        width: 150px;
-        border-radius: 36px;
-        top: 41px;
-        right: 39px;
-        text-align: center;
-        height: 60px;
-        padding-top: 10px;
-    }
     
-
-  .row{
-    border-radius: 40px 0 40px 0;
-    .col{
-      border-radius: 40px 0 40px 0;
-      .card{
-        border-radius: 40px 0 40px 0;
-        .card-image{
-          border-radius: 40px 0 40px 0;
-          *{
-            border-radius: 40px 0 40px 0;
-          }
-        .card-content{
-          border-radius: 40px 0 40px 0;
-        }
-        }
-      }
-    }
-  }
 
 .collapsible{
   border-color: transparent !important;
@@ -71,6 +34,13 @@
     background-color: white;
   }
 
+}
+
+
+
+
+.cards{
+  margin-top: 20px!important;
 }
 
 
