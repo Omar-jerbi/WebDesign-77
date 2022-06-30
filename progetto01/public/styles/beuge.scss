@@ -19,3 +19,39 @@
       }
     }
   }
+
+
+  .ospiti{
+    .col{
+      border-radius: 20px;
+      .card{
+        border-radius: 20px;
+        *{
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  .banner-evento{
+    height: 40vh;
+    border-radius: 20px;
+    background-color: $footer-color;
+    text-align: center;
+    box-shadow: 0px 2px 7px #0000007a;
+    .main-sect{
+      padding-top: 50px;
+      height: 75%;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0px 1px 3px #00000057;
+    }
+  }
+
+  @media only screen and (max-width: 500px){//phone
+    .banner-evento{
+      .main-sect{
+        padding-top: 8%;
+      }
+    }
+  }
