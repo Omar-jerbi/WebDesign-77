@@ -41,21 +41,21 @@
 
 .cards{
   margin-top: 20px!important;
+  .row{
+    .col{
+      margin-bottom: 20px;
+    }
+  }
 }
 
-
-  @media only screen and (min-width: 1920px) {//desktop
-
-    .cards-pc{
-        width: 30% !important;
-        margin-left: 45px !important;
+.progetti{
+  .prog-card{
+    border-radius: 20px !important;
+  }
+  
+  .row{
+    .col{
+      margin-bottom: 20px;
     }
-
   }
-
-  @media only screen and (max-width: 600px){//phone
-    .cards-pc{
-      width: 50% !important;
-  }
-
-  }
+}
