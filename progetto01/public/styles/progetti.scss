@@ -41,4 +41,21 @@
 
 .cards{
   margin-top: 20px!important;
+  .row{
+    .col{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.progetti{
+  .prog-card{
+    border-radius: 20px !important;
+  }
+  
+  .row{
+    .col{
+      margin-bottom: 20px;
+    }
+  }
 }
