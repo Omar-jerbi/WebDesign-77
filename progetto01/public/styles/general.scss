@@ -192,6 +192,16 @@ hr{
 }
 
 
+#tit-sm-med{
+  font-size: larger;
+  display: inline;
+  position: absolute;
+  top: 8%;
+  left: 80%;
+  font-size: 1.8em;
+}
+
+
 @media only screen and (max-width: 850px) {//solo tablet e phone
     .footer-container{
       padding: 10px 20vw;
@@ -202,5 +212,9 @@ hr{
   @media only screen and (max-width: 450px){//solo phone
     .titolo{
         text-align: center;
+    }
+
+    #tit-sm-med{
+      left: 70%;
     }
   }
