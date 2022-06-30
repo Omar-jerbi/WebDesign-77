@@ -8,3 +8,14 @@
   .slider{
     box-shadow: -1px 4px 2px #00000052;
   }
+
+
+  .slides  {
+    .caption{
+      h4{
+        color: $primary-color !important;
+        text-shadow: 2px 2px 0px black;
+        font-size: 48px;
+      }
+    }
+  }
