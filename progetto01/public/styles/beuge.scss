@@ -1,0 +1,87 @@
+@import "../../node_modules/materialize-css/sass/materialize.scss";
+
+
+.slider, .slides, .slider .slides li{
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .slider{
+    box-shadow: -1px 4px 2px #00000052;
+  }
+
+
+  .slides  {
+    .caption{
+      h4{
+        color: $primary-color !important;
+        text-shadow: 2px 2px 0px black;
+        font-size: 48px;
+      }
+    }
+  }
+
+
+  .ospiti{
+    .col{
+      border-radius: 20px;
+      .card{
+        border-radius: 20px;
+        *{
+          border-radius: 20px;
+        }
+        .card-reveal{
+          height: 80% !important;
+        }
+      }
+    }
+  }
+
+
+  .sfondo-viola{
+    background-color: $secondary-color;
+    color: $primary-color !important;
+    position: relative;
+
+    padding-top: 20vh;
+    margin-top: 20vh;
+    padding-bottom: 20px;
+  }
+
+
+
+  .banner-evento{
+    height: 40vh;
+    border-radius: 20px;
+    background-color: $footer-color;
+    text-align: center;
+    box-shadow: 0px 2px 7px #0000007a;
+    
+    
+    .main-sect{
+      padding-top: 50px;
+      height: 75%;
+      color: $secondary-color;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0px 1px 3px #00000057;
+    }
+  }
+
+
+
+
+
+  @media only screen and (max-width: 500px){//phone
+    .banner-evento{
+      margin-top: -320px;
+      .main-sect{
+        padding-top: 8%;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 700px){//tablet e desktop
+    .banner-evento{
+      margin-top: -375px;
+    }
+  }

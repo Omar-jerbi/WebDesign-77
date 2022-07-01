@@ -50,7 +50,7 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
         <div class="col s6 left show-on-medium-and-down hide-on-large-only" style="height: inherit; width: 20%;">
-          <h6 style="font-size: larger; display: inline; position: absolute; top: 8%; left: 10.5em; font-size: 1.8em;">BeUge</h6>
+          <h6 id="tit-sm-med">BeUge</h6>
         </div>
         <div class="right show-on-medium-and-down">
           <i style="display: none;" id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
@@ -58,7 +58,7 @@
 
 
         <ul class="right hide-on-med-and-down">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" id="selected-page">Home</a></li>
           <li><a href="progetto01/public/progetti.html">Progetti</a></li>
           <li><a href="progetto01/public/beuge.html">BEuGE</a></li>
           <li style="margin-right: 10vw;"><a href="progetto01/public/aboutus.html">About Us</a></li>
@@ -69,11 +69,16 @@
   </div>
 
   <ul class="sidenav" id="mobile-demo">
+    <li class="banner-side-menu" style="text-align: center;">
+      <h5>BeUge</h5>
+      <h3>-3 giorni</h3>
+      <h5>all'inizio dell'evento</h5>
+    </li>
     <li><a href="index.html">
         <i class="material-icons">home</i>Home</a></li>
     <li><a href="progetto01/public/progetti.html">
         <i class="material-icons">work</i>Progetti</a></li>
-    <li><a href="progetto01/public/UnigeXBeigua.html">
+    <li><a href="progetto01/public/beuge.html">
         <i class="material-icons">nature_people</i>
         BEuGE</a></li> 
     <li><a href="progetto01/public/aboutus.html">
@@ -87,7 +92,7 @@
 
 
   <div class="titolo">
-    <h1 style="margin-top: 20px;">
+    <h1 style="margin-top: 20px;" class="tit-sec">
       Benvenuto su BeUge
     </h1>
 
@@ -194,49 +199,37 @@
 
 
     <div class="cards container">
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="./progetto01/public/img/I liguri muoiono prima.png">
-              <!-- <span class="card-title">Card Title</span> -->
-            </div>
-            <div class="card-content">
-              <h3 style="margin: 0">I Liguri muoiono prima</h3>
-              <a class="bttcards btn-floating waves-effect waves-light">VAI AI PROGETTI</a>
-            </div>
+      <div class="row" id="r1">
+         <div class="col s12 m12 cards-pc">
+          <div class="sect" style="background-image: url('./progetto01/public/img/I liguri muoiono prima.png');">
+            <div class="sect-tit">
+              <h4 style="margin-top: 7px;">I liguri muoiono prima</h4>
+            </div>  
+            <a class="bttcards btn-floating waves-effect waves-light">VAI AI PROGETTI</a>
+          </div>
+        </div> 
+
+
+        <div class="col s12 m12 cards-pc">
+          <div class="sect" style="background-image: url('./progetto01/public/img/unige.png');">
+            <div class="sect-tit">
+              <h4>BeUge</h4>
+            </div>  
+            <a class="bttcards btn-floating waves-effect waves-light">VAI AI PROGETTI</a>
           </div>
         </div>
-      </div>
 
-
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="./progetto01/public/img/unige.png" style="padding: 60px 20px; background-color: white;">
-            </div>
-            <div class="card-content">
-              <h3 style="margin: 0">BeUge</h3>
-              <a class="bttcards btn-floating waves-effect waves-light">VISITA L'EVENTO</a>
-            </div>
+        
+        <div class="col s12 m12 cards-pc">
+          <div class="sect" style="background-image: url('./progetto01/public/img/vian.png');">
+            <div class="sect-tit">
+              <h4>I nostri ospiti</h4>
+            </div>  
+            <a class="bttcards btn-floating waves-effect waves-light">VAI AI PROGETTI</a>
           </div>
         </div>
-      </div>
 
 
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="./progetto01/public/img/vian.png">
-            </div>
-            <div class="card-content">
-              <h3 style="margin: 0">I nostri ospiti</h3>
-              <a class="bttcards btn-floating waves-effect waves-light">SCOPRI GLI OSPITI</a>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
