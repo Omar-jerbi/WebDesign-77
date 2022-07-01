@@ -29,9 +29,25 @@
         *{
           border-radius: 20px;
         }
+        .card-reveal{
+          height: 80% !important;
+        }
       }
     }
   }
+
+
+  .sfondo-viola{
+    background-color: $secondary-color;
+    color: $primary-color !important;
+    position: relative;
+
+    padding-top: 20vh;
+    margin-top: 20vh;
+    padding-bottom: 20px;
+  }
+
+
 
   .banner-evento{
     height: 40vh;
@@ -39,19 +55,33 @@
     background-color: $footer-color;
     text-align: center;
     box-shadow: 0px 2px 7px #0000007a;
+    
+    
     .main-sect{
       padding-top: 50px;
       height: 75%;
+      color: $secondary-color;
       border-radius: 20px;
       background-color: white;
       box-shadow: 0px 1px 3px #00000057;
     }
   }
 
+
+
+
+
   @media only screen and (max-width: 500px){//phone
     .banner-evento{
+      margin-top: -320px;
       .main-sect{
         padding-top: 8%;
       }
+    }
+  }
+
+  @media only screen and (min-width: 700px){//tablet e desktop
+    .banner-evento{
+      margin-top: -375px;
     }
   }
