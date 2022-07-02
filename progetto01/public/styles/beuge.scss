@@ -24,6 +24,8 @@
   .ospiti{
     .col{
       border-radius: 20px;
+      height: 38vh;
+      margin-bottom: 20px;
       .card{
         border-radius: 20px;
         *{
@@ -31,6 +33,20 @@
         }
         .card-reveal{
           height: 80% !important;
+        }
+
+        .card-content{
+          padding: 10px!important;
+          .card-title{
+            font-size: large;
+          }
+        }        
+
+        .card-image{
+          height: 30vh;
+          img{
+            height: 30vh;
+          }
         }
       }
     }
