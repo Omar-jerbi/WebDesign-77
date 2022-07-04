@@ -96,8 +96,14 @@
     }
   }
 
-  @media only screen and (min-width: 700px){//tablet e desktop
+  @media only screen and (min-width: 700px){//tablet 
     .banner-evento{
       margin-top: -375px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px){// desktop
+    .banner-evento{
+      margin-top: -580px;
     }
   }

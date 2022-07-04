@@ -17,7 +17,7 @@ main{
 .faq{
     border-radius: 20px 20px 0 0;
     color: $footer-color;
-    height: 85vh;
+    padding-bottom: 100px;
     background-color: $secondary-color;
     margin-top: 200px;
     position: relative;
@@ -131,7 +131,8 @@ main{
 @media only screen and (min-width: 1700px){//pc
   .faq{
     .newsletter{
-      width: 66%;
+      width: 40%;
+      left: 30%;
     }
   }
 }
