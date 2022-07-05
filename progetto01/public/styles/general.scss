@@ -38,7 +38,7 @@ main{
       
       
       .sect{
-        height: 35vh;
+        height: 45vh;
         border-radius: 60px 0;
         background-size: cover;
         position: relative;
@@ -46,7 +46,8 @@ main{
       }
       
       .sect-tit{
-        background-color: rgba(255, 255, 255, 0.541);
+        // background-color: rgba(255, 255, 255, 0.541);//trasparente
+        background-color: rgb(228, 226, 226);
         height: 40%;
         width: 100%;
         position: absolute;
@@ -217,11 +218,11 @@ nav{
 
 
 
-@media only screen and (max-width: 850px) {//solo tablet e phone
+@media only screen and (max-width: 850px) {//solo tablet e phone}
     .footer-container{
       padding: 10px 20vw;
     }
-  }
+}
 
 
   @media only screen and (max-width: 450px){//solo phone
@@ -233,3 +234,10 @@ nav{
       left: 70%;
     }
   }
+
+
+@media only screen and (min-width: 700px) {//tablet e pc
+  .sect{
+    height: 35vh !important;
+  }
+}
