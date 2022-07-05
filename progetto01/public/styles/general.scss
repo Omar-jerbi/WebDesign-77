@@ -136,6 +136,13 @@ hr{
 }
 
 
+nav{
+    a{
+      color: red!important;
+    }
+}
+
+
 
 #selected-page{
     color: $footer-color !important;
@@ -200,6 +207,14 @@ hr{
   left: 80%;
   font-size: 1.8em;
 }
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 850px) {//solo tablet e phone

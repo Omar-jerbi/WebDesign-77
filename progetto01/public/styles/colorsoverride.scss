@@ -18,6 +18,12 @@ body{
             color: $font-color2-light-theme !important;
             background-color: $secondary-color-light !important;          
         }
+        a{
+            font-size: 1.5em !important;
+        }
+        .brand-logo{
+            font-size: 2em !important;
+        }
     }
    
 
@@ -36,11 +42,5 @@ body{
             box-shadow: -1px 6px 12px 0px #0000007d!important;
         }
     }
-}
-
-
-// dark mode !!! lasciare in fondo!!!
-.dark-mode{//body
-
 }
 
