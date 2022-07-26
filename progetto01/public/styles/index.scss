@@ -20,11 +20,10 @@
 
   .immagine-bottom{
     border-radius: 30px 30px 30px 30px;
-    img{
-    border-radius: 30px 30px 30px 30px;
-      width: -webkit-fill-available;
-      height: 35vh;
-    }
+    width: 100%;
+    height: 43vh;
+    background-size: cover;
+    background-position-y: 74px;
   }
   
   .collapsibles{
@@ -71,14 +70,21 @@
 
 
 @media only screen and (min-width: 700px) {//tablet  e pc
-  
   .cards{
     width: 80%;
     margin-left: 10%;
   }
 }
 
-@media only screen and (min-width: 1900px) {// pc
+@media only screen and (max-width: 400px) {//phone
+  .immagine-coll{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
-
+@media only screen and (min-width: 1024px) {//tablet  e pc
+  .immagine-bottom{
+    background-position-y: -90px !important;
+  }
 }
