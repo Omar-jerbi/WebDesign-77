@@ -1,9 +1,105 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
 
 
+
+main{
+    p, h5, h6{
+        line-height: 32px !important;
+    }
+
+    .tit-sec{
+        font-family:'Plus Jakarta Sans';
+        font-weight: 600;
+        line-height: 56px;
+    }
+
+
+
+
+    .cards{
+        margin-top: 30vh;
+        .row{
+          margin-bottom: 60px!important;
+        }
+      }
+      
+      .bttcards {
+        background-color: #de6c3f;
+        width: 150px;
+        border-radius: 36px;
+        top: 92%;
+        right: 39px;
+        text-align: center;
+        height: 60px;
+        padding-top: 10px;
+        position: absolute;
+        left: 0;
+      }
+      
+      
+      .sect{
+        height: 45vh;
+        border-radius: 60px 0;
+        background-size: cover;
+        position: relative;
+        box-shadow: 1px 1px 5px 1px rgb(71, 71, 71);
+      }
+      
+      .sect-tit{
+        // background-color: rgba(255, 255, 255, 0.541);//trasparente
+        background-color: rgb(228, 226, 226);
+        height: 40%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        border-radius: 0 0 60px 0;
+        padding: 10px;
+      
+      }
+
+
+}
+
+
+ .slider {
+    h3{
+        font-weight: bold !important;
+        font-size:xxx-large !important;
+        text-shadow: 1px 1px 0 white;
+    }
+    h5{
+        font-weight: bold !important;
+        a{
+            text-shadow: 1px 1px 0 black;
+            font-weight: bold !important;
+            text-decoration: underline !important;
+            font-size:xx-large !important;
+        }
+    }
+}
+
+
+
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif !important;
+}
+
 // footer
-#logosocial{
-    margin: 15px 0;
+footer{
+    position: relative;
+    border-radius: 20px;
+    .back-to-top{
+        position: absolute;
+        top: -37px;
+        right: 23px;
+        background-color: transparent!important;
+        *{
+            background-color: $tertiary-color-light !important;
+        }
+    }
 }
 
 
@@ -24,13 +120,124 @@ body {
 
 main {
     flex: 1 0 auto;
-    margin: 1vh 0;
+    margin-top: 0;
+    margin-bottom: 5px;
     overflow-x: hidden;
 }
 
+hr{
+    border-color: black;
+  }
 
-a{
-    color: rgb(14, 56, 92);
+
+.navbar-fixed{
+    li{
+        margin-right: 2vw;
+    }
 }
 
 
+nav{
+    a{
+      color: red!important;
+    }
+}
+
+
+
+#selected-page{
+    color: $footer-color !important;
+    text-decoration: underline;
+}
+
+
+
+.titolo{
+    padding: 20px 10vw;
+    color: $font-color1-light-theme !important;
+    background-color: $secondary-color-light !important;
+    h1, h2, h3, h4, h5{
+        color: $font-color2-light-theme !important;
+    }
+  
+    .fix-edges{
+      width: 100vw;
+      height: 30px;
+      position: absolute;
+      top: 42px;
+      left: 0;
+      background-color: #3b429f;
+    }
+  }
+
+.navbar-fixed, nav, #main-nav{
+    border-radius: 0 0 15px 15px;
+  }
+
+
+
+
+
+.sidenav{
+    background-color: $footer-color !important;
+    height: 60vh !important;    
+    border-radius: 0 20px 20px 0;
+    overflow-y: hidden !important;
+
+    .banner-side-menu{
+        height: 30vh;
+        border: 1px solid transparent;//per forzare radius
+        border-radius: 0 20px 20px 0;
+        background-color:darken($color: $secondary-color-light, $amount: 20);
+        color: $primary-color !important;
+        margin-bottom: 20px;
+        padding: 10px;
+        *{
+            margin-bottom: 60px;
+        }
+    }
+
+}
+
+
+#tit-sm-med{
+  font-size: larger;
+  display: inline;
+  position: absolute;
+  top: 8%;
+  left: 80%;
+  font-size: 1.8em;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 850px) {//solo tablet e phone}
+    .footer-container{
+      padding: 10px 20vw;
+    }
+}
+
+
+  @media only screen and (max-width: 450px){//solo phone
+    .titolo{
+        text-align: center;
+    }
+
+    #tit-sm-med{
+      left: 70%;
+    }
+  }
+
+
+@media only screen and (min-width: 700px) {//tablet e pc
+  .sect{
+    height: 35vh !important;
+  }
+}
