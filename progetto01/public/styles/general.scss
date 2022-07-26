@@ -2,6 +2,8 @@
 
 
 
+
+
 main{
     p, h5, h6{
         line-height: 32px !important;
@@ -38,7 +40,7 @@ main{
       
       
       .sect{
-        height: 35vh;
+        height: 45vh;
         border-radius: 60px 0;
         background-size: cover;
         position: relative;
@@ -46,7 +48,9 @@ main{
       }
       
       .sect-tit{
-        background-color: rgba(255, 255, 255, 0.541);
+        // background-color: rgba(255, 255, 255, 0.541);//trasparente
+        background-color: $secondary-color-b;
+        color: $primary-color-w;
         height: 40%;
         width: 100%;
         position: absolute;
@@ -96,7 +100,10 @@ footer{
         right: 23px;
         background-color: transparent!important;
         *{
-            background-color: $tertiary-color-light !important;
+            background-color: $primary-color-w!important;
+        }
+        a{
+          box-shadow: 0px 0px 5px 1px #000000a3;
         }
     }
 }
@@ -136,20 +143,27 @@ hr{
 }
 
 
-
-#selected-page{
-    color: $footer-color !important;
-    text-decoration: underline;
+nav{
+    a{
+      color: red!important;
+    }
 }
 
 
 
+#selected-page{
+    color: red !important;
+    text-decoration: underline;
+}
+
+ 
+
 .titolo{
     padding: 20px 10vw;
-    color: $font-color1-light-theme !important;
-    background-color: $secondary-color-light !important;
+    color: $primary-color-w !important;
+    background-color: $secondary-color-b !important;
     h1, h2, h3, h4, h5{
-        color: $font-color2-light-theme !important;
+        color:$primary-color-w !important;
     }
   
     .fix-edges{
@@ -158,7 +172,7 @@ hr{
       position: absolute;
       top: 42px;
       left: 0;
-      background-color: #3b429f;
+      background-color: $secondary-color-b !important;
     }
   }
 
@@ -171,16 +185,16 @@ hr{
 
 
 .sidenav{
-    background-color: $footer-color !important;
-    height: 60vh !important;    
+    background-color: $primary-color-w !important;
+    height: 65vh !important;    
     border-radius: 0 20px 20px 0;
     overflow-y: hidden !important;
 
     .banner-side-menu{
-        height: 30vh;
+        height: 35vh;
         border: 1px solid transparent;//per forzare radius
         border-radius: 0 20px 20px 0;
-        background-color:darken($color: $secondary-color-light, $amount: 20);
+        background-color:$secondary-color-b;
         color: $primary-color !important;
         margin-bottom: 20px;
         padding: 10px;
@@ -202,11 +216,19 @@ hr{
 }
 
 
-@media only screen and (max-width: 850px) {//solo tablet e phone
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 850px) {//solo tablet e phone}
     .footer-container{
       padding: 10px 20vw;
     }
-  }
+}
 
 
   @media only screen and (max-width: 450px){//solo phone
@@ -218,3 +240,20 @@ hr{
       left: 70%;
     }
   }
+
+
+@media only screen and (min-width: 700px) {//tablet e pc
+  .sect{
+    height: 35vh !important;
+  }
+}
+
+
+@media only screen and (max-width: 390px){//MINI phone
+  .sidenav{
+    height: 80vh !important;
+    .banner-side-menu{
+      height: 40vh !important;
+    }
+  }
+}

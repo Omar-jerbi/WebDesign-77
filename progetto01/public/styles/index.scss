@@ -10,52 +10,43 @@
   box-shadow: -1px 4px 2px #00000052;
 }
 
-.collapsibles , .immagine-top, .immagine-top img{
-  border-radius: 20px 20px 0 0;
-}
 
-.collapsibles{
+
+.immagine-coll{
+  width: 100vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
   position: relative;
-  .immagine-top{
-    position: absolute;
+
+  .immagine-bottom{
+    border-radius: 30px 30px 30px 30px;
+    width: 100%;
+    height: 43vh;
+    background-size: cover;
+    background-position-y: 74px;
   }
-  .contents{
-    width: 100vw;
+  
+  .collapsibles{
+    border-radius: 30px 30px 0 0;
     position: relative;
-    top: 28vh;
-    border-radius: 20px 20px 20px 20px;
-    *{
+    .contents{
+      width: 100%;
+      position: relative;
+      bottom: -100px;
       border-radius: 20px 20px 20px 20px;
+      *{
+        border-radius: 20px 20px 20px 20px;
+      }
+  
     }
-
-  }
-
-  .collapsible{
-    background-color: white;
-  }
-}
-
-
-
-
-.row{
-  border-radius: 40px 0 40px 0;
-  .col{
-    border-radius: 40px 0 40px 0;
-    .card{
-      border-radius: 40px 0 40px 0;
-      .card-image{
-        border-radius: 40px 0 40px 0;
-        *{
-          border-radius: 40px 0 40px 0;
-        }
-      .card-content{
-        border-radius: 40px 0 40px 0;
-      }
-      }
+  
+    .collapsible{
+      background-color: white;
     }
   }
 }
+
+
 
 
 .collapsible-header{
@@ -69,55 +60,31 @@
 }
 
 
-.cards-pc{
-  margin-top: 50px;
-}
-
-
-@media only screen and (min-width: 700px) {//tablet 
-  .cards{
-    margin-left: 8vw;
-    margin-right: 8vw;
-    margin-top: 30vh;
-  }
-}
-
-@media only screen and (min-width: 1920px) {// pc
-  .collapsibles{
-    .contents{
-      top: 96vh;
-    }
-  }
-
-  .collapsible{
-    padding: 20px 100px !important;
-  }
-
-  .cards{
-    margin-top: 100vh !important;
-  }
-
-  .slider{
-    height: 500px !important;
-    .slides{
-      height: 500px !important;
-    }
-  }
-
-  .immagine-top{
-    img{
-      height: 100vh;
-    }
-  }
-
-
-  #r1{
-    width: 100vw;
-  }
-
-
+.cards{
+  width: 90%;
+  margin-left: 5%;
   .cards-pc{
-    width: 27% !important;
-    margin: 0 20px ;
+    margin-bottom: 40px;
+  }
+}
+
+
+@media only screen and (min-width: 700px) {//tablet  e pc
+  .cards{
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 400px) {//phone
+  .immagine-coll{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {//tablet  e pc
+  .immagine-bottom{
+    background-position-y: -90px !important;
   }
 }

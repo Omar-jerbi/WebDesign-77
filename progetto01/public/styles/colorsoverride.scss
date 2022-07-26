@@ -2,31 +2,35 @@
 
 
 //OVERRIDE DEI COLORI DI BODY HEADER E FOOTER IN TUTTE E PAGINE  + OMBRE
-
-
+  
+ 
 body{
-    $tertiary-color: $tertiary-color-light !important;
-
-    color: $font-color1-light-theme !important;
-    background-color: $primary-color-light !important;
-
+    color: $font-color2 !important;
+    background-color: $primary-color-w !important;
+ 
     nav{
-        color: $font-color2-light-theme !important;
-        background-color: $secondary-color-light !important;
+        color: $font-color1 !important;
+        background-color: $secondary-color-b !important;
         box-shadow: -1px -1px 12px 1px black !important;
         *{
-            color: $font-color2-light-theme !important;
-            background-color: $secondary-color-light !important;          
+            color: $font-color1 !important;
+            background-color: $secondary-color-b !important;          
+        }
+        a{
+            font-size: 1.5em !important;
+        }
+        .brand-logo{
+            font-size: 2em !important;
         }
     }
    
 
     footer{
-        color: $footer-color-font !important;
-        background-color: $footer-color !important;
+        color: $font-color1 !important;
+        background-color: $secondary-color-b !important;
         *{
-            color: $footer-color-font !important;
-            background-color: $footer-color !important;
+            color: $font-color1!important;
+            background-color: $secondary-color-b !important;
         }
     }
 
@@ -36,11 +40,5 @@ body{
             box-shadow: -1px 6px 12px 0px #0000007d!important;
         }
     }
-}
-
-
-// dark mode !!! lasciare in fondo!!!
-.dark-mode{//body
-
 }
 
