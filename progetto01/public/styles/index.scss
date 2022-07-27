@@ -41,7 +41,11 @@
     }
   
     .collapsible{
-      background-color: white;
+      background-color: $secondary-color-b;
+      color: $font-color1;
+      .collapsible-header{
+        background-color: $secondary-color-b;
+      }
     }
   }
 }
