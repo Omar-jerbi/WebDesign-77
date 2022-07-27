@@ -64,7 +64,10 @@ main{
           border: 1px solid black;
           border-radius: 10px 10px 3px 10px;
           text-align: center;
-          margin-top: 10%;
+          position: absolute;
+          bottom: 15px;
+          width: 90%;
+          right: 5%;
           h5{
             font-weight: 700;
           }
@@ -105,6 +108,7 @@ html{
 footer{
     position: relative;
     border-radius: 20px;
+    padding-top: 30px !important;
     .back-to-top{
         position: absolute;
         top: -37px;
@@ -192,6 +196,11 @@ nav{
     }
   }
 
+  .no-slider{
+    box-shadow: 2px 2px 9px #00000061;
+    border-radius: 0 0 20px 0;
+  }
+
 .navbar-fixed, nav, #main-nav{
     border-radius: 0 0 15px 15px;
   }
@@ -261,16 +270,20 @@ nav{
 
 @media only screen and (min-width: 700px) {//tablet e pc
   .sect{
-    height: 35vh !important;
+    height: 40vh !important;
   }
 }
 
 
-@media only screen and (max-width: 390px){//MINI phone
+@media only screen and (max-width: 380px){//MINI phone
   .sidenav{
     height: 80vh !important;
     .banner-side-menu{
       height: 40vh !important;
     }
+  }
+
+  .sect-link{
+    display: none;
   }
 }
