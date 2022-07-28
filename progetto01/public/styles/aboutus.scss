@@ -132,6 +132,7 @@ main{
         background-color: $tertiary-color-g;
         .card-title{
           font-size: initial;
+          font-weight: 500;
         }
       }        
 
@@ -148,7 +149,11 @@ main{
   }
 }
 
-
+.dev{
+  .container{
+    width: 100% !important;
+  }
+}
 
 @media only screen and (min-width: 1700px){//pc
   .faq{
