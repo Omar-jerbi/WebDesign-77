@@ -9,32 +9,52 @@
 }
 
 #prima-card{
-    background-color: white;
+    background-color:lighten($color: $secondary-color-light, $amount: 10);
 }
 
 
 .obbiettivo{
     width: 100vw; 
-    background-color: $primary-color-light;
+    background-color: $tertiary-color-light;
     
+    box-shadow: 1px 1px 3px 0px;
+
     .card-content{
-        background-color: $primary-color-light;
+        background-color: $tertiary-color-light;
     }
+
+    .card-image{
+        background-color: $tertiary-color-light;
+        img{
+            height: 80%!important;
+        }
+    }
+
+}
+
+
+.collection{
+    .collection-header, .collection-item{
+      background-color: lighten($secondary-color, 10)!important;
+    }
+  }
+
+
+.poster-img{
+    width: 100%;
 }
 
 
 
-
-.dark-mode{
+@media only screen and (min-width: $medium-screen) {//tablet e pc
     .obbiettivo{
-        background-color: $primary-color-dark;
-    
-        .card-content{
-            background-color: $primary-color-dark;
+        .card{
+            margin: 0 25vw;
         }
     }
 
-    #prima-card{
-        background-color: $tertiary-color-dark;
+    .poster-img{
+        width: 70%;
+        margin-left: 15%;
     }
 }

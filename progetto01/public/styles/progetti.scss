@@ -1,1 +1,85 @@
 @import "../../node_modules/materialize-css/sass/materialize.scss";
+
+
+// .slider, .slides, .slider .slides li{
+//     border-radius: 0 0 20px 20px;
+//   }
+  
+//   .slider{
+//     box-shadow: -1px 4px 2px #00000052; 
+//   }
+
+
+.pres{
+  background-color: $primary-color-w;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 5px #00000069;
+}
+  
+
+.cards{
+  margin-top: 20px!important;
+  .row{
+    .col{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.progetti{
+  .row{
+    .col{
+      margin-bottom: 20px;
+      border-radius: 20px 20px 5px 20px;
+      .card{
+        box-shadow: 2px 3px 4px rgb(0 0 0 / 49%);
+        border-radius: 20px 20px 5px 20px;
+        position: relative;
+        .card-content{
+          border-radius: 20px 20px 5px 20px;
+          padding: 0 !important;
+          text-align: center;
+          position: absolute;
+          height: 45%;
+          width: 100%;
+          bottom: 0;
+          z-index: 10;
+          background-color: $primary-color-w;
+          .card-title{
+            font-weight: 700;
+          }
+          .content-up{
+            color: $font-color2;
+            height: 50%;
+          }
+          .content-down{
+            height: 50%;
+            width: 90%;
+            margin-right: 5%;
+            margin-left: 5%;
+            color: $font-color2 !important;
+            background-color: $primary-color-w;
+            border: 2px solid black;
+            border-radius: 20px 20px 5px 20px;
+          }
+
+          .card-title{
+            padding-top: 15px;
+          }
+        }
+        .card-reveal{
+          border-radius: 20px 20px 5px 20px;
+          z-index: 11;
+        }
+        .card-image{
+          border-radius: 20px 20px 5px 20px;
+          img{
+            height: 300px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
