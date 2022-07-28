@@ -172,8 +172,17 @@ nav{
 
 
 #selected-page{
-    color: red !important;
-    text-decoration: underline;
+    color: rgb(0, 0, 0) !important;
+    font-weight: 700;
+    // text-decoration: underline;
+    #under{
+      border-bottom: 5px solid black;
+      width: 10%;
+      border-radius: 57px;
+      text-align: center;
+      margin-left: 45%;
+      margin-top: -12px;
+    }
 }
 
  
