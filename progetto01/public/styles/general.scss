@@ -250,7 +250,15 @@ nav{
 }
 
 
-
+.radius-fix{
+  background-color: $tertiary-color-g;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: -7px;
+  z-index: 2;
+}
 
 
 
