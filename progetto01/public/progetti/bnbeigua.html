@@ -79,13 +79,37 @@
   <!-- FINE NAV -->
 
 
+<!-- importante lasciare stili banner in pagina html, da personalizzare secondo esigenze -->
+
+
+
+<style>
+  @media only screen and (min-width: 700px) and (max-width: 1020px){
+    #banner-proj{
+      background-position-y: -140% !important;
+    }
+  }
+
+  @media only screen and (min-width: 1020px){
+    #nome-proj{
+      font-size: 140px !important;
+    }
+    #banner-proj{
+      background-position-y: -46% !important;
+    }
+  } 
+
+</style>
 
     <main>
     <!-- slider -->
     <div class="slider titolo-proj" style="top: -70px">
         <ul class="slides">
           <li>
-            <img src=".././img/bnbeigu.jpg" id="banner-proj">
+            <img src=".././img/bnbeigu.jpg" id="banner-proj" style="background-position-y: -55%;">
+            <div class="caption center-align">
+              <h3 class="blue-text text-darken-3" style="margin-top: 150px;" id="nome-proj">BnBeigua</h3>
+            </div>
           </li>
         </ul>
       </div>
@@ -101,7 +125,7 @@
     <br>
     <div class="sito container">
       <h4 class="tit-sec grey-text text-darken-1">Il sito</h4>
-      <h5><a href="#" class="tit-sec grey-text text-lighten-1"><u style="font-size: 0.8em;">www.airBnBeigua.com/unige.it</u></a></h5>
+      <h5><a href="https://www.bnbeigua.live" class="tit-sec grey-text text-lighten-1"><u style="font-size: 0.8em;">https://www.bnbeigua.live</u></a></h5>
     </div>
     
     <br><br>
@@ -130,19 +154,13 @@
 <div class="container info-impl row">
   <div class="sw container col s12 m12 l6">
     <h5 class="tit-sec">Software utilizzati</h5>
-    <p>Beatrice Portaluri - designer
-      Tiziano Mario Riemma - designer
-      Milo Galli - sviluppatore
-      Daniele Carrega - sviluppatore</p>
+    <p>Figma</p>
   </div>
 
   
   <div class="y container col s12 m12 l6">
     <h5 class="tit-sec">Perchè?</h5>
-    <p>Beatrice Portaluri - designer
-      Tiziano Mario Riemma - designer
-      Milo Galli - sviluppatore
-      Daniele Carrega - sviluppatore</p>
+    <p>Incentivare i cittadini a frequentare il parco e le aree circostanti, per conoscerne le meraviglie e protestare, quindi, contro la minaccia degli scavi.</p>
   </div>
 </div>
 
@@ -152,22 +170,10 @@
 <div class="container">
 
   <div class="carousel carousel-slider center">
-  <div class="carousel-item red white-text" href="#one!">
-    <h2>First Panel</h2>
-    <p class="white-text">This is your first panel</p>
-  </div>
-  <div class="carousel-item amber white-text" href="#two!">
-    <h2>Second Panel</h2>
-    <p class="white-text">This is your second panel</p>
-  </div>
-  <div class="carousel-item green white-text" href="#three!">
-    <h2>Third Panel</h2>
-    <p class="white-text">This is your third panel</p>
-  </div>
-  <div class="carousel-item blue white-text" href="#four!">
-    <h2>Fourth Panel</h2>
-    <p class="white-text">This is your fourth panel</p>
-  </div>
+    <a class="carousel-item" href="https://www.bnbeigua.live"><img src="..//img/bnbeigua1.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="..//img/bnbeigu.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="..//img/bnbeigu.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="..//img/bnbeigu.jpg"></a>
 </div>
 
 </div>
