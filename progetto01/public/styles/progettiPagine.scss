@@ -46,9 +46,15 @@
 
 
 .carousel{
-    .indicator-item{
-        background-color: gray !important; 
+    .indicators{
+        .indicator-item{
+            background-color: gray !important; 
+        }
+        .active{
+            background-color: black !important; 
+        }
     }
+
 }
 
 
