@@ -11,7 +11,14 @@
 
 
   .slides  {
-    .caption{
+    .caption{//per sfondo viola
+      margin-top: -60px!important;
+      padding-top: 81px!important;
+      left: unset !important;
+      background-color: rgba(59, 66, 159, 0.651) ;
+      width: 100% !important;
+      height: 100% !important;
+
       h4{
         color: $primary-color !important;
         text-shadow: 2px 2px 0px black;
@@ -24,6 +31,8 @@
   .ospiti{
     .col{
       border-radius: 20px;
+      height: 38vh;
+      margin-bottom: 20px;
       .card{
         border-radius: 20px;
         *{
@@ -31,6 +40,21 @@
         }
         .card-reveal{
           height: 80% !important;
+        }
+
+        .card-content{
+          padding: 10px!important;
+          .card-title{
+            font-size: large;
+          }
+        }        
+
+        .card-image{
+          height: 30vh;
+          img{
+            height: 30vh;
+            object-fit: cover;
+          }
         }
       }
     }
@@ -80,8 +104,14 @@
     }
   }
 
-  @media only screen and (min-width: 700px){//tablet e desktop
+  @media only screen and (min-width: 700px){//tablet 
     .banner-evento{
       margin-top: -375px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px){// desktop
+    .banner-evento{
+      margin-top: -580px;
     }
   }

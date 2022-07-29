@@ -16,18 +16,18 @@ main{
 
 .faq{
     border-radius: 20px 20px 0 0;
-    color: $footer-color;
-    height: 85vh;
-    background-color: $secondary-color;
+    color: $font-color2;
+    padding-bottom: 100px;
+    background-color: $tertiary-color-g;
     margin-top: 200px;
     position: relative;
 
     .collapsible{
         border-color: transparent !important;
-        border-radius: 20px 5px 20px 5px;
+        border-radius: 15px 15px 5px 15px;
       
         *{
-          border-radius: 20px 5px 20px 5px;
+          border-radius: 15px 15px 5px 15px;
         }
       
         .active{
@@ -35,13 +35,15 @@ main{
         }
       
         .collapsible-header{
-          background-color: $primary-color;
-          color: white;
+          background-color: $secondary-color-b;
+          color: $font-color3;
+          border: 0;
         }
       
         .collapsible-body{
-          border-radius: 0px 0px 20px 0px;
+          border-radius: 0px 0px 5px 15px;
           background-color: white;
+          line-height: 24px;
         }
       
       }
@@ -55,13 +57,14 @@ main{
     top: -120px;
     border-radius: 20px;
     text-align: center;
+    box-shadow: 1px 2px 9px 1px #00000069;;
     *{   
       border-radius: 20px;
     }
 
     .tit-nl{
-      color: $secondary-color;
-      background-color: $footer-color;
+      color: $font-color1;
+      background-color: $secondary-color-b;
       position: absolute;
       height: 45%;
       width: 100%;
@@ -81,6 +84,7 @@ main{
         border-radius: 10px;
         height: 50px;
         text-align: center;
+        background-color: $tertiary-color-g;
       }
     }
 
@@ -89,14 +93,14 @@ main{
       position: absolute;
       bottom: -17px;
       button{
-        background-color: $footer-color;
+        background-color: $secondary-color-b;
       }
     }
   }
 }
 
 .filler{
-    background-color: $secondary-color!important;
+    background-color: $tertiary-color-g!important;
     position: absolute;
     z-index: -1;
     height:20px;
@@ -105,33 +109,58 @@ main{
 }
 
 
+
+
 .des, .dev{
-  .row{
-    .col{
-      border-radius: 20px!important;
-      .card{
-        border-radius: 20px!important;
-        .card-image{
-          border-radius: 20px!important;
-          img{
-            border-radius: 20px!important;
-          }
+  .col{
+    border-radius: 20px;
+    height: 38vh;
+    margin-bottom: 20px;
+    .card{
+      border-radius: 20px;
+      *{
+        border-radius: 20px;
+      }
+      .card-reveal{
+        height: 80% !important;
+      }
+
+      .card-content{
+        padding: 10px!important;
+        text-align: center;
+        position: relative;
+        background-color: $tertiary-color-g;
+        .card-title{
+          font-size: initial;
+          font-weight: 500;
+        }
+      }        
+
+      .card-image{
+        height: 30vh;
+        border-radius: 0 !important;
+        img{
+          border-radius: 20px 20px 0 0;
+          height: 30vh;
+          object-fit: cover;
         }
       }
     }
   }
 }
 
-
-
-.btn-floating{
-  background-color: #de6c3f;
+.dev{
+  .container{
+    width: 100% !important;
+  }
 }
 
 @media only screen and (min-width: 1700px){//pc
   .faq{
     .newsletter{
-      width: 66%;
+      width: 40%;
+      left: 30%;
     }
   }
+
 }
