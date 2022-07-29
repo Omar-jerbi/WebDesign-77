@@ -45,6 +45,12 @@
 }
 
 
+.carousel{
+    .indicator-item{
+        background-color: gray !important;
+    }
+}
+
 
 @media only screen and (min-width: 1020px) {// pc
     .slider{
