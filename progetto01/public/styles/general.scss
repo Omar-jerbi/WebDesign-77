@@ -70,6 +70,10 @@ main{
           right: 5%;
           h5{
             font-weight: 700;
+            a{
+              color: $font-color2;
+              text-decoration: underline;
+            }
           }
         }
       }
@@ -145,10 +149,6 @@ main {
     margin-bottom: 5px;
     overflow-x: hidden;
 }
-
-hr{
-    border-color: black;
-  }
 
 
 .navbar-fixed{

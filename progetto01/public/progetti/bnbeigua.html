@@ -35,13 +35,13 @@
     <nav>
       <div id="main-nav" class="nav-wrapper row">
         <a href="#!" class="brand-logo col s3 offset-s1 hide-on-med-and-down" style="width: fit-content;">
-          BeUge
+          TUTELA<span id="beigua-grey">BEIGUA</span>
         </a>
 
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
         <div class="col s6 left show-on-medium-and-down hide-on-large-only" style="height: inherit; width: 20%;">
-          <h6 id="tit-sm-med">BeUge</h6>
+          <h6 id="tit-sm-med">TUTELA<span id="beigua-grey">BEIGUA</span></h6>
         </div>
         <div class="right show-on-medium-and-down">
           <i style="display: none;" id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
@@ -50,8 +50,8 @@
 
         <ul class="right hide-on-med-and-down">
           <li><a href="../../../index.html">Home</a></li>
-          <li><a href=".././progetti.html" id="selected-page">Progetti</a></li>
-          <li><a href=".././beuge.html">BEuGE</a></li>
+          <li id="selected-page"><a href=".././progetti.html">Progetti</a></li>
+          <li><a href=".././beuge.html">Evento</a></li>
           <li style="margin-right: 10vw;"><a href=".././aboutus.html">About Us</a></li>
         </ul>
 
@@ -71,7 +71,7 @@
         <i class="material-icons">work</i>Progetti</a></li>
     <li><a href=".././beuge.html">
         <i class="material-icons">nature_people</i>
-        BEuGE</a></li> 
+        Evento</a></li> 
     <li><a href=".././aboutus.html">
         <i class="material-icons">event_note</i>
         About Us</a></li>
@@ -79,21 +79,37 @@
   <!-- FINE NAV -->
 
 
+<!-- importante lasciare stili banner in pagina html, da personalizzare secondo esigenze -->
+
+
+
+<style>
+  @media only screen and (min-width: 700px) and (max-width: 1020px){
+    #banner-proj{
+      background-position-y: -140% !important;
+    }
+  }
+
+  @media only screen and (min-width: 1020px){
+    #nome-proj{
+      font-size: 140px !important;
+    }
+    #banner-proj{
+      background-position-y: -46% !important;
+    }
+  } 
+
+</style>
 
     <main>
-        <div class="titolo">
-            <h1 style="margin-top: 20px;" class="tit-sec">
-              BnBeigua
-            </h1>
-        
-            <div class="fix-edges"></div>
-          </div>
-
     <!-- slider -->
-    <div class="slider">
+    <div class="slider titolo-proj" style="top: -70px">
         <ul class="slides">
           <li>
-            <img src=".././img/bnbeigu.jpg" id="banner-proj">
+            <img src=".././img/bnbeigu.jpg" id="banner-proj" style="background-position-y: -55%;">
+            <div class="caption center-align">
+              <h3 class="blue-text text-darken-3" style="margin-top: 150px;" id="nome-proj">BnBeigua</h3>
+            </div>
           </li>
         </ul>
       </div>
@@ -103,33 +119,69 @@
 <br><br><br>
 
 
+
 <div class="container presentazione" >
     <h3 class="tit-sec">BnBeigua</h3>
-    <div class="container">
-        <h5>Sito web che raccoglie le esperienze,
-            i soggiorni e le informazioni sul Parco del Beigua. Il sito propone anche
-            un  paragrafo di sensibilizzazione sul problema della minaccia degli scavi
-            nel parco.</h5>
+    <br>
+    <div class="sito container">
+      <h4 class="tit-sec grey-text text-darken-1">Il sito</h4>
+      <h5><a href="https://www.bnbeigua.live" class="tit-sec grey-text text-lighten-1"><u style="font-size: 0.8em;">https://www.bnbeigua.live</u></a></h5>
     </div>
     
     <br><br>
-    
-    <h4 class="tit-sec">Gruppo Povero gabbiano</h4>
-    <div class="container">
-        <h5>Beatrice Portaluri - designer</h5>
-        <h5>Tiziano Mario Riemma - designer</h5>
-        <h5>Milo Galli - sviluppatore</h5>
-        <h5>Daniele Carrega - sviluppatore</h5>
-        <h5>Samuele Zen - sviluppatore</h5>
-        <h5>Fabrizio Varaldo - sviluppatore</h5>
-        <h5>Jonathan Scazzola - sviluppatore</h5>
-        <h5>Fotsing Tebou Laurent Desire - sviluppatore</h5>
-    </div>
+
+    <h3 class="tit-sec">Il progetto</h3>
+    <p class="flow-text">Sito web che raccoglie le esperienze,
+      i soggiorni e le informazioni sul Parco del Beigua. Il sito propone anche
+      un  paragrafo di sensibilizzazione sul problema della minaccia degli scavi
+      nel parco.</p>
+    <br>
+
+    <h3 class="tit-sec">Gruppo povero gabbiano</h3>
+    <p class="flow-text">Beatrice Portaluri - designer<br>
+      Tiziano Mario Riemma - designer<br>
+      Milo Galli - sviluppatore<br>
+      Daniele Carrega - sviluppatore<br>
+      Samuele Zen - sviluppatore<br>
+      Fabrizio Varaldo - sviluppatore<br>
+      Jonathan Scazzola - sviluppatore<br>
+      Fotsing Tebou Laurent Desire - sviluppatore<br>
+    </p>
+    <br>
         
 </div>
 
+<div class="container info-impl row">
+  <div class="sw container col s12 m12 l6">
+    <h5 class="tit-sec">Software utilizzati</h5>
+    <p class="flow-text">Figma</p>
+  </div>
 
-    </main>
+  
+  <div class="y container col s12 m12 l6">
+    <h5 class="tit-sec">Perchè?</h5>
+    <p class="flow-text">Incentivare i cittadini a frequentare il parco e le aree circostanti, per conoscerne le meraviglie e protestare, quindi, contro la minaccia degli scavi.</p>
+  </div>
+</div>
+
+
+
+
+<div class="container">
+
+  <div class="carousel carousel-slider center">
+    <a class="carousel-item" href="https://www.bnbeigua.live"><img src="..//img/bnbeigua1.jpg"></a>
+    <a class="carousel-item" href="https://www.bnbeigua.live"><img src="..//img/bnbeigua1.jpg"></a>
+    <a class="carousel-item" href="https://www.bnbeigua.live"><img src="..//img/bnbeigua1.jpg"></a>
+    <a class="carousel-item" href="https://www.bnbeigua.live"><img src="..//img/bnbeigua1.jpg"></a>
+</div>
+
+</div>
+  
+
+
+
+</main>
 
 
 
@@ -208,6 +260,12 @@
         instances.start();
       });
 
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances2 = M.Carousel.init(elems, {fullWidth: true, indicators: true, shift: 20});
+      });
     </script>
+    <script src="../js/UNDERLINEnav.js"></script>
+
 </body>
 </html>
