@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <!--Import Google Icon Font-->
+  <!-- necessario per icone -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="progetto01/node_modules/materialize-css/dist/css/materialize.min.css"
+    media="screen,projection" />
+
+  <!-- style -->
+  <link type="text/css" rel="stylesheet" href="progetto01/node_modules/materialize-css/dist/css/general.min.css" media="screen,projection" />
+
+  <!-- lasciare "pagina".scss per ultimo, override colori variabili scss  + DARK MODE -->
+  <link type="text/css" rel="stylesheet" href="progetto01/node_modules/materialize-css/dist/css/colorsoverride.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="progetto01/node_modules/materialize-css/dist/css/index.min.css" media="screen,projection" />
+
+  <!-- icone  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <script src="progetto01/public/js/FNbackToTop.js"></script>
+  <title>TUTELABEIGUA</title>
+
+</head>
+
+
+
+
+
+<body>
+  <!-- NAV -->
+  <div class="navbar-fixed">
+    <nav>
+      <div id="main-nav" class="nav-wrapper row">
+        <a href="index.html" class="brand-logo col s3 offset-s1 hide-on-med-and-down" style="width: fit-content;">
+          TUTELA<span id="beigua-grey">BEIGUA</span>
+        </a>
+
+        <a href="../../index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <div class="col s6 left show-on-medium-and-down hide-on-large-only" style="height: inherit; width: 20%;">
+          <h6 id="tit-sm-med">TUTELA<span id="beigua-grey">BEIGUA</span></h6>
+        </div>
+        <div class="right show-on-medium-and-down">
+          <i style="display: none;" id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
+        </div>
+
+
+        <ul class="right hide-on-med-and-down">
+          <li id="selected-page"><a href="index.html" >Home</a></li>
+          <li><a href="progetto01/public/progetti.html">Progetti</a></li>
+          <li><a href="progetto01/public/tutelabeigua.html">TUTELABEIGUA</a></li>
+          <li style="margin-right: 10vw;"><a href="progetto01/public/aboutus.html">Info</a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li class="banner-side-menu" style="text-align: center;">
+      <h5>TUTELABEIGUA</h5>
+      <h3>-2 giorni</h3>
+      <h5>all'inizio dell'evento</h5>
+    </li>
+    <li><a href="index.html">
+        Home</a></li>
+    <li><a href="progetto01/public/progetti.html">
+        Progetti</a></li>
+    <li><a href="progetto01/public/tutelabeigua.html">
+        TUTELABEIGUA</a></li> 
+    <li><a href="progetto01/public/aboutus.html">
+        Info</a></li>
+  </ul>
+  <!-- FINE NAV -->
+
+  <main>
+
+
+
+  <div class="titolo">
+    <h1 style="margin-top: 20px;" class="tit-sec">
+      Welcome <br> on board!
+    </h1>
+    <!-- <div class="fix-edges"></div> -->
+    <div class="add-edges"></div>
+  </div>
+
+    <!-- slider -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="./progetto01/public/img/CASA ALPINI4.jpg">
+        </li>
+        <li>
+          <img src="./progetto01/public/img/parco-beigua-671551.jpg">
+        </li>
+        <li>
+          <img src="https://st.ilfattoquotidiano.it/wp-content/uploads/2021/04/12/MONTEREIXABIS-scaled.jpg">
+        </li>
+        <li>
+          <img src="./progetto01/public/img/Panorama-dal-Beigua-Ft.-Monica-Saettone.jpg">
+        </li>
+        <li>
+          <img src="./progetto01/public/img/20190822_175604 (1).jpg">
+        </li>
+      </ul>
+    </div>
+    <!-- END slider -->
+
+
+<br><br><br>
+
+    <div class="container welcome">
+      <h5>
+        Ciao benvenut* qui troverai forti iniziative che hanno come obbiettivo quello di Divulgare su tematiche strette al tuo vivere, 
+        e quello di tutti 
+      </h5>
+    </div>
+
+<br><br><br>
+
+<div class="immagine-coll"> 
+
+  <div class="collapsibles">
+      <div class="contents">
+        <ul class="collapsible">
+          <li id="c1" class="active">
+            <div class="collapsible-header">
+              <h4>Il Parco del Beigua</h4>
+              <img src="./progetto01/public/img/Component 16.png" alt="" style="transition: all 0.5s ease 0s; position: absolute; top: 4px;  right: 17px; transform: rotate(45deg);">
+            </div>
+            <div class="collapsible-body">
+              <p class="flow-text">
+                Qui trovarai un insieme di progetti della classe di web design del dipartimento di architettura in collaborazione con gli sviluppatori del dipartimento di informatica dell'universita'di Genova.
+              </p>
+              <br>
+              <p class="flow-text">
+                Tutti i progetti si articoleranno seguendo lo stesso filo conduttore: La messa al bando del progetto di allestimento di una miniera di amianto nell'attuale parco del Beigua.
+              </p>
+              <br><br><br><br>
+           </div>
+          </li>
+
+          <li id="c2">
+            <div class="collapsible-header">
+            <h4>La tua salute</h4>
+            <img src="./progetto01/public/img/Component 16.png" alt="" style="transition: all 0.5s ease 0s; position: absolute; top: 4px;  right: 17px">
+            </div>
+            <div class="collapsible-body">
+              <p class="flow-text">
+                L’inalazione di Amianto e il conseguente abbattimento di foreste per garantire alle estrazioni un migliore spazio di lavorazione risulta tossico e dannoso per la nostra salute.
+              </p>
+              <br>
+              <p class="flow-text">
+                I maggiori problemi sono legati all’apparato respiratorio e conducendo cosi alle gravose dipendenze di un tumore polmonare.
+                L’abbattimento degli Alberi del Parco del Beigua contribuirebbe ad abbassare la qualità dell’aria respirata.
+              </p>
+              <br><br><br><br>
+            </div>
+          </li>
+
+          <li id="c3">
+            <div class="collapsible-header">
+              <h4>L'ambiente</h4>
+              <img src="./progetto01/public/img/Component 16.png" alt="" style="transition: all 0.5s ease 0s; position: absolute; top: 4px;  right: 17px">
+            </div>
+            <div class="collapsible-body">
+                            <p class="flow-text">
+                              Un territorio il cui patrimonio geologico è tutelato dall'UNESCO. Con questo prestigioso riconoscimento si presenta il comprensorio del Beigua, la più vasta area naturale protetta della Liguria – che coinvolge i comuni di Arenzano, Campo
+              </p>
+              <br>
+              <p class="flow-text">
+                Ligure, Cogoleto, Genova, Masone, Rossiglione, Sassello, Stella, Tiglieto e Varazze – riconosciuto come sito UNESCO nell'ambito della prestigiosa lista dei Geoparchi mondiali (UNESCO Global Geoparks).
+              </p>
+              <br><br><br><br>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="immagine-bottom" style="background-image: url('./progetto01/public/img/cascina.png');">
+    </div>
+</div>
+
+
+
+
+
+    <div class="cards">
+      <div class="row" >
+         <div class="col s12 m12 l4 cards-pc">
+          <div class="sect" style="background-image: url('./progetto01/public/img/I liguri muoiono prima.png');">
+            <div class="sect-tit">
+              <h4>Scopri i progetti di tutela del Beigua</h4>
+              <div class="sect-link">
+                <h5><a href="/progetto01/public/progetti.html">I PROGETTI</a></h5>
+              </div>
+            </div>  
+          </div>
+        </div> 
+
+
+        <div class="col s12 m12 l4 cards-pc">
+          <div class="sect" style="background-image: url('./progetto01/public/img/noMinB.JPg');">
+            <div class="sect-tit">
+              <h4>Cosa sai di TUTELABEIGUA?</h4>
+              <div class="sect-link">
+                <h5><a href="/progetto01/public/tutelabeigua.html">TUTELABEIGUA</a></h5>
+              </div>
+            </div>  
+          </div>
+        </div>
+
+        
+        <div class="col s12 m12 l4 cards-pc">
+          <div class="sect" style="background-image: url('./progetto01/public/img/bnbeigu.jpg'); background-position-y: -110px;">
+            <div class="sect-tit">
+              <h4>Scopri di più sul Gruppo77</h4>
+              <div class="sect-link">
+                <h5><a href="/progetto01/public/aboutus.html">INFO</a></h5>
+              </div>
+            </div>              
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+  </main>
+
+  <br>
+  <br>
+
+<!--  -->
+<!-- FOOTER -->
+<!--  -->
+  <footer class="page-footer">
+
+
+<div class="back-to-top" onclick="FNbackToTop()">
+  <a class="btn-floating btn-large waves-effect waves-light" style="padding: 8px;">
+    <img src="./progetto01/public/img/Group 4.png">
+  </a>
+</div>
+
+
+
+
+
+    <div class="container footer-container">
+      <div class="row">
+        <div class="col l6 s12">
+            <img src="./progetto01/public/img/Component 8.png" alt="logo">
+            <h4 style="font-weight: 450;">Gruppo 77</h4>
+        </div>
+
+        <div class="col l6 s12">
+        <h6 style="text-decoration:underline; margin-top: 30px;">Design:</h6>
+        <p>Gabriella Bonetti  </p>
+         <p>  Luca Galli </p>
+         <p> Gabriele Moggio </p> 
+        
+        <h6 style="text-decoration:underline; margin-top: 30px;">Development:</h6>
+        <p>Omar Jerbi</p>
+         <p>  Erik Ricci </p>
+         <p> Gianluca Napolitano </p> 
+         <p> Luca Insinna </p> 
+      </div>
+        
+        <div class="col l4 offset-l2 s12">
+          <h5  style="margin-top: 30px;">Social Media</h5>
+              <a class="grey-text text-lighten-3" href="#!" style="margin-right: 15px;">
+                <i class="fa fa-twitter" style="font-size:36px"></i>
+              </a>
+
+              <a class="grey-text text-lighten-3" href="#!"  style="margin-right: 15px;">
+                <i class="fa fa-instagram" style="font-size:36px"></i>
+              </a>
+
+              <a class="grey-text text-lighten-3" href="#!"  style="margin-right: 15px;">
+                <i class="fa fa-facebook" style="font-size:36px"></i>
+              </a>
+
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container" style="background-color: unset;">
+        © 2022 Copyright
+        <a class="black-text text-lighten-4 right" target="_blank" href="https://www.unige.it"
+          style="font-size:larger ; background-color: unset;">Unige</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="progetto01/node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script>M.AutoInit();</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.slider');
+      var instances = M.Slider.init(elems, { "indicators": false, "height": 300, "interval": 5000 });
+      instances.start();
+    });
+  </script>
+  <script src="./progetto01/public/js/rotate_icone_index.js"></script>
+  <script src="progetto01/public/js/UNDERLINEnav.js"></script>
+
+
+</body>
+
+</html>
+
