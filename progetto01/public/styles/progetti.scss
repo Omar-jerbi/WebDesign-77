@@ -3,7 +3,7 @@
 
 
 .pres{
-  background-color: $primary-color-w;
+  background-color: $tertiary-color-g;
   padding: 30px 20px;
   border-radius: 20px;
   box-shadow: 1px 2px 5px #00000069;
@@ -73,5 +73,11 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  #col-webdes-img{
+    padding: 5% 15%;
   }
 }

@@ -10,7 +10,9 @@
   box-shadow: -1px 4px 2px #00000052;
 }
 
-
+.welcome{
+  color: $font-color2;
+}
 
 .immagine-coll{
   width: 100vw;
@@ -41,10 +43,10 @@
     }
   
     .collapsible{
-      background-color: $secondary-color-b;
-      color: $font-color1;
+      background-color: $primary-color-w;
+      color: $font-color2;
       .collapsible-header{
-        background-color: $secondary-color-b;
+        background-color: $primary-color-w;
       }
     }
   }
