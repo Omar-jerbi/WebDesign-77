@@ -17,7 +17,7 @@
 }
 
 .presentazione{
-    margin-top: 32vh;
+    margin-top: 30vh;
 }
 
 
@@ -58,7 +58,7 @@
 }
 
 
-@media only screen and (min-width: 1020px) {// pc
+@media only screen and (min-width: 1020px) {// laptop
     .slider{
         height: 600px !important;
         .slides{
@@ -66,9 +66,17 @@
         }
     }
 
+    .presentazione{
+        margin-top: 60vh;
+    }
+
     .sw{
         border-bottom: 0px !important;
         border-right: 2px solid $tertiary-color-g;
+    }
+
+    .y{
+        padding-left: 5% !important;
     }
 
     .carousel{
@@ -76,4 +84,13 @@
         width: 70% !important;
         margin-left: 15%;
     }
+}
+
+
+@media only screen and (min-width: 1500px) {// pc
+
+    .presentazione{
+        margin-top: 50vh;
+    }
+
 }
