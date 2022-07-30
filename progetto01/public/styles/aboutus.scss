@@ -149,13 +149,8 @@ main{
   }
 }
 
-.dev{
-  .container{
-    width: 100% !important;
-  }
-}
 
-@media only screen and (min-width: 1700px){//pc
+@media only screen and (min-width: 1020px){//pc
   .faq{
     .newsletter{
       width: 40%;
