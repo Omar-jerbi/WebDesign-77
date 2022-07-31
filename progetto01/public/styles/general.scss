@@ -207,6 +207,14 @@ nav{
 }
 
  
+.fix-edges{
+  width: 100vw;
+  height: 30px;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background-color: $primary-color-w !important;
+}
 
 .titolo{
     padding: 20px 10vw;
@@ -217,14 +225,6 @@ nav{
         color:$font-color2 !important;
     }
   
-    // .fix-edges{
-    //   width: 100vw;
-    //   height: 30px;
-    //   position: absolute;
-    //   top: 42px;
-    //   left: 0;
-    //   background-color: $primary-color-w !important;
-    // }
 
     .add-edges{
       width: 100%;
