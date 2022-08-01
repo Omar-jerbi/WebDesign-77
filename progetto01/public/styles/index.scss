@@ -55,6 +55,14 @@
   }
 }
 
+.anticlick{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ff000000;
+  z-index: 10;
+}
+
 .separate{
   position: absolute;
   width: 80%;
@@ -108,9 +116,10 @@
   }
   .collapsible-body{
     display: block !important;
-    
+    border: none;
   }
   .collapsible-header{
+    border: none;
     img{
       display: none;
     }
