@@ -42,7 +42,8 @@ main{
       
         .collapsible-body{
           border-radius: 0px 0px 5px 15px;
-          background-color: white;
+          background-color: $primary-color-w;
+          color: $font-color2;
           line-height: 24px;
         }
       
@@ -69,7 +70,7 @@ main{
       height: 45%;
       width: 100%;
       top: 0;
-      padding: 0 5%;
+      padding: 3% 5%;
       text-decoration:underline;
       box-shadow: 0px 4px 4px #0000004f;
     }
@@ -130,6 +131,7 @@ main{
         text-align: center;
         position: relative;
         background-color: $tertiary-color-g;
+        border-radius: 0 0 20px 20px !important;
         .card-title{
           font-size: initial;
           font-weight: 500;
