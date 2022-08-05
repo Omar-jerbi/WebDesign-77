@@ -253,6 +253,8 @@ nav{
   font-weight: 200;
   .brand-logo{
     font-weight: 500;
+    font-size: 1.7em !important;
+    padding-top: 4px;
   }
  }
 
@@ -352,5 +354,15 @@ nav{
 @media only screen and (min-width: 1020px) and (max-width: 1030px){ //laptop
   .sect{
     height: 60vh !important;
+  }
+}
+
+@media only screen and (min-width: 1000px) {//desktop e laptop
+  .navbar-fixed{
+    height: 90px !important;
+    nav{
+      height: 90px !important;
+      padding-top: 10px !important;
+    }
   }
 }
