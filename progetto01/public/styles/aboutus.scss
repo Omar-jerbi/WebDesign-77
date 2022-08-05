@@ -22,6 +22,12 @@ main{
     margin-top: 200px;
     position: relative;
 
+    .faq-tit{
+      color:$font-color2;
+      font-family: 'Plus Jakarta Sans';
+      font-weight: 600;
+    }
+
     .collapsible{
         border-color: transparent !important;
         border-radius: 15px 15px 5px 15px;
@@ -38,6 +44,7 @@ main{
           background-color: $secondary-color-b;
           color: $font-color3;
           border: 0;
+          font-weight: 500;
         }
       
         .collapsible-body{
@@ -45,6 +52,7 @@ main{
           background-color: $primary-color-w;
           color: $font-color2;
           line-height: 24px;
+          font-weight: 300;
         }
       
       }
