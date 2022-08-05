@@ -125,7 +125,7 @@ footer{
     border-radius: 20px 20px 0 0;
     padding-top: 60px !important;
     padding-bottom: 60px !important;
-    .back-to-top{
+    .back-to-top{ 
         position: absolute;
         top: -37px;
         right: 23px;
@@ -253,6 +253,8 @@ nav{
   font-weight: 200;
   .brand-logo{
     font-weight: 500;
+    font-size: 1.7em !important;
+    padding-top: 4px;
   }
  }
 
@@ -293,11 +295,12 @@ nav{
 
 .radius-fix{
   background-color: $tertiary-color-g;
+  border-radius: 20px 20px 0 0 !important;
   width: 100%;
-  height: 20px;
+  height: 13px;
   position: absolute;
   left: 0;
-  top: -7px;
+  top: -9px;
   z-index: 2;
 }
 
@@ -341,8 +344,8 @@ nav{
     }
   }
 
-  .sect-link{
-    display: none;
+  .sect{
+    height: 60vh !important;
   }
 }
 
@@ -351,5 +354,15 @@ nav{
 @media only screen and (min-width: 1020px) and (max-width: 1030px){ //laptop
   .sect{
     height: 60vh !important;
+  }
+}
+
+@media only screen and (min-width: 1000px) {//desktop e laptop
+  .navbar-fixed{
+    height: 90px !important;
+    nav{
+      height: 90px !important;
+      padding-top: 10px !important;
+    }
   }
 }
