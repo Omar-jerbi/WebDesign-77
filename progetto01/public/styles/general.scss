@@ -318,21 +318,6 @@ nav{
 }
 
 
-  @media only screen and (max-width: 450px){//solo phone SMALL
-    .titolo{
-        text-align: center;
-    }
-
-    #tit-sm-med{
-      font-size: large;
-      left: 59%;
-    }
-
-    .sect{
-      height: 65vh!important;
-    }
-  }
-
 
 @media only screen and (min-height: 700px) {//tablet in su
   .sect{
@@ -363,19 +348,27 @@ nav{
 }
 
 
-
 @media only screen and (max-width: 800px){ //tablet 
   .sect{
     height: 45vh !important;
   }
 }
 
-@media only screen and (max-width: 350px){ //Mini phone
+
+@media only screen and (max-width: 450px){//solo phone SMALL
+  .titolo{
+      text-align: center;
+  }
+
+  #tit-sm-med{
+    font-size: large;
+    left: 59%;
+  }
+
   .sect{
-    height: 55vh !important;
+    height: 65vh!important;
   }
 }
-
 
 
 
