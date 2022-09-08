@@ -24,9 +24,6 @@
     .col{
       margin-bottom: 20px;
       border-radius: 20px 20px 5px 20px;
-      .sect{
-        height: 40vh;
-      }
     }
   }
 }
@@ -47,13 +44,7 @@
 
 @media only screen and (min-width: 1020px)and (max-width: 1030px) {
   .sect{
-    height: 70vh!important;
     background-position-x: center !important;
   }
 
-  .progetti{
-    .sect{
-      height: 70vh!important;
-    }
-  }
 }

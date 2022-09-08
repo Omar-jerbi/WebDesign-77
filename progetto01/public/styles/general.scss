@@ -314,10 +314,11 @@ nav{
     .footer-container{
       padding: 10px 20vw;
     }
+
 }
 
 
-  @media only screen and (max-width: 450px){//solo phone
+  @media only screen and (max-width: 450px){//solo phone SMALL
     .titolo{
         text-align: center;
     }
@@ -326,15 +327,30 @@ nav{
       font-size: large;
       left: 59%;
     }
+
+    .sect{
+      height: 65vh!important;
+    }
   }
 
 
-@media only screen and (min-width: 700px) {//tablet e pc
+@media only screen and (min-height: 700px) {//tablet in su
   .sect{
-    height: 50vh !important;
+    height: 65vh!important;
   }
 }
 
+@media only screen and (min-height: 1080px) {//full hp
+  .sect{
+    height: 50vh!important;
+  }
+}
+
+@media only screen and (min-height: 1440px) {//2k
+  .sect{
+    height: 30vh!important;
+  }
+}
 
 @media only screen and (max-width: 380px){//MINI phone
   .sidenav{
@@ -344,18 +360,24 @@ nav{
     }
   }
 
+}
+
+
+
+@media only screen and (max-width: 800px){ //tablet 
   .sect{
-    height: 60vh !important;
+    height: 45vh !important;
+  }
+}
+
+@media only screen and (max-width: 350px){ //Mini phone
+  .sect{
+    height: 55vh !important;
   }
 }
 
 
 
-@media only screen and (min-width: 1020px) and (max-width: 1030px){ //laptop
-  .sect{
-    height: 60vh !important;
-  }
-}
 
 @media only screen and (min-width: 1000px) {//desktop e laptop
   .navbar-fixed{
