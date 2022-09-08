@@ -6,7 +6,7 @@
   background-color: $tertiary-color-g;
   padding: 30px 20px;
   border-radius: 20px;
-  box-shadow: 1px 2px 5px #00000069;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2));
 }
   
 
@@ -24,9 +24,6 @@
     .col{
       margin-bottom: 20px;
       border-radius: 20px 20px 5px 20px;
-      .sect{
-        height: 40vh;
-      }
     }
   }
 }
@@ -47,13 +44,7 @@
 
 @media only screen and (min-width: 1020px)and (max-width: 1030px) {
   .sect{
-    height: 70vh!important;
     background-position-x: center !important;
   }
 
-  .progetti{
-    .sect{
-      height: 70vh!important;
-    }
-  }
 }

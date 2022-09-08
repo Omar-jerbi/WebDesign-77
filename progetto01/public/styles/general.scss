@@ -44,7 +44,7 @@ main{
         border-radius: 30px 30px 5px 30px;
         background-size: cover;
         position: relative;
-        box-shadow: 1px 1px 5px 1px rgb(71, 71, 71);
+        filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2));
         background-position-x: -10px;
         background-position-y: -10px;
       }
@@ -125,7 +125,7 @@ footer{
     border-radius: 20px 20px 0 0;
     padding-top: 60px !important;
     padding-bottom: 60px !important;
-    .back-to-top{
+    .back-to-top{ 
         position: absolute;
         top: -37px;
         right: 23px;
@@ -198,7 +198,7 @@ nav{
     // text-decoration: underline;
     #under{
       border-bottom: 5px solid black;
-      width: 10%;
+      width: 6px;
       border-radius: 57px;
       text-align: center;
       margin-left: 45%;
@@ -232,13 +232,13 @@ nav{
       position: absolute;
       background-color: $primary-color-w !important;
       left: 0;
-      border-radius: 30px;
+      border-radius: 30px 30px 30px 0;
       z-index: 10;
     }
   }
 
   .no-slider{
-    box-shadow: 2px 2px 9px #00000061;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 20px 0;
   }
 
@@ -253,6 +253,8 @@ nav{
   font-weight: 200;
   .brand-logo{
     font-weight: 500;
+    font-size: 1.7em !important;
+    padding-top: 4px;
   }
  }
 
@@ -293,11 +295,12 @@ nav{
 
 .radius-fix{
   background-color: $tertiary-color-g;
+  border-radius: 20px 20px 0 0 !important;
   width: 100%;
-  height: 20px;
+  height: 13px;
   position: absolute;
   left: 0;
-  top: -7px;
+  top: -9px;
   z-index: 2;
 }
 
@@ -311,10 +314,11 @@ nav{
     .footer-container{
       padding: 10px 20vw;
     }
+
 }
 
 
-  @media only screen and (max-width: 450px){//solo phone
+  @media only screen and (max-width: 450px){//solo phone SMALL
     .titolo{
         text-align: center;
     }
@@ -323,15 +327,30 @@ nav{
       font-size: large;
       left: 59%;
     }
+
+    .sect{
+      height: 65vh!important;
+    }
   }
 
 
-@media only screen and (min-width: 700px) {//tablet e pc
+@media only screen and (min-height: 700px) {//tablet in su
   .sect{
-    height: 40vh !important;
+    height: 65vh!important;
   }
 }
 
+@media only screen and (min-height: 1080px) {//full hp
+  .sect{
+    height: 50vh!important;
+  }
+}
+
+@media only screen and (min-height: 1440px) {//2k
+  .sect{
+    height: 30vh!important;
+  }
+}
 
 @media only screen and (max-width: 380px){//MINI phone
   .sidenav{
@@ -341,15 +360,31 @@ nav{
     }
   }
 
-  .sect-link{
-    display: none;
+}
+
+
+
+@media only screen and (max-width: 800px){ //tablet 
+  .sect{
+    height: 45vh !important;
+  }
+}
+
+@media only screen and (max-width: 350px){ //Mini phone
+  .sect{
+    height: 55vh !important;
   }
 }
 
 
 
-@media only screen and (min-width: 1020px) and (max-width: 1030px){ //laptop
-  .sect{
-    height: 60vh !important;
+
+@media only screen and (min-width: 1000px) {//desktop e laptop
+  .navbar-fixed{
+    height: 90px !important;
+    nav{
+      height: 90px !important;
+      padding-top: 10px !important;
+    }
   }
 }
