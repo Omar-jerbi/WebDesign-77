@@ -26,6 +26,8 @@
 
 
     <script src="../public/js/FNbackToTop.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="../public/js/mail.js"></script>
   <title>Info</title>
 </head>
 <body>
@@ -283,7 +285,7 @@
         <input type="text" name="mail" id="mail" placeholder="latua@email.com">
       </div>
       <div class="btt-nl"> 
-        <button class="btn waves-effect waves-light" type="submit" name="action">Iscriviti subito</button> 
+        <button class="btn waves-effect waves-light" type="submit" name="action" onclick="sendMail()">Iscriviti subito</button> 
       </div>
     </div>
 
