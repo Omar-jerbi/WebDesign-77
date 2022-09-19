@@ -10,22 +10,11 @@
   }
 
 
-  .slides  {
-    .caption{//per sfondo viola
-      margin-top: -60px!important;
-      padding-top: 81px!important;
-      left: unset !important;
-      background-color: rgba(59, 66, 159, 0.651) ;
-      width: 100% !important;
-      height: 100% !important;
-
-      h4{
-        color: $primary-color !important;
-        text-shadow: 2px 2px 0px black;
-        font-size: 48px;
-      }
-    }
-  }
+.fix-edges{
+  top: 34px !important;
+  background-color: rgb(180, 180, 180) !important;
+  z-index: -1;
+}
 
 
   .ospiti{
@@ -41,17 +30,24 @@
         .card-reveal{
           height: 80% !important;
         }
-
+  
         .card-content{
           padding: 10px!important;
+          text-align: center;
+          position: relative;
+          background-color: $tertiary-color-g;
+          border-radius: 0 0 20px 20px !important;
           .card-title{
-            font-size: large;
+            font-size: initial;
+            font-weight: 500;
           }
         }        
-
+  
         .card-image{
           height: 30vh;
+          border-radius: 0 !important;
           img{
+            border-radius: 20px 20px 0 0;
             height: 30vh;
             object-fit: cover;
           }
@@ -65,53 +61,30 @@
     background-color: $secondary-color;
     color: $primary-color !important;
     position: relative;
-
-    padding-top: 20vh;
-    margin-top: 20vh;
     padding-bottom: 20px;
+    padding-top: 35px;
+    margin-top: 300px;
+    position: relative;
   }
 
 
 
   .banner-evento{
-    height: 40vh;
-    border-radius: 20px;
-    background-color: $footer-color;
+    height: 500px;
+    // width: inherit;
+    top: -290px;
+    border-radius: 20px 20px 4px 20px;
+    background-color: $tertiary-color-g;
     text-align: center;
     box-shadow: 0px 2px 7px #0000007a;
-    
-    
+    position: absolute;
+
     .main-sect{
       padding-top: 50px;
       height: 75%;
       color: $secondary-color;
       border-radius: 20px;
-      background-color: white;
-      box-shadow: 0px 1px 3px #00000057;
+      background-color: $tertiary-color-g;
     }
   }
 
-
-
-
-
-  @media only screen and (max-width: 500px){//phone
-    .banner-evento{
-      margin-top: -320px;
-      .main-sect{
-        padding-top: 8%;
-      }
-    }
-  }
-
-  @media only screen and (min-width: 700px){//tablet 
-    .banner-evento{
-      margin-top: -375px;
-    }
-  }
-
-  @media only screen and (min-width: 1200px){// desktop
-    .banner-evento{
-      margin-top: -580px;
-    }
-  }
