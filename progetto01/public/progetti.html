@@ -34,14 +34,14 @@
   <div class="navbar-fixed">
     <nav>
       <div id="main-nav" class="nav-wrapper row">
-        <a href="#!" class="brand-logo col s3 offset-s1 hide-on-med-and-down" style="width: fit-content;">
-          BeUge
+        <a href="../../index.html" class="brand-logo col s3 offset-s1 hide-on-med-and-down" style="width: fit-content;">
+          TUTELA<span id="beigua-grey">BEIGUA</span>
         </a>
 
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="../../index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
         <div class="col s6 left show-on-medium-and-down hide-on-large-only" style="height: inherit; width: 20%;">
-          <h6 id="tit-sm-med">BeUge</h6>
+          <h6 id="tit-sm-med">TUTELA<span id="beigua-grey">BEIGUA</span></h6>
         </div>
         <div class="right show-on-medium-and-down">
           <i style="display: none;" id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
@@ -50,9 +50,9 @@
 
         <ul class="right hide-on-med-and-down">
           <li><a href="../../index.html">Home</a></li>
-          <li><a href="./progetti.html" id="selected-page">Progetti</a></li>
-          <li><a href="./beuge.html">BEuGE</a></li>
-          <li style="margin-right: 10vw;"><a href="./aboutus.html">About Us</a></li>
+          <li id="selected-page"><a href="./progetti.html">Progetti</a></li>
+          <li><a href="./tutelabeigua.html">TUTELABEIGUA</a></li>
+          <li style="margin-right: 10vw;"><a href="./aboutus.html">Info</a></li>
         </ul>
 
       </div>
@@ -61,78 +61,67 @@
 
   <ul class="sidenav" id="mobile-demo">
     <li class="banner-side-menu" style="text-align: center;">
-      <h5>BeUge</h5>
+      <h5>TUTELABEIGUA</h5>
       <h3>-3 giorni</h3>
       <h5>all'inizio dell'evento</h5>
     </li>
     <li><a href="../../index.html">
-        <i class="material-icons">home</i>Home</a></li>
+        Home</a></li>
     <li><a href="./progetti.html">
-        <i class="material-icons">work</i>Progetti</a></li>
-    <li><a href="./beuge.html">
-        <i class="material-icons">nature_people</i>
-        BEuGE</a></li> 
+        Progetti</a></li>
+    <li><a href="./tutelabeigua.html">
+        TUTELABEIGUA</a></li> 
     <li><a href="./aboutus.html">
-        <i class="material-icons">event_note</i>
-        About Us</a></li>
+        Info</a></li>
   </ul>
   <!-- FINE NAV -->
 
 <main>
 
-  <div class="titolo">
+  <div class="titolo no-slider">
     <h1 style="margin-top: 20px;" class="tit-sec">
-      I progetti
+      Progetti
     </h1>
 
-    <div class="fix-edges"></div>
+    <!-- <div class="fix-edges"></div> -->
   </div>
-
-
-    <!-- slider -->
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <img src="./img/CASA ALPINI4.jpg">
-        </li>
-        <li>
-          <img src="./img/parco-beigua-671551.jpg">
-        </li>
-        <li>
-          <img src="https://st.ilfattoquotidiano.it/wp-content/uploads/2021/04/12/MONTEREIXABIS-scaled.jpg">
-        </li>
-        <li>
-          <img src="./img/Panorama-dal-Beigua-Ft.-Monica-Saettone.jpg">
-        </li>
-        <li>
-          <img src="./img/20190822_175604 (1).jpg">
-        </li>
-      </ul>
-    </div>
-    <!-- END slider -->
 
 
 <br><br><br>
 
     <div class="container welcome">
       <h5>
-        I progetti sono l’insieme delle azioni che coordinate hanno deciso di muovere un dito contro la attuale situazione in beigua.
+        I progetti sono l’insieme delle soluzioni elaborate dagli studenti per visualizzare il problema, muovere le coscienze e argomentare sui rischi che la costruzione della miniera sul Beigua potrebbe comportare. 
       </h5>
     </div>
 
 <br><br><br>
 
-<!-- -->
-<div class="container show-on-small hide-on-med-and-up">
+
+<!-- <div class="container show-on-small hide-on-med-and-up">
   <img src="./img/progetti-vian.png" alt="" srcset="">
 </div>
 
 <div class="container show-on-medium-and-up hide-on-small-and-down">
   <img src="./img/Group 96.png" style="width: 100%;">
+</div> -->
+
+
+<div class="container pres">
+  <div class="row">
+    <div class="col l6 m12 s12" id="col-webdes-img">
+      <img src="./img/LABORATORIO DI web design.png" alt="" srcset="">
+    </div>
+    <div class="col l6 m12 s12">
+      <p class="flow-text">Il corso di Web Design è stato tenuto dal Prof. Andrea Vian. Sono stati coinvolti gli studenti del Dipartimento di Architettura e Design e di Informatica.</p>
+      <p class="flow-text">Il corso si è posto l’obiettivo di realizzare alcuni progetti di intervento sull’attuale questione legata alla presenza dell’amianto sul Parco del Beigua. </p>
+    </div>
+  </div>
 </div>
 
+
 <div class="container evidenza">
-  <h3 class="tit-sec">In evidenza:</h3>
+  <h3 class="tit-sec">I più visti:</h3>
   <div class="cards">
 
     <div class="row">
@@ -140,15 +129,21 @@
         <div class="sect" style="background-image: url('./img/I\ liguri\ muoiono\ prima.png');">
           <div class="sect-tit">
             <h4 >I liguri muoiono prima</h4>
-            <h5>Gruppo 8</h5>
+            <div class="hide-on-med-only"><h5>Gruppo 8</h5></div>
+            <div class="sect-link">
+              <h5><a href="">TAP FOR MORE</a></h5>
+            </div>
           </div>  
         </div>
       </div>
       <div class="col s12 m4">
-        <div class="sect" style="background-image: url('./img/noMinB.jpg');">
+        <div class="sect" style="background-image: url('./img/saveurpets.jpg');">
           <div class="sect-tit">
-            <h4>No alla miniera nel parco del Beigua</h4>
-            <h5>Gruppo 25</h5>
+            <h4>Save your pets</h4>
+            <div class="hide-on-med-only"><h5>Gruppo 404</h5></div>
+            <div class="sect-link">
+              <h5><a href="">TAP FOR MORE</a></h5>
+            </div>
           </div>  
         </div>
       </div>
@@ -156,7 +151,10 @@
         <div class="sect" style="background-image: url('./img/bnbeigu.jpg');">
           <div class="sect-tit">
             <h4>BnBeigua</h4>
-            <h5>Gruppo Povero gabbiano</h5>
+            <div class="hide-on-med-only"><h5>Gruppo Povero gabbiano</h5></div>
+            <div class="sect-link">
+              <h5><a href="./progetti/bnbeigua.html">TAP FOR MORE</a></h5>
+            </div>
           </div>  
         </div>
       </div>
@@ -170,256 +168,137 @@
 
 <div class="row" id="r1">
   <div class="col s12 m6 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/I liguri muoiono prima.png">
-      </div>
-      <div class="card-content">
-        <div class="content-up">
-          <span class="card-title">i liguri muoiono prima</span>
+    <div class="sect" style="background-image: url('./img/I\ liguri\ muoiono\ prima.png');">
+      <div class="sect-tit">
+        <h4>I liguri muoiono prima</h4>
+        <div class="sect-link">
+          <h5><a href="">TAP FOR MORE</a></h5>
         </div>
-        <div class="content-down">
-          <span class="card-title activator">Apri</span>
-        </div>
-        <!-- <p><a href="#">This is a link</a></p> -->
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Apri<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
+      </div>  
     </div>
   </div>
-  <div class="col s12 m6 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/morteob.jpg">
-      </div>
-      <div class="card-content">
-        <div class="content-up">
-          <span class="card-title">Morte o Beigua</span>
-        </div>
-        <div class="content-down">
-          <span class="card-title activator">Apri</span>
-        </div>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Apri<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
 
-    </div>
-  </div>
   <div class="col s12 m6 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/namnpdb.jpg">
-      </div>
-      <div class="card-content">
-                <div class="content-up">
-          <span class="card-title" style="padding-top: 3px;">No alla miniera nel parco del Beigua</span>
+    <div class="sect" style="background-image: url('./img/morteob.jpg');">
+      <div class="sect-tit">
+        <h4>Morte o Beigua</h4>
+        <div class="sect-link">
+          <h5><a href="">TAP FOR MORE</a></h5>
         </div>
-        <div class="content-down">
-          <span class="card-title activator">Apri</span>
-        </div>
-        <!-- <p><a href="#">This is a link</a></p> -->
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Apri<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-
+      </div>  
     </div>
   </div>
+
   <div class="col s12 m6 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/saveurpets.jpg">
-      </div>
-      <div class="card-content">
-                <div class="content-up">
-          <span class="card-title">Save your pets</span>
+    <div class="sect" style="background-image: url('./img/namnpdb.jpg');">
+      <div class="sect-tit">
+        <h4>No alla miniera nel parco del Beigua</h4>
+        <div class="sect-link">
+          <h5><a href="">TAP FOR MORE</a></h5>
         </div>
-        <div class="content-down">
-          <span class="card-title activator">Apri</span>
-        </div>
-        <!-- <p><a href="#">This is a link</a></p> -->
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Apri<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-
+      </div>  
     </div>
   </div>
+
   <div class="col s12 m6 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/mesoteliberi.jpg">
-      </div>
-      <div class="card-content">
-                <div class="content-up">
-          <span class="card-title">Mesote liberi</span>
+    <div class="sect" style="background-image: url('./img/saveurpets.jpg');">
+      <div class="sect-tit">
+        <h4>Save your pets</h4>
+        <div class="sect-link">
+          <h5><a href="">TAP FOR MORE</a></h5>
         </div>
-        <div class="content-down">
-          <span class="card-title activator">Apri</span>
-        </div>
-        <!-- <p><a href="#">This is a link</a></p> -->
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Apri<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-
+      </div>  
     </div>
   </div>
+
   <div class="col s12 m6 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/2025.jpg">
-      </div>
-      <div class="card-content">
-                <div class="content-up">
-          <span class="card-title">Beigua 2025</span>
+    <div class="sect" style="background-image: url('./img/mesote\ liberi.jpg');">
+      <div class="sect-tit">
+        <h4>Mesote liberi</h4>
+        <div class="sect-link">
+          <h5><a href="">TAP FOR MORE</a></h5>
         </div>
-        <div class="content-down">
-          <span class="card-title activator">Apri</span>
-        </div>
-        <!-- <p><a href="#">This is a link</a></p> -->
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Apri<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-
+      </div>  
     </div>
   </div>
+
   <div class="col s12 m6 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/bnbeigu.jpg">
-      </div>
-      <div class="card-content">
-                <div class="content-up">
-          <span class="card-title">BnBeigua</span>
+    <div class="sect" style="background-image: url('./img/2025.jpg');">
+      <div class="sect-tit">
+        <h4>Beigua 2025</h4>
+        <div class="sect-link">
+          <h5><a href="">TAP FOR MORE</a></h5>
         </div>
-        <div class="content-down">
-          <span class="card-title activator">Apri</span>
-        </div>
-        <!-- <p><a href="#">This is a link</a></p> -->
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">chiudi<i class="material-icons right">close</i></span>
-        <!-- <p>Here is some more information about this product that is only revealed once clicked on.</p> -->
-        <a href="./progetti/bnbeigua.html">SITO</a>
-      </div>
-
+      </div>  
     </div>
   </div>
+
   <div class="col s12 m6 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/casalem.jpg">
-      </div>
-      <div class="card-content">
-                <div class="content-up">
-          <span class="card-title">Casale Monferrato</span>
+    <div class="sect" style="background-image: url('./img/bnbeigu.jpg');">
+      <div class="sect-tit">
+        <h4>BnBeigua</h4>
+        <div class="sect-link">
+          <h5><a href="">TAP FOR MORE</a></h5>
         </div>
-        <div class="content-down">
-          <span class="card-title activator">Apri</span>
-        </div>
-        <!-- <p><a href="#">This is a link</a></p> -->
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Apri<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-
+      </div>  
     </div>
   </div>
+
   <div class="col s12 m6 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/g10.jpg">
-      </div>
-      <div class="card-content">
-                <div class="content-up">
-          <span class="card-title">Gruppo 10</span>
+    <div class="sect" style="background-image: url('./img/casalem.jpg');">
+      <div class="sect-tit">
+        <h4>Casale Monferrato</h4>
+        <div class="sect-link">
+          <h5><a href="">TAP FOR MORE</a></h5>
         </div>
-        <div class="content-down">
-          <span class="card-title activator">Apri</span>
-        </div>
-        <!-- <p><a href="#">This is a link</a></p> -->
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Apri<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-
+      </div>  
     </div>
   </div>
+
   <div class="col s12 m6 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/cascina.png">
-      </div>
-      <div class="card-content">
-                <div class="content-up">
-          <span class="card-title">Gruppo 3</span>
+    <div class="sect" style="background-image: url('./img/gruppo10.jpg');">
+      <div class="sect-tit">
+        <h4>Gruppo 10</h4>
+        <div class="sect-link">
+          <h5><a href="">TAP FOR MORE</a></h5>
         </div>
-        <div class="content-down">
-          <span class="card-title activator">Apri</span>
-        </div>
-        <!-- <p><a href="#">This is a link</a></p> -->
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Apri<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-
+      </div>  
     </div>
   </div>
+
   <div class="col s12 m6 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/h2a.jpg">
-      </div>
-      <div class="card-content">
-                <div class="content-up">
-          <span class="card-title">h2Amianto</span>
+    <div class="sect" style="background-image: url('./img/gruppovacanze.jpg'); background-position-x: center;">
+      <div class="sect-tit">
+        <h4>Gruppo Vacanze</h4>
+        <div class="sect-link">
+          <h5><a href="">TAP FOR MORE</a></h5>
         </div>
-        <div class="content-down">
-          <span class="card-title activator">Apri</span>
-        </div>
-        <!-- <p><a href="#">This is a link</a></p> -->
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Apri<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-
+      </div>  
     </div>
   </div>
+
   <div class="col s12 m6 l4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="./img/cascina.png">
-      </div>
-      <div class="card-content">
-                <div class="content-up">
-          <span class="card-title">gruppo vacanze</span>
+    <div class="sect" style="background-image: url('./img/poveredesigner.jpg');background-size: contain; background-position-x: center;">
+      <div class="sect-tit">
+        <h4>Povere Designer</h4>
+        <div class="sect-link">
+          <h5><a href="">TAP FOR MORE</a></h5>
         </div>
-        <div class="content-down">
-          <span class="card-title activator">Apri</span>
-        </div>
-        <!-- <p><a href="#">This is a link</a></p> -->
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Apri<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-
+      </div>  
     </div>
   </div>
+
+  <div class="col s12 m6 l4">
+    <div class="sect" style="background-color: grey;">
+      <div class="sect-tit">
+        <h4>Gruppo 3</h4>
+        <div class="sect-link">
+          <h5><a href="">TAP FOR MORE</a></h5>
+        </div>
+      </div>  
+    </div>
+  </div>
+  
 </div>
 
 </div>
@@ -446,26 +325,26 @@
   
       <div class="container footer-container">
         <div class="row">
-          <div class="col l6 s12">
+          <div class="col l12 s12">
               <img src="./img/Component 8.png" alt="logo">
               <h4 style="font-weight: 450;">Gruppo 77</h4>
           </div>
   
-          <div class="col l6 s12">
-          <h6 style="text-decoration:underline; margin-top: 30px;">Design:</h6>
-          <p>Gabriella Bonetti  </p>
-           <p>  Luca Galli </p>
-           <p> Gabriele Moggio </p> 
-          
-          <h6 style="text-decoration:underline; margin-top: 30px;">Developmet:</h6>
-          <p>Omar Jerbi</p>
-           <p>  Erik Ricci </p>
-           <p> Gianluca Napolitano </p> 
-           <p> Luca Insinna </p> 
+          <div class="col l8 s12">
+            <h6 style="text-decoration:underline; margin-top: 30px;">Design:</h6>
+            <p>Gabriella Bonetti, 
+              Luca Galli,<br>
+             Gabriele Moggio </p> 
+            
+            <h6 style="text-decoration:underline; margin-top: 30px;">Development:</h6>
+            <p>Omar Jerbi,
+              Erik Ricci, <br>
+             Gianluca Napolitano,
+             Luca Insinna </p> 
         </div>
           
-          <div class="col l4 offset-l2 s12">
-            <h5  style="margin-top: 30px;">Social Media</h5>
+          <div class="col l4 s12">
+            <h5 id="keep-in-touch">Let's keep <br> in touch</h5>
                 <a class="grey-text text-lighten-3" href="#!" style="margin-right: 15px;">
                   <i class="fa fa-twitter" style="font-size:36px"></i>
                 </a>
@@ -485,15 +364,12 @@
       <div class="footer-copyright">
         <div class="container" style="background-color: unset;">
           © 2022 Copyright
-          <a class="black-text text-lighten-4 right" href="https://www.unige.it"
+          <a class="black-text text-lighten-4 right" target="_blank" href="https://www.unige.it"
             style="font-size:larger ; background-color: unset;">Unige</a>
         </div>
       </div>
     </footer>
   
-
-
-
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
@@ -504,7 +380,7 @@
         var instances = M.Slider.init(elems, { "indicators": false, "height": 300, "interval": 5000 });
         instances.start();
       });
-
     </script>
+    <script src="../public/js/UNDERLINEnav.js"></script>
   </body>
 </html>

@@ -26,7 +26,9 @@
 
 
     <script src="../public/js/FNbackToTop.js"></script>
-  <title>about us</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="../public/js/mail.js"></script>
+  <title>Info</title>
 </head>
 <body>
 
@@ -34,14 +36,14 @@
   <div class="navbar-fixed">
     <nav>
       <div id="main-nav" class="nav-wrapper row">
-        <a href="#!" class="brand-logo col s3 offset-s1 hide-on-med-and-down" style="width: fit-content;">
-          BeUge
+        <a href="../../index.html" class="brand-logo col s3 offset-s1 hide-on-med-and-down" style="width: fit-content;">
+          TUTELA<span id="beigua-grey">BEIGUA</span>
         </a>
 
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="../../index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
         <div class="col s6 left show-on-medium-and-down hide-on-large-only" style="height: inherit; width: 20%;">
-          <h6 id="tit-sm-med">BeUge</h6>
+          <h6 id="tit-sm-med">TUTELA<span id="beigua-grey">BEIGUA</span></h6>
         </div>
         <div class="right show-on-medium-and-down">
           <i style="display: none;" id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
@@ -51,8 +53,8 @@
         <ul class="right hide-on-med-and-down">
           <li><a href="../../index.html">Home</a></li>
           <li><a href="./progetti.html">Progetti</a></li>
-          <li><a href="./beuge.html">BEuGE</a></li>
-          <li style="margin-right: 10vw;"><a href="./aboutus.html" id="selected-page">About Us</a></li>
+          <li><a href="./tutelabeigua.html">TUTELABEIGUA</a></li>
+          <li style="margin-right: 10vw;" id="selected-page"><a href="./aboutus.html">Info</a></li>
         </ul>
 
       </div>
@@ -61,57 +63,31 @@
 
   <ul class="sidenav" id="mobile-demo">
     <li class="banner-side-menu" style="text-align: center;">
-      <h5>BeUge</h5>
+      <h5>TUTELABEIGUA</h5>
       <h3>-3 giorni</h3>
       <h5>all'inizio dell'evento</h5>
     </li>
     <li><a href="../../index.html">
-        <i class="material-icons">home</i>Home</a></li>
+        Home</a></li>
     <li><a href="./progetti.html">
-        <i class="material-icons">work</i>Progetti</a></li>
-    <li><a href="./beuge.html">
-        <i class="material-icons">nature_people</i>
-        BEuGE</a></li> 
+        Progetti</a></li>
+    <li><a href="./tutelabeigua.html">        
+        TUTELABEIGUA</a></li> 
     <li><a href="./aboutus.html">
-        <i class="material-icons">event_note</i>
-        About Us</a></li>
+        Info</a></li>
   </ul>
   <!-- FINE NAV -->
 
 
   <main>
     
-  <div class="titolo">
+  <div class="titolo no-slider">
     <h1 style="margin-top: 20px;" class="tit-sec">
-      About Us
+      Info
     </h1>
 
-    <div class="fix-edges"></div>
+    <!-- <div class="fix-edges"></div> -->
   </div>
-
-
-
-    <!-- slider -->
-    <div class="slider">
-        <ul class="slides">
-          <li>
-            <img src="./img/CASA ALPINI4.jpg">
-          </li>
-          <li>
-            <img src="./img/parco-beigua-671551.jpg">
-          </li>
-          <li>
-            <img src="https://st.ilfattoquotidiano.it/wp-content/uploads/2021/04/12/MONTEREIXABIS-scaled.jpg">
-          </li>
-          <li>
-            <img src="./img/Panorama-dal-Beigua-Ft.-Monica-Saettone.jpg">
-          </li>
-          <li>
-            <img src="./img/20190822_175604 (1).jpg">
-          </li>
-        </ul>
-      </div>
-      <!-- END slider -->
 
 
 
@@ -120,7 +96,7 @@
 
   <div class="bigtitolo" style="text-align: center;">
     <img src="./img/Component 11.png" alt="" srcset="">
-    <h1 class="tit-sec" style="font-weight: 700;">Siamo il gruppo 77</h1>
+    <h1 class="tit-sec" style="font-weight: 700;">Noi siamo <BR>il gruppo 77</h1>
   </div>
   <br><br>
 
@@ -158,12 +134,13 @@
             <img class="activator" src="./img/gabrielem.jpeg" style="filter:grayscale()">
           </div>
           <div class="card-content">
-            <span class="card-title activator">Gabriele Moggio</span>
-            
+            <div class="radius-fix"></div>
+            <span class="card-title activator">Gabriele Moggio</span>          
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <span class="card-title grey-text text-darken-4">Gabriele Moggio<i class="material-icons right">close</i></span>
+            <p>Designer genovese, amo la contaminazione di visioni alternative alle mie... 
+              Il mio motto? NEVER GIVE UP! </p>
           </div>
         </div>
       </div>
@@ -174,12 +151,12 @@
             <img class="activator" src="./img/gabriellab.jpeg">
           </div>
           <div class="card-content">
-            <span class="card-title activator">Gabriella Bonetti</span>
-            
+            <div class="radius-fix"></div>
+            <span class="card-title activator">Gabriella Bonetti</span>            
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <span class="card-title grey-text text-darken-4">Gabriella Bonetti<i class="material-icons right">close</i></span>
+            <p>Nata tra il Monviso e le Langhe amo viaggiare, le cartoline e le passeggiate. La progettazione, a tutto tondo, è il mio hobby preferito.</p>
           </div>
         </div>
       </div>
@@ -190,12 +167,12 @@
             <img class="activator" src="./img/lucag.jpeg">
           </div>
           <div class="card-content">
+            <div class="radius-fix"></div>
             <span class="card-title activator">Luca Galli</span>
-            
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <span class="card-title grey-text text-darken-4">Luca Galli<i class="material-icons right">close</i></span>
+            <p>Designer milanese, improntato al visual design ed all’editoria.</p>
           </div>
         </div>
       </div>
@@ -204,23 +181,29 @@
 </div>
 
 
-  <br><br>
+<br><br>
+<h3 class="tit-sec">Sviluppo:</h3>
+
+
+
+  <!-- end container -->
+</div>
+
+
   <div class="dev">
-    <h3 class="tit-sec">Sviluppo:</h3>
-    
-    <div class="row">
+    <div class="row  container">
       <div class="col s6 m6 l3">
         <div class="card">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="./img/erikr.jpg" style="filter:grayscale()">
           </div>
           <div class="card-content">
+            <div class="radius-fix"></div>
             <span class="card-title activator">Erik Ricci</span>
-            
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <span class="card-title grey-text text-darken-4">Erik Ricci<i class="material-icons right">close</i></span>
+            <p></p>
           </div>
         </div>
       </div>
@@ -231,12 +214,16 @@
             <img class="activator" src="./img/omarj.jpg" style="filter:grayscale()">
           </div>
           <div class="card-content">
+            <div class="radius-fix"></div>
             <span class="card-title activator">Omar Jerbi</span>
             
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <div class="radius-fix"></div>
+            <span class="card-title grey-text text-darken-4">Omar Jerbi<i class="material-icons right">close</i></span>
+            <p>Programmatore con la passione per lo sviluppo full stack di siti web, la messa in funzione di dispositivi IOT e la progettatzione hardware tramite l'interazione con micro-computer e microcontrollori Hardwino a Raspberry.</p>
+            <p>E-mail: <a href="mailto:Omarjerbi98@gmail.com">Omarjerbi98@gmail.com</a></p>
+            <p>Github: <a href="https://github.com/Omar-jerbi">github.com/Omar-jerbi</a></p>
           </div>
         </div>
       </div>
@@ -247,12 +234,13 @@
             <img class="activator" src="./img/lucai.png" style="filter:grayscale()">
           </div>
           <div class="card-content">
+            <div class="radius-fix"></div>
             <span class="card-title activator">Luca Insinna</span>
             
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <span class="card-title grey-text text-darken-4">Luca Insinna<i class="material-icons right">close</i></span>
+            <p>Programmatore che si occupa della realizzazione full stack di siti web e assistenza informatica</p>
           </div>
         </div>
       </div>
@@ -263,12 +251,13 @@
             <img class="activator" src="./img/gianlucan.jpeg" style="filter:grayscale()">
           </div>
           <div class="card-content">
+            <div class="radius-fix"></div>
             <span class="card-title activator">Gianluca Napolitano</span>
             
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <span class="card-title grey-text text-darken-4">Gianluca Napolitano<i class="material-icons right">close</i></span>
+            <p></p>
           </div>
         </div>
       </div>
@@ -278,8 +267,7 @@
 </div>
 
 
-  <!-- end container -->
-  </div>
+
 
 
   
@@ -297,50 +285,47 @@
         <input type="text" name="mail" id="mail" placeholder="latua@email.com">
       </div>
       <div class="btt-nl"> 
-        <button class="btn waves-effect waves-light" type="submit" name="action">Iscriviti subito</button> 
+        <button class="btn waves-effect waves-light" type="submit" name="action" onclick="sendMail()">Iscriviti subito</button> 
       </div>
     </div>
 
 <br><br><br><br>
 <br><br><br><br>
 
-    <div class="titfaq" style="text-align: center;">
-      <h3 class="tit-sec">FAQ:</h3>
-    </div>
-
+<h3 class="faq-tit center">FAQ</h3>
 
     <ul class="collapsible">
       <li class="tit-sec">
-        <div class="collapsible-header">Quando si svolge l'evento?</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-header">Che cos’è TUTELABEIGUA?</div>
+        <div class="collapsible-body"><span>TUTELABEIGUA è un evento trans mediale che raccoglie le idee di giovani designer ed informatici a favore i una causa comune: la salvaguardia del Parco del Beigua. La presenza di Amianto e di miniere di titanio ha ingolosito numerosi imprenditori che vorrebbero convertire il parco in una miniera a cielo aperto. Durante il nostro evento si illustreranno le possibili soluzioni progettate dagli studenti dell’Università di Genova.</span></div>
       </li>
     </ul>
   
     <ul class="collapsible">
       <li class="tit-sec">
-        <div class="collapsible-header">Quando costa il biglietto?</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-header">Dove e quando si svolgerà?</div>
+        <div class="collapsible-body"><span>L'evento si svolgerà alle porte del parco del Beigua in una piana che permette di apprezzarne il paesaggio. Per apprezzare il clima fresco della Valle, l’evento si svolgerà tra settembre e ottobre 2022.</span></div>
       </li>
     </ul>
 
     <ul class="collapsible">
       <li class="tit-sec">
-        <div class="collapsible-header">Dove si svolge?</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-header">Bisogna acquistare un biglietto per partecipare?</div>
+        <div class="collapsible-body"><span>Non è necessario versare nessun tipo di quota per partecipare all'evento. Per questioni amministrative vi chiediamo la registrazione all’evento su Eventbrite.</span></div>
       </li>
     </ul>
 
     <ul class="collapsible">
       <li class="tit-sec">
-        <div class="collapsible-header">Ci sarà del materiale?</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-header">Sono un relatore e voglio partecipare. Come fare?</div>
+        <div class="collapsible-body"><span>Prepara  e invia un piccolo essay con un estratto dei tuoi contenuti alla mail: infobeigua@gmail.com. Verrai ricontattato dal nostro Team!</span></div>
       </li>
     </ul>
 
     <ul class="collapsible">
       <li class="tit-sec">
-        <div class="collapsible-header">Quali requisiti devo avere?</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-header">Food and Beverage?</div>
+        <div class="collapsible-body"><span>Ci saranno dei piccoli truck che provvederanno al cibo e alle bevande.</span></div>
       </li>
     </ul>
 
@@ -370,26 +355,26 @@
     
         <div class="container footer-container">
           <div class="row">
-            <div class="col l6 s12">
+            <div class="col l12 s12">
                 <img src="./img/Component 8.png" alt="logo">
                 <h4 style="font-weight: 450;">Gruppo 77</h4>
             </div>
     
-            <div class="col l6 s12">
-            <h6 style="text-decoration:underline; margin-top: 30px;">Design:</h6>
-            <p>Gabriella Bonetti  </p>
-             <p>  Luca Galli </p>
-             <p> Gabriele Moggio </p> 
-            
-            <h6 style="text-decoration:underline; margin-top: 30px;">Developmet:</h6>
-            <p>Omar Jerbi</p>
-             <p>  Erik Ricci </p>
-             <p> Gianluca Napolitano </p> 
-             <p> Luca Insinna </p> 
+            <div class="col l8 s12">
+              <h6 style="text-decoration:underline; margin-top: 30px;">Design:</h6>
+              <p>Gabriella Bonetti, 
+                Luca Galli,<br>
+               Gabriele Moggio </p> 
+              
+              <h6 style="text-decoration:underline; margin-top: 30px;">Development:</h6>
+              <p>Omar Jerbi,
+                Erik Ricci, <br>
+               Gianluca Napolitano,
+               Luca Insinna </p> 
           </div>
             
-            <div class="col l4 offset-l2 s12">
-              <h5  style="margin-top: 30px;">Social Media</h5>
+            <div class="col l4 s12">
+              <h5 id="keep-in-touch">Let's keep <br> in touch</h5>
                   <a class="grey-text text-lighten-3" href="#!" style="margin-right: 15px;">
                     <i class="fa fa-twitter" style="font-size:36px"></i>
                   </a>
@@ -409,7 +394,7 @@
         <div class="footer-copyright">
           <div class="container" style="background-color: unset;">
             © 2022 Copyright
-            <a class="black-text text-lighten-4 right" href="https://www.unige.it"
+            <a class="black-text text-lighten-4 right" target="_blank" href="https://www.unige.it"
               style="font-size:larger ; background-color: unset;">Unige</a>
           </div>
         </div>
@@ -424,7 +409,8 @@
         var instances = M.Slider.init(elems, { "indicators": false, "height": 300, "interval": 5000 });
         instances.start();
       });
-
     </script>
+    <script src="../public/js/UNDERLINEnav.js"></script>
+
 </body>
 </html>
