@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../../node_modules/materialize-css/dist/css/materialize.min.css"
+    media="screen,projection" />
+
+  <!-- styles -->
+  <link type="text/css" rel="stylesheet" href="../../node_modules/materialize-css/dist/css/general.min.css"
+    media="screen,projection" />
+
+  <!-- lasciare per ultimo file.scss, override colori variabili scss  + DARK MODE -->
+  <link type="text/css" rel="stylesheet" href="../../node_modules/materialize-css/dist/css/colorsoverride.min.css"
+    media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="../../node_modules/materialize-css/dist/css/progettiPagine.min.css"
+    media="screen,projection" />
+
+  <!-- icone  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <script src="../../public/js/FNbackToTop.js"></script>
+  <title>Save your pets</title>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="navbar-fixed">
+    <nav>
+      <div id="main-nav" class="nav-wrapper row">
+        <a href="#!" class="brand-logo col s3 offset-s1 hide-on-med-and-down" style="width: fit-content;">
+          TUTELA<span id="beigua-grey">BEIGUA</span>
+        </a>
+
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <div class="col s6 left show-on-medium-and-down hide-on-large-only" style="height: inherit; width: 20%;">
+          <h6 id="tit-sm-med">TUTELA<span id="beigua-grey">BEIGUA</span></h6>
+        </div>
+        <div class="right show-on-medium-and-down">
+          <i style="display: none;" id="DLIcon" class="material-icons col s3" onclick="dark_lightFN()">brightness_5</i>
+        </div>
+
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="../../../index.html">Home</a></li>
+          <li id="selected-page"><a href=".././progetti.html">Progetti</a></li>
+          <li><a href=".././tutelabeigua.html">TUTELABEIGUA</a></li>
+          <li style="margin-right: 10vw;"><a href=".././aboutus.html">info</a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li class="banner-side-menu" style="text-align: center;">
+      <h5>TUTELABEIGUA</h5>
+      <h3>-3 giorni</h3>
+      <h5>all'inizio dell'evento</h5>
+    </li>
+    <li><a href="../../../index.html">
+        Home</a></li>
+    <li><a href=".././progetti.html">
+        Progetti</a></li>
+    <li><a href=".././tutelabeigua.html">
+        TUTELABEIGUA</a></li>
+    <li><a href=".././aboutus.html">
+        info</a></li>
+  </ul>
+  <!-- FINE NAV -->
+
+
+  <!-- importante lasciare stili banner in pagina html, da personalizzare secondo esigenze -->
+  <style>
+    @media only screen and (min-width: 700px) and (max-width: 1020px) {
+      #banner-proj {
+        background-position-y: -140% !important;
+      }
+    }
+
+    @media only screen and (min-width: 1020px) {
+      #nome-proj {
+        font-size: 140px !important;
+      }
+
+      #banner-proj {
+        background-position-y: -73% !important;
+      }
+    }
+
+    @media only screen and (min-width: 1500px) {
+      #banner-proj {
+        background-position-y: -139% !important;
+      }
+    }
+  </style>
+
+  <main>
+    <!-- slider -->
+    <div class="slider titolo-proj" style="top: -70px">
+      <ul class="slides">
+        <li>
+          <img src=".././img/banner_savepets.png" id="banner-proj" style="background-position-y: -55%;">
+        </li>
+      </ul>
+    </div>
+    <!-- END slider -->
+
+
+    <br><br><br>
+
+
+
+    <div class="container presentazione">
+      <br>
+      <div class="sito container">
+        <h4 class="tit-sec">Save your pets</h4>
+        <h5><a href="https://www.#####" class="tit-sec" target="_blank"><u
+              style="font-size: 0.7em; font-weight: 300; font-family: 'Inter';">MANCA</u></a>
+        </h5>
+      </div>
+
+      <br><br>
+
+      <h3 class="tit-sec">Il progetto</h3>
+      <p class="flow-text">Utilizzando un sito web cerchiamo di sensibilizzare le persone del fatto che le polvere
+        sottili di amianto sono dannose anche per gli animali e quindi sono in pericolo</p>
+      <br>
+      <br>
+      <hr style="height: 1px; background-color:black;">
+      <br>
+      <h3 class="tit-sec">Gruppo 404</h3>
+      <p class="flow-text">
+        Luigi Timossi sviluppatore <br>
+        Celeste Bazzi sviluppatrice <br>
+        Cesare Amodeo designer <br>
+        Fabiana Grittani designer <br>
+        Jiakai Zeng designer <br>
+        Matteo La Licata sviluppatore <br>
+        Maxwell Sanyaolu sviluppatore <br>
+        Claudio Stana sviluppatore <br>
+      </p>
+      <br>
+
+    </div>
+
+    <div class="container info-impl row">
+      <div class="sw container col s12 m12 l5 offset-l1">
+        <h5 class="tit-sec">Software utilizzati</h5>
+        <br>
+        <p class="flow-text"> React</p>
+        <p class="flow-text"> figma</p>
+      </div>
+
+
+      <div class="y container col s12 m12 l6">
+        <h5 class="tit-sec">Perchè lo avete fatto?</h5>
+        <br>
+        <p class="flow-text">Perché gli animali catturano l'attenzione delle persone</p>
+      </div>
+    </div>
+
+
+
+
+    <div class="container">
+
+      <div class="carousel carousel-slider center">
+        <a class="carousel-item" href="https://www.iligurimuoionoprima.it" target="_blank"><img src="..//img/carosellosavepets.jpeg"></a>
+        <a class="carousel-item" href="https://www.iligurimuoionoprima.it" target="_blank"><img src="..//img/carosellosavepets.jpeg"></a>
+        <a class="carousel-item" href="https://www.iligurimuoionoprima.it" target="_blank"><img src="..//img/carosellosavepets.jpeg"></a>
+        <a class="carousel-item" href="https://www.iligurimuoionoprima.it" target="_blank"><img src="..//img/carosellosavepets.jpeg"></a>
+      </div>
+
+    </div>
+
+
+
+
+  </main>
+
+
+
+
+
+
+  <br><br><br>
+  <!--  -->
+  <!-- FOOTER -->
+  <!--  -->
+  <footer class="page-footer">
+
+
+    <div class="back-to-top" onclick="FNbackToTop()">
+      <a class="btn-floating btn-large waves-effect waves-light" style="padding: 8px;">
+        <img src=".././img/Group 4.png">
+      </a>
+    </div>
+
+
+    <div class="container footer-container">
+      <div class="row">
+        <div class="col l12 s12">
+          <img src="../img/Component 8.png" alt="logo">
+          <h4 style="font-weight: 450;">Gruppo 77</h4>
+        </div>
+
+        <div class="col l8 s12">
+          <h6 style="text-decoration:underline; margin-top: 30px;">Design:</h6>
+          <p>Gabriella Bonetti,
+            Luca Galli,<br>
+            Gabriele Moggio </p>
+
+          <h6 style="text-decoration:underline; margin-top: 30px;">Development:</h6>
+          <p>Omar Jerbi,
+            Erik Ricci, <br>
+            Gianluca Napolitano,
+            Luca Insinna </p>
+        </div>
+
+        <div class="col l4 s12">
+          <h5 id="keep-in-touch">Let's keep <br> in touch</h5>
+          <a class="grey-text text-lighten-3" href="#!" style="margin-right: 15px;">
+            <i class="fa fa-twitter" style="font-size:36px"></i>
+          </a>
+
+          <a class="grey-text text-lighten-3" href="#!" style="margin-right: 15px;">
+            <i class="fa fa-instagram" style="font-size:36px"></i>
+          </a>
+
+          <a class="grey-text text-lighten-3" href="#!" style="margin-right: 15px;">
+            <i class="fa fa-facebook" style="font-size:36px"></i>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container" style="background-color: unset;">
+        © 2022 Copyright
+        <a class="black-text text-lighten-4 right" href="https://www.unige.it"
+          style="font-size:larger ; background-color: unset;">Unige</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="../../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script>M.AutoInit();</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.slider');
+      var instances = M.Slider.init(elems, { "indicators": false, "height": 400, "interval": 5000 });
+      instances.start();
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.carousel');
+      var instances2 = M.Carousel.init(elems, { fullWidth: true, indicators: true, shift: 20 });
+    });
+  </script>
+  <script src="../js/UNDERLINEnav.js"></script>
+
+</body>
+
+</html>
